@@ -25,8 +25,11 @@
   - %mkdir test: Creates a file called test in the current directory
   - %%bash: when using multiple lines of magic command, this can be used
   - %lsmagic: Lists all the magic codes that can used within the notebook
-    - line magic: runs only for one line -> % used 
+    - Line magic: runs only for one line -> % used 
     - Cell magic: runs for the entire line -> %% used
   - %%timeit: returns the total time taken to run the cell
-- Latex commands:
-  -  
+
+  # Python
+
+  - Chaining comparison: if 4 < mark <=6: print("pass")
+  - 
