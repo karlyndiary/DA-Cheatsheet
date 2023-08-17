@@ -40,13 +40,14 @@
     - or loan_columns = [col for col in credit.columns if 'loan' in col]
     - loan_columns -> This returns the list of columns that contains the word 'loan' in it.
 -  Pandas Profiling:
--  Highlighting tables: Apply colors to a dataframe
+-  Highlighting tables: Apply colours to a data frame
     - def highlight_min_max(data_frame, min_color, max_color) : 
     - numeric_cols = data_frame.select_dtypes ( [np. number]).columns
-    - #This first line create a styler object
+    - #This first line creates a styler object
     - final data = data_frame.style.highlight_max (color=max_color, subset=numeric_cols)
     - #On this second line, no need to use ".style"
     - final data final data.highlight_min(color = min_color, subset=numeric_cols) 
     - return final data
     - #Function to apply ORANGE to min and GREEN to max
     - highlight_min_max (my_data, min_color='orange', max_color="green")
+- Type hinting: 
