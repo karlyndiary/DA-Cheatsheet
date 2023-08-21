@@ -50,4 +50,20 @@
     - return final data
     - #Function to apply ORANGE to min and GREEN to max
     - highlight_min_max (my_data, min_color='orange', max_color="green")
-- Type hinting: 
+- Type hinting:
+
+# RStudio
+- Multiple line comment: Select all the lines and Ctrl + Shift + C
+- New Script or new file: Ctrl + Shift + N
+- When referencing script names from another script: Ctrl + click on the function -> this will direct you to the main function
+- data.table package: Essential for Data cleaning, Data Wrangling, EDA
+- Data Profiling: library(inspectdf) -> Displays the memory size of each column, lists all the columns in a pie chart, and checks for correlations between all numeric columns, similar to ggplot but better
+- library(doParallel): It speeds up your execution time by running it in parallel
+
+# Excel
+- Right-click on the bottom bar to select or unselect the average, sum or max
+- Analyze Data: Home -> All the way to the right (Analyze data). Suggested Analysis. Ask a question and the result will be provided as well. 
+- Excel Table: Insert -> Table. This you can call in the table name itself. Example: =average(credit_risk[person_income]) -> credit_risk: the renamed table name, person_income: the column name
+  - This is helpful when you want to add additional columns at the end. 
+- Slicer: Insert -> slicer -> select all the columns you want to filter.
+- 
