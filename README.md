@@ -76,4 +76,12 @@
   - Filling in missing values: Highlight the range -> Home -> Find & Replace -> Special -> Select Blanks
   - Ctrl + Enter -> To fill in all the cells with the same value as before
   - Conditional Formatting: Select the columns -> Home -> Conditional Formatting option -> Highlight cell rules
-  - Use Macros for repeated tasks: Developer -> Record Macros -> Give it a name and click on ok to start recording. Now you can do the usual repeated tasks and once done, stop recording. Click on the Macros button -> The recorded macro will be listed here and available for other workbooks as well.
+  - Use Macros for repeated tasks: Developer -> Record Macros -> Give it a name and click on ok to start recording. Now you can do the usual repeated tasks and once done, stop recording. Click on the Macros button -> The recorded macro will be listed here and available for other workbooks.
+ 
+# Google Sheet
+- To order days of the week or months, add a helper column and a lot numbers according to the list and filter it out from A->Z
+- =SORTN(A2:B33,3,,2,FALSE) -> Helps in displaying top 3
+- =SORTN(A1:B33,3,D14,2,True) -> Helps in displays bottom 3
+- =QUERY(A1:B66, "limit 5") -> To display top 5
+- To convert a dataset to display as a pie chart, add a helper column -> =100000-B2 
+
