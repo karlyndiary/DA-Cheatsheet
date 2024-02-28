@@ -1,3 +1,28 @@
+## Pandas
+- df.head(n): Returns the first n rows of the DataFrame.
+- df.tail(n): Returns the last n rows of the DataFrame.
+- df.info(): Provides a concise summary of the DataFrame including column data types and non-null values.
+- df.describe(): Generates descriptive statistics summarizing the central tendency, dispersion, and shape of the dataset's distribution.
+- df.shape: Returns a tuple representing the dimensionality of the DataFrame (rows, columns).
+- df.columns: Returns the column labels of the DataFrame.
+- df.index: Returns the index labels of the DataFrame.
+- df.dtypes: Returns the data types of each column in the DataFrame.
+- df.isnull(): Returns a DataFrame of the same shape as the original with True/False values indicating the presence of missing values (NaN).
+- df.dropna(): Returns a DataFrame with missing values removed.
+- df.fillna(value): Returns a copy of the DataFrame with missing values filled or imputed with the specified value.
+- df.groupby(): Groups the DataFrame using a mapper or by a Series of columns and returns a groupby object for further operations.
+- df.merge(): Merges DataFrame objects by performing a database-style join operation based on columns or indexes.
+- df.pivot_table(): Creates a spreadsheet-style pivot table as a DataFrame.
+- df.apply(): Applies a function along an axis of the DataFrame.
+- df.sort_values(): Sorts the DataFrame by specified column(s).
+- df.unique(): Returns unique values in a DataFrame column.
+- df.nunique(): Returns the number of unique values in a DataFrame column.
+- df.value_counts(): Returns a Series containing counts of unique values in a DataFrame column.
+- 
+
+
+
+
 - Chaining comparison: if 4 < mark <=6: print("pass")
 - List comprehension(used to list all the columns that start with a particular word) for loop can be used. 
     - loan_columns = [] 
