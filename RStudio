@@ -1,0 +1,6 @@
+- Multiple line comment: Select all the lines and Ctrl + Shift + C
+- New Script or new file: Ctrl + Shift + N
+- When referencing script names from another script: Ctrl + click on the function -> this will direct you to the main function
+- data.table package: Essential for Data cleaning, Data Wrangling, EDA
+- Data Profiling: library(inspectdf) -> Displays the memory size of each column, lists all the columns in a pie chart, and checks for correlations between all numeric columns, similar to ggplot but better
+- library(doParallel): It speeds up your execution time by running it in parallel
