@@ -18,7 +18,26 @@
 - df.unique(): Returns unique values in a DataFrame column.
 - df.nunique(): Returns the number of unique values in a DataFrame column.
 - df.value_counts(): Returns a Series containing counts of unique values in a DataFrame column.
-- 
+- df.loc[]: Retrieve rows and columns from a DataFrame by label(s) or boolean array.
+- df.iloc[]: Retrieve rows and columns from a DataFrame by integer position(s).
+- df.drop(): Generate a new DataFrame with specified columns removed.
+- df.rename(): Modify the names of one or more axes of the DataFrame.
+- df.astype(): Convert a pandas object to a specified data type.
+- df.merge(): Combine DataFrame or named Series objects using a database-style join.
+- df.corr(): Calculate pairwise correlations of columns, excluding NA/null values.
+- df.corrwith(): Compute pairwise correlations between rows or columns of two DataFrame objects.
+- df.drop_duplicates(): Eliminate duplicate rows from the DataFrame.
+- df.isna(): Identify missing values (NaN in numeric arrays, None/NaN in object arrays).
+- df.notna(): Recognize non-missing values (no NA values).
+- df.melt(): Transform a DataFrame from wide format to long format, possibly retaining identifier variables.
+- df.str(): Apply vectorized string functions to Series and Index objects.
+- df.fillna(): Populate NA/NaN values using the specified method.
+- df.dropna(): Discard missing values.
+- df.isin(): Determine whether elements in DataFrame are present in specified values.
+- df.nlargest(): Retrieve the first n rows ordered by columns in descending order.
+- df.nsmallest(): Fetch the first n rows ordered by columns in ascending order.
+- df.sample(): Obtain a random sample of items from an axis of the object.
+- df.resample(): Simplify frequency conversion and resampling of time series data.
 
 
 
