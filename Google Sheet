@@ -1,0 +1,10 @@
+- To order days of the week or months, add a helper column and a lot numbers according to the list and filter it out from A->Z
+- =SORTN(A2:B33,3,,2,FALSE) -> To display top 3
+  - A2:B33 - Range
+  - 3 - top 3 or bottom 3
+  - 2 - Column number
+  - False - Descending
+  - True - Ascending
+- =SORTN(A1:B33,3,,2,True) -> To display bottom 3
+- =QUERY(A1:B66, "limit 5") -> To display top 5
+- To convert a dataset to display as a pie chart, add a helper column -> =100000-B2 
