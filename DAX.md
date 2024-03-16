@@ -40,6 +40,7 @@ Variable = Dax Function(Table Name[Columns]) Mathematical operators
 - NOW: Returns the current date and time of the system.
 - QUARTER: Returns the quarter number of a year from a given date.
 
+
 ### Information Functions
 
 - ISBLANK: Returns the value as True and False depending upon if the value is blank or not.
@@ -49,6 +50,37 @@ Variable = Dax Function(Table Name[Columns]) Mathematical operators
 - ISLOGICAL: Returns True if a value is boolean, else False.
 - ISTEXT: Returns True if the value is text, else False
 - USERNAME: Returns the domain name and username from the login credentials used to log in to the system.
+
+#### Contains
+Functions returns true or false depending on whether the values for all of the referred columns exist or are contained in those columns. If the values for all the referred columns are not contained, the function returns false.
+```
+Syntax: CONTAINS(<table>, <column value> <value>[<column value>, <value>]…)
+ContainsMeasure = CONTAINS('Example Data_Inf_Func', 'Example Data_Inf_Func'[Ontime Delivery], "Yes", 'Example Data_Inf_Func'[Products Returned], "yes")
+```
+#### ContainsString
+Depending on whether one string contains another, this function returns true or false. 
+```
+Syntax: CONTAINSSTRING(<within text>, <find text>)
+Contains String Measure = CONTAINSSTRING(SELECTEDVALUE('Example Data_Inf_Func'[Furniture]),"Sofas")
+```
+#### ContainsStringExact
+Whether one string contains another is indicated by a return value of TRUE or FALSE
+```
+Syntax: CONTAINSSTRINGEXACT(<within_text>, <find_text>)
+ContainsStringExtract = CONTAINSSTRINGEXACT(SELECTEDVALUE('Example Data_Inf_Func'[Furniture]),"Sofas")
+```
+#### IsBlank
+If the value is blank, this function returns true;    
+```
+Syntax: ISBLANK(<Value>)
+Is_blank = ISBLANK(Sheet1[name])
+```
+#### IsNumber
+This function determines whether a value is a number before returning either true or false.                   
+```
+Syntax:  ISNUMBER(<value>)
+Is_number = ISNUMBER(Sheet1[id])
+```
 
 ### Logical Functions
 
@@ -123,6 +155,100 @@ Country Code = SWITCH(Data_Logical_Func[Country], "Canada", "CA", "Germany", "GE
 - LOWER: Converts a string to lowercase.
 - UPPER: Converts a string to upper case.
 - TRIM: This function removes all the whitespaces from the beginning and starting of a given string.
+
+#### BLANK ()
+Returns a blank.
+```
+
+```
+
+#### LEN ()
+Returns the number of characters in a text string.
+```
+Length = LEN(Employee[EmpName])
+```
+
+#### CONCATENATE ()
+Joins two text strings into one text string.
+```
+NameID = CONCATENATE(Employee[EmpID], Employee[EmpName])
+```
+
+#### CONCATENATEX ()
+Concatenates the result of an expression evaluated for each row in a table.
+```
+CityWiseEmp = CONCATENATEX(Employee, Employee[EmpName], ",") 
+```
+
+#### LEFT ()
+Returns the specified number of characters from the left side of a given text string.
+```
+Left = LEFT(Employee[EmpName])
+Left2 = Left(Employee[EmpName], 2)
+```
+
+#### RIGHT ()
+Returns the specified number of characters from the right side of a given text string.
+```
+Right = RIGHT(Employee[EmpName])
+Right3 = RIGHT(Employee[EmpName], 3)
+```
+
+#### MID ()
+Returns a string of characters from the middle of a  text string. 
+```
+Mid2 = MID(Employee[EmpName], 3, 2)
+```
+
+#### UPPER ()
+Converts a text string to all uppercase letters.
+```
+Upper = UPPER(Employee[EmpName])
+```
+
+#### LOWER ()
+Converts a text string to all lowercase letters.
+```
+Lower = LOWER(Employee[EmpName])
+```
+
+#### TRIM ()
+Removes all spaces from text.
+```
+Trim = TRIM(Employee[EmpName])
+```
+
+#### SUBSTITUTE ()
+Replace existing text with new text in a text string.
+```
+Substitute = SUBSTITUTE(Employee[EmpName],"Abhinav","Adam") 
+```
+
+#### REPLACE ()
+Replaces a part of a text string.
+```
+Replace = REPLACE(Employee[Salary], 2,3,999) 
+Replaces the characters from 2nd character to 3 characters. 
+From 1200 to 1999
+```
+
+#### EXACT ()
+Compares two text strings and returns TRUE if they are exactly the same, otherwise returns FALSE.
+```
+Exact = EXACT("Abhinav", "Adam")
+```
+
+#### FIND ()
+Returns the starting position of one text string within another text string.
+```
+
+```
+
+#### FORMAT ()
+Converts a value to text according to the specified format.
+```
+
+```
 
 ### Table Manipulation Functions
 
