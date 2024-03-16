@@ -51,42 +51,56 @@ Variable = Dax Function(Table Name[Columns]) Mathematical operators
 - ISTEXT: Returns True if the value is text, else False
 - USERNAME: Returns the domain name and username from the login credentials used to log in to the system.
 
+#### IF
+Checks whether the expression supplied to it evaluates to True or False and then executes the statements depending upon the result.
+```
+Syntax: IF(<logical_test>, <value_if_true>[, <value_if_false>])
+Sales Status = IF(Data_Logical_Func[Net Sales]>500,"High", "Low")
+```
+
 ### Logical Functions
 
 #### IF
 Checks whether the expression supplied to it evaluates to True or False and then executes the statements depending upon the result.
 ```
 Syntax: IF(<logical_test>, <value_if_true>[, <value_if_false>])
+Sales Status = IF(Data_Logical_Func[Net Sales]>500,"High", "Low")
 ```
 #### AND
 Return True if both the expressions supplied evaluate to True.
 ```
 Syntax: AND(<logical1>,<logical2>)
+Canada Sales = IF(AND(Data_Logical_Func[Country]="Canada", Data_Logical_Func[Net Sales]>500), "Valid", "Invalid")
 ```
 #### COALESCE
 Identifies the first expression that is not BLANK and returns it. BLANK is returned if all expressions evaluate to NULL.
 ```
 Syntax: COALESCE(<expression>, <expression>[, <expression>]…)
+CoalDemo = COALESCE(Data_Logical_Func[Country Code], BLANK(), BLANK(), "Default", BLANK())
 ```
 #### IFERROR
 Returns the value of the expression itself unless the expression returns an error, in which case it returns a specified value.
 ```
 Syntax: IFERROR(value, value_if_error)
+ErrorDemo = IFERROR(Data_Logical_Func[Net Sales],0)
 ```
 #### NOT
 This function converts either FALSE or TRUE values into the other.
 ```
 Syntax: NOT(<logical>)
+CanadaNotDemo = IF(NOT(Data_Logical_Func[Country]="Canada"), "Valid","Invalid")
 ```
 #### OR
 Returns true if any one of the expressions supplied to it evaluates to True.
 ```
 Syntax: OR(<logical1>,<logical2>)
+CanadaSales = IF(OR(Data_Logical_Func[Country]="Canada", Data_Logical_Func[Net Sales]>500),"Valid","Invalid")
 ```
 #### SWITCH
 Returns one of several potential result expressions after comparing an expression to a list of values.
 ```
 Syntax: SWITCH(<expression>, <value>, <result>[, <value>, <result>]…[, <else>])
+Country Code = SWITCH(Data_Logical_Func[Country], "Canada", "CA", "Germany", "GE", "France", "FR")
 ```
 
 ### Mathematical and Trigonometric Functions
@@ -144,8 +158,3 @@ If used, all columns in orderBy and partitionBy must originate from this table.
 - orderBy: Optional clause for specifying sorting within each partition.
 - blanks: Specifies how to handle blank data when sorting (e.g., KEEP).
 - partitionBy: Optional clause defining partitioning columns for the relationship.
-
-## DAX Logical Function
-
-
-
