@@ -40,7 +40,6 @@ Variable = Dax Function(Table Name[Columns]) Mathematical operators
 - NOW: Returns the current date and time of the system.
 - QUARTER: Returns the quarter number of a year from a given date.
 
-
 ### Information Functions
 
 - ISBLANK: Returns the value as True and False depending upon if the value is blank or not.
@@ -50,13 +49,6 @@ Variable = Dax Function(Table Name[Columns]) Mathematical operators
 - ISLOGICAL: Returns True if a value is boolean, else False.
 - ISTEXT: Returns True if the value is text, else False
 - USERNAME: Returns the domain name and username from the login credentials used to log in to the system.
-
-#### IF
-Checks whether the expression supplied to it evaluates to True or False and then executes the statements depending upon the result.
-```
-Syntax: IF(<logical_test>, <value_if_true>[, <value_if_false>])
-Sales Status = IF(Data_Logical_Func[Net Sales]>500,"High", "Low")
-```
 
 ### Logical Functions
 
