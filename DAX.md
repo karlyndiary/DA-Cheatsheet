@@ -11,6 +11,7 @@
     - [Filter Index](#filter-index)
     - [DAX COUPDAY Financial Function](#dax-coupday-financial-function)
 - [DAX Window Function](#dax-window-function)
+
 ## Introduction
 
 - DAX stands for Data Analysis Expression.
@@ -143,6 +144,11 @@ Country Code = SWITCH(Data_Logical_Func[Country], "Canada", "CA", "Germany", "GE
 ```
 
 ### Mathematical and Trigonometric Functions
+
+#### Mathematical Functions
+
+
+#### Trigonometric Function
 
 #### sin(θ) Trigonometric Function
 Returns the sine of the specified angle.
@@ -366,9 +372,15 @@ Format = FORMAT(Employee[DOJ],"MM-DD-YYYY")
 ### Table Manipulation Functions
 
 - CROSSJOIN: Returns the cartesian product of two tables that contains rows from both tables.
-- DISTINCT table: This function returns a table with unique values. Rows with duplicate values are eliminated from the table.
 - GROUPBY: It is similar to the GROUPBY function in SQL 
 - INTERSECT: This function returns the intersection of two tables without removing the duplicates.
+
+#### Distinct()
+It is a Table Manipulation function that returns a table or manipulates existing tables. Measures are used in some of the most common data analyses.
+```
+Syntax: DISTINCT (<column name>)
+Distinct = DISTINCT(Data_Logical_Func[Country])
+```
 
 ### Filter Index 
 
@@ -410,25 +422,100 @@ If used, all columns in orderBy and partitionBy must originate from this table.
 ## DAX COUPDAY Financial Function
 
 #### COUPDAYBS
-ACOTH() returns a number of inverse hyperbolic cotangents.
-The inverses hyperbolic cotangent of 33 in radians.
+DAX COUPDAYBS reveals how many days there are between the start of a coupon period and its settlement date.
 ```
-syntax: COTH(number)
-acoth = ACOTH(33)
+syntax: COUPDAYBS(<settlement>, <maturity>, <frequency>[, <basis>])
+COUPDAYBS = EVALUATEANDLOG(COUPDAYBS(DATE(2011, 1, 25),DATE(2011, 11, 15), 2, 1))
 ```
-#### COUPDAYS
-ACOTH() returns a number of inverse hyperbolic cotangents.
-The inverses hyperbolic cotangent of 33 in radians.
-```
-syntax: COTH(number)
-acoth = ACOTH(33)
-```
-#### COUPDAYSNC
-ACOTH() returns a number of inverse hyperbolic cotangents.
-The inverses hyperbolic cotangent of 33 in radians.
-```
-syntax: COTH(number)
-acoth = ACOTH(33)
-```
+- settlement: The settlement date for the security. The day after the issuance date - when the security is traded to the buyer is known as the settlement date for securities.
+- maturity: The maturity date of the security. The security’s expiration date is known as the maturity date.
+- frequency: The quantity of annual coupon payments. The frequency for annual payments is 1, for semi-annual payments is 2, and for quarterly payments is 4.
+- basis: The kind of day count foundation to employ (optional). Basis is taken to be 0 if it is omitted. Below this table is a list of the acceptable values.
 
+| Basis | Day Count Basis      |
+|-------|----------------------|
+| 0     | US (NASD) 30/360     |
+| 1     | Actual/actual        |
+| 2     | Actual/360           |
+| 3     | Actual/365           |
+| 4     | European 30/360      |
+
+#### COUPDAYS
+DAX COUPDAYS gives the total number of days that make up the coupon term, including the settlement date.
+```
+syntax: COUPDAYS(<settlement>, <maturity>, <frequency>[, <basis>])
+Coupdays = EVALUATEANDLOG({COUPDAYS(DATE(2011,1,25),DATE(2011,12,15),2,1)})
+```
+- settlement: The settlement date for the security. The day after the issuance date when the security is traded to the buyer is known as the settlement date for securities.
+- maturity: The maturity date of the security. The security’s expiration date is known as the maturity date.
+- frequency: The quantity of annual coupon payments. The frequency for annual payments is 1, for semi-annual payments is 2, and for quarterly payments is 4.
+- basis: The kind of day count foundation to employ (optional). Basis is taken to be 0 if it is omitted. Below this table is a list of the acceptable values.
+
+| Basis           | Day Count Basis      |
+|-----------------|----------------------|
+| 0 or omitted    | US (NASD) 30/360     |
+| 1               | Actual/actual        |
+| 2               | Actual/360           |
+| 3               | Actual/365           |
+| 4               | European 30/360      |
+
+
+#### COUPDAYSNC
+The number of days between the settlement date and the following coupon date is returned.
+```
+Syntax: COUPDAYSNC(<settlement>, <maturity>, <frequency>[, <basis>])
+Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+```
+- settlement: The settlement date for the security. The day after the issuance date when the security is traded to the buyer is known as the settlement date for securities.
+- maturity: The maturity date of the security. The security’s expiration date is known as the maturity date.
+- frequency: The quantity of annual coupon payments. The frequency for annual payments is 1, for semi-annual payments is 2, and for quarterly payments is 4.
+- basis: The kind of day count foundation to employ (optional). Basis is taken to be 0 if it is omitted. Below this table is a list of the acceptable values.
+
+| Basis           | Day Count Basis      |
+|-----------------|----------------------|
+| 0 or omitted    | US (NASD) 30/360     |
+| 1               | Actual/actual        |
+| 2               | Actual/360           |
+| 3               | Actual/365           |
+| 4               | European 30/360      |
+
+
+## DAX Depreciation Functions
+
+#### AMORDEGRC
+The function calculates depreciation for each accounting period, similar to AMORLINC, but with a depreciation coefficient applied based on the asset's lifespan.
+```
+Syntax: AMORDEGRC(<cost>, <date_purchased>, <first_period>, <salvage>, <period>, <rate>[, <basis>])
+Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+```
+#### AMORLINC
+This function provides the depreciation amount for each accounting period. It uses a depreciation coefficient based on the asset's lifespan, unlike AMORLINC.
+```
+Syntax: AMORLINC(<cost>, <date_purchased>, <first_period>, <salvage>, <period>, <rate>[, <basis>])
+Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+```
+#### DB
+Gives back an asset’s depreciation over a given period using the fixed-declining balanced approach.	
+```
+Syntax: DB(<cost>, <salvage>, <life>, <period>[, <month>])
+Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+```
+#### DDB
+This function calculates the asset's depreciation using the fixed-declining balance method for the given time period.
+```
+Syntax: DDB(<cost>, <salvage>, <life>, <period>[, <factor>])
+Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+```
+#### SLN
+Provides a one-time asset’s straight-line depreciation.	
+```
+Syntax: SLN(<cost>, <salvage>, <life>)
+Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+```
+#### SYD
+Returns the asset’s annualized depreciation over a given time period.	
+```
+Syntax: SYD(<cost>, <salvage>, <life>, <per>)
+Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+```
 
