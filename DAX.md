@@ -1,3 +1,18 @@
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Dax Functions](#dax-functions)
+    - [Date and Time Functions](#date-and-time-functions)
+    - [Logical Functions](#logical-functions)
+    - [Mathematical and Trigonometric Functions](#mathematical-and-trigonometric-functions)
+    - [Statistical Functions](#statistical-functions)
+    - [Text Functions](#text-functions)
+    - [Table Manipulation Functions](#table-manipulation-functions)
+    - [Filter Index](#filter-index)
+    - [DAX COUPDAY Financial Function](#dax-coupday-financial-function)
+- [DAX Window Function](#dax-window-function)
+## Introduction
+
 - DAX stands for Data Analysis Expression.
 - DAX queries return results as a table within the tool.
 - DAX queries are commonly utilized to create and test the performance of formulas in Power BI Desktop.
@@ -129,13 +144,118 @@ Country Code = SWITCH(Data_Logical_Func[Country], "Canada", "CA", "Germany", "GE
 
 ### Mathematical and Trigonometric Functions
 
-- SIN: It gives the sine of the value supplied to it.
-- COS: It returns the cosine of a given value.
-- TAN: It returns the tangent of a given value.
-- COSEC: It gives the cosecant of a value 
-- SEC: It returns the secant of a value.
-- COT: It returns the cotangent of a value 
-- ROUND: It takes 2 arguments. First is the number to be rounded off and second is the number of digits to which the number should be rounded off.
+#### sin(θ) Trigonometric Function
+Returns the sine of the specified angle.
+sine of 45° in radians.
+```
+syntax: SIN(number)
+sin = SIN(RADIANS(45))
+```
+#### cos(θ) Trigonometric Function
+The Power BI DAX COS function returns the cosine value of the angle.
+cosine of 60° in radians.
+```
+syntax: COS(number)
+COS = COS(RADIANS(60))
+```
+#### sinh(θ) Trigonometric Function
+Returns a number’s hyperbolic sine.
+Hyperbolic sine of 13 in radians.
+```
+syntax: SINH(number)
+sinh = SINH(13)
+```
+#### cosh(θ) Trigonometric Function
+Returns the hyperbolic cosine of any real number equal to or greater than 1.
+The hyperbolic cosine of 12 in radians.
+```
+syntax: COSH(number)
+cosh = COSH(12)
+```
+#### tan(θ) Trigonometric Function
+Returns the angle’s tangent.
+tangent of -3 in radians.
+```
+syntax: TAN(number)
+tan = TAN(-3)
+```
+#### tanh(θ) Trigonometric Function
+The hyperbolic tangent of a number is returned by it.
+The hyperbolic tangent of 23 in radians.
+```
+syntax: TANH(number)
+tanh = TANH(23)
+```
+#### cot(θ) Trigonometric Function
+The function returns the cotangent of a real angle with a radian value.
+The cotangent of 25 in radians.
+```
+syntax: COT(number)
+cot = COT(25)
+```
+#### coth(θ) Trigonometric Function
+The hyperbolic cotangent of a hyperbolic angle whose absolute value must be greater than 1, is returned by the function.
+The hyperbolic cotangent of 37 in radians.
+```
+syntax: COTH(number)
+coth = COTH(37)
+```
+#### asin(θ) Trigonometric Function
+A number’s arcsine, or inverse sine, is returned by the ASIN() function. The angle whose sine is number is called the arcsine. The returned angle is between -pi/2 and pi/2 in radians. The number in radian must be from -1 to 1.
+Inverse sine of 0.8 in radians.
+```
+syntax: ASIN(number)
+asin = ASIN(0.8)
+```
+#### asinh(θ) Trigonometric Function
+The function ASINH(number) returns the real number’s inverse hyperbolic sine. As ASINH(SINH(number)) equals number, the value whose hyperbolic sine is number is called the inverse hyperbolic sine.
+inverse hyperbolic sine of 55 in radians.
+```
+syntax: ASINH(number)
+asinh = ASINH(55)
+```
+#### acos(θ) Trigonometric Function
+The function ACOS() returns the real number’s arccosine, or inverse cosine. The angle whose cosine is a number is called an arccosine. The returning angle is specified from 0 to pi in radians. The number in radian must be from -1 to 1.
+arccosine of -0.5 in radians.
+```
+syntax: ACOS(number)
+acos = ACOS(-0.5)
+```
+#### acosh(θ) Trigonometric Function
+Returns a real number’s inverse hyperbolic cosine. It must be greater than or equal to one. ACOSH(COSH(number)) corresponds to a  number because the inverse hyperbolic cosine is the value whose hyperbolic cosine is a number.
+inverse hyperbolic of 60 cosine in radians.
+```
+syntax: ACOSH(number)
+acosh = ACOSH(60)
+```
+#### atan(θ) Trigonometric Function
+Provides a number’s arctangent, or inverse tangent. The angle whose tangent is a number is an arctangent. The returned angle is between -π/2 and π/2 in radians.
+inverse tangent of 48 in radians.
+```
+syntax: ATAN(number)
+atan = ATAN(48)
+```
+#### atanh(θ) Trigonometric Function
+The function ATANH() returns a number’s inverse hyperbolic tangent. The number must be ranged from -1 to 1. (excluding -1 and 1). In other words, ATANH(TANH(number)) equals number. The inverse hyperbolic tangent is the value whose hyperbolic tangent is a number.
+inverse hyperbolic tangent of 0.7 in radians.
+```
+syntax: ATNH(number)
+atanh = ATANH(0.7)
+```
+#### acot(θ) Trigonometric Function
+The function ACOT() returns the arccotangent or inverse cotangent, or principal value, of an integer.
+The inverse cotangent of 60 in radians.of
+```
+syntax: ACOT(number)
+acot = ACOT(60)
+```
+#### acoth(θ) Trigonometric Function
+ACOTH() returns a number of inverse hyperbolic cotangents.
+The inverses hyperbolic cotangent of 33 in radians.
+```
+syntax: COTH(number)
+acoth = ACOTH(33)
+```
 
 ### Statistical Functions
 
@@ -265,121 +385,6 @@ Format = FORMAT(Employee[DOJ],"MM-DD-YYYY")
 Syntax: INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>])
 Table = INDEX(1,ALL(DimDate[EnglishMonthName]))
 Table 2 = INDEX(1, DISTINCT(DimDate), ORDERBY(DimDate[DateKey], ASC), DEFAULT, PARTITIONBY(DimDate[EnglishMonthName]))
-```
-
-## DAX Trigonometric Function
-
-#### sin(θ) Trigonometric Function
-Returns the sine of the specified angle.
-sine of 45° in radians.
-```
-syntax: SIN(number)
-sin = SIN(RADIANS(45))
-```
-#### cos(θ) Trigonometric Function
-The Power BI DAX COS function returns the cosine value of the angle.
-cosine of 60° in radians.
-```
-syntax: COS(number)
-COS = COS(RADIANS(60))
-```
-#### sinh(θ) Trigonometric Function
-Returns a number’s hyperbolic sine.
-Hyperbolic sine of 13 in radians.
-```
-syntax: SINH(number)
-sinh = SINH(13)
-```
-#### cosh(θ) Trigonometric Function
-Returns the hyperbolic cosine of any real number equal to or greater than 1.
-The hyperbolic cosine of 12 in radians.
-```
-syntax: COSH(number)
-cosh = COSH(12)
-```
-#### tan(θ) Trigonometric Function
-Returns the angle’s tangent.
-tangent of -3 in radians.
-```
-syntax: TAN(number)
-tan = TAN(-3)
-```
-#### tanh(θ) Trigonometric Function
-The hyperbolic tangent of a number is returned by it.
-The hyperbolic tangent of 23 in radians.
-```
-syntax: TANH(number)
-tanh = TANH(23)
-```
-#### cot(θ) Trigonometric Function
-The function returns the cotangent of a real angle with a radian value.
-The cotangent of 25 in radians.
-```
-syntax: COT(number)
-cot = COT(25)
-```
-#### coth(θ) Trigonometric Function
-The hyperbolic cotangent of a hyperbolic angle whose absolute value must be greater than 1, is returned by the function.
-The hyperbolic cotangent of 37 in radians.
-```
-syntax: COTH(number)
-coth = COTH(37)
-```
-#### asin(θ) Trigonometric Function
-A number’s arcsine, or inverse sine, is returned by the ASIN() function. The angle whose sine is number is called the arcsine. The returned angle is between -pi/2 and pi/2 in radians. The number in radian must be from -1 to 1.
-Inverse sine of 0.8 in radians.
-```
-syntax: ASIN(number)
-asin = ASIN(0.8)
-```
-#### asinh(θ) Trigonometric Function
-The function ASINH(number) returns the real number’s inverse hyperbolic sine. As ASINH(SINH(number)) equals number, the value whose hyperbolic sine is number is called the inverse hyperbolic sine.
-inverse hyperbolic sine of 55 in radians.
-```
-syntax: ASINH(number)
-asinh = ASINH(55)
-```
-#### acos(θ) Trigonometric Function
-The function ACOS() returns the real number’s arccosine, or inverse cosine. The angle whose cosine is a number is called an arccosine. The returning angle is specified from 0 to pi in radians. The number in radian must be from -1 to 1.
-arccosine of -0.5 in radians.
-```
-syntax: ACOS(number)
-acos = ACOS(-0.5)
-```
-#### acosh(θ) Trigonometric Function
-Returns a real number’s inverse hyperbolic cosine. It must be greater than or equal to one. ACOSH(COSH(number)) corresponds to a  number because the inverse hyperbolic cosine is the value whose hyperbolic cosine is a number.
-inverse hyperbolic of 60 cosine in radians.
-```
-syntax: ACOSH(number)
-acosh = ACOSH(60)
-```
-#### atan(θ) Trigonometric Function
-Provides a number’s arctangent, or inverse tangent. The angle whose tangent is a number is an arctangent. The returned angle is between -π/2 and π/2 in radians.
-inverse tangent of 48 in radians.
-```
-syntax: ATAN(number)
-atan = ATAN(48)
-```
-#### atanh(θ) Trigonometric Function
-The function ATANH() returns a number’s inverse hyperbolic tangent. The number must be ranged from -1 to 1. (excluding -1 and 1). In other words, ATANH(TANH(number)) equals number. The inverse hyperbolic tangent is the value whose hyperbolic tangent is a number.
-inverse hyperbolic tangent of 0.7 in radians.
-```
-syntax: ATNH(number)
-atanh = ATANH(0.7)
-```
-#### acot(θ) Trigonometric Function
-The function ACOT() returns the arccotangent or inverse cotangent, or principal value, of an integer.
-The inverse cotangent of 60 in radians.of
-```
-syntax: ACOT(number)
-acot = ACOT(60)
-```
-#### acoth(θ) Trigonometric Function
-ACOTH() returns a number of inverse hyperbolic cotangents.
-The inverses hyperbolic cotangent of 33 in radians.
-```
-syntax: COTH(number)
-acoth = ACOTH(33)
 ```
 
 ## DAX Window Function
