@@ -149,17 +149,10 @@ Country Code = SWITCH(Data_Logical_Func[Country], "Canada", "CA", "Germany", "GE
 
 ### Text Functions
 
-- CONCATENATE: This function is used to join two strings or words.
-- EXACT: It compares two strings and returns True if they are exactly the same.
-- LEN: It is used to find the length of the string.
-- LOWER: Converts a string to lowercase.
-- UPPER: Converts a string to upper case.
-- TRIM: This function removes all the whitespaces from the beginning and starting of a given string.
-
 #### BLANK ()
 Returns a blank.
 ```
-
+Blank = If(Employee[Number of Days] = 0, BLANK (), Employee[Salary]/Employee[Number of Days])
 ```
 
 #### LEN ()
@@ -241,13 +234,13 @@ Exact = EXACT("Abhinav", "Adam")
 #### FIND ()
 Returns the starting position of one text string within another text string.
 ```
-
+Find = FIND("hi", "Abhinav")
 ```
 
 #### FORMAT ()
 Converts a value to text according to the specified format.
 ```
-
+Format = FORMAT(Employee[DOJ],"MM-DD-YYYY")
 ```
 
 ### Table Manipulation Functions
@@ -256,6 +249,138 @@ Converts a value to text according to the specified format.
 - DISTINCT table: This function returns a table with unique values. Rows with duplicate values are eliminated from the table.
 - GROUPBY: It is similar to the GROUPBY function in SQL 
 - INTERSECT: This function returns the intersection of two tables without removing the duplicates.
+
+### Filter Index 
+
+- DAX Filter Index retrieves a row from a table based on a specified position.
+- Position parameter is 1-based, meaning the first row is at position 1, second row at position 2, and so forth.
+- Negative positions indicate counting from the end, -1 being the last row, -2 being the second last, and so on.
+- If the specified position is outside the bounds or zero, or if it's BLANK(), an empty table is returned.
+- The relation parameter specifies the table from which the output is retrieved. If omitted, it needs to be derived from orderBy and partitionBy parameters.
+- The orderBy parameter specifies the order of rows within each split. If omitted, it defaults to all columns in the relation that aren't already specified in partitionBy.
+- The blanks parameter determines how empty values are handled during sorting, with the default option being KEEP where blank values are sorted before numerical or date values and before all strings.
+- The partitionBy parameter defines how the relationship is partitioned. If omitted, the entire relation is treated as a single partition.
+
+```
+Syntax: INDEX(<position>[, <relation>][, <orderBy>][, <blanks>][, <partitionBy>])
+Table = INDEX(1,ALL(DimDate[EnglishMonthName]))
+Table 2 = INDEX(1, DISTINCT(DimDate), ORDERBY(DimDate[DateKey], ASC), DEFAULT, PARTITIONBY(DimDate[EnglishMonthName]))
+```
+
+## DAX Trigonometric Function
+
+#### sin(θ) Trigonometric Function
+Returns the sine of the specified angle.
+sine of 45° in radians.
+```
+syntax: SIN(number)
+sin = SIN(RADIANS(45))
+```
+#### cos(θ) Trigonometric Function
+The Power BI DAX COS function returns the cosine value of the angle.
+cosine of 60° in radians.
+```
+syntax: COS(number)
+COS = COS(RADIANS(60))
+```
+#### sinh(θ) Trigonometric Function
+Returns a number’s hyperbolic sine.
+Hyperbolic sine of 13 in radians.
+```
+syntax: SINH(number)
+sinh = SINH(13)
+```
+#### cosh(θ) Trigonometric Function
+Returns the hyperbolic cosine of any real number equal to or greater than 1.
+The hyperbolic cosine of 12 in radians.
+```
+syntax: COSH(number)
+cosh = COSH(12)
+```
+#### tan(θ) Trigonometric Function
+Returns the angle’s tangent.
+tangent of -3 in radians.
+```
+syntax: TAN(number)
+tan = TAN(-3)
+```
+#### tanh(θ) Trigonometric Function
+The hyperbolic tangent of a number is returned by it.
+The hyperbolic tangent of 23 in radians.
+```
+syntax: TANH(number)
+tanh = TANH(23)
+```
+#### cot(θ) Trigonometric Function
+The function returns the cotangent of a real angle with a radian value.
+The cotangent of 25 in radians.
+```
+syntax: COT(number)
+cot = COT(25)
+```
+#### coth(θ) Trigonometric Function
+The hyperbolic cotangent of a hyperbolic angle whose absolute value must be greater than 1, is returned by the function.
+The hyperbolic cotangent of 37 in radians.
+```
+syntax: COTH(number)
+coth = COTH(37)
+```
+#### asin(θ) Trigonometric Function
+A number’s arcsine, or inverse sine, is returned by the ASIN() function. The angle whose sine is number is called the arcsine. The returned angle is between -pi/2 and pi/2 in radians. The number in radian must be from -1 to 1.
+Inverse sine of 0.8 in radians.
+```
+syntax: ASIN(number)
+asin = ASIN(0.8)
+```
+#### asinh(θ) Trigonometric Function
+The function ASINH(number) returns the real number’s inverse hyperbolic sine. As ASINH(SINH(number)) equals number, the value whose hyperbolic sine is number is called the inverse hyperbolic sine.
+inverse hyperbolic sine of 55 in radians.
+```
+syntax: ASINH(number)
+asinh = ASINH(55)
+```
+#### acos(θ) Trigonometric Function
+The function ACOS() returns the real number’s arccosine, or inverse cosine. The angle whose cosine is a number is called an arccosine. The returning angle is specified from 0 to pi in radians. The number in radian must be from -1 to 1.
+arccosine of -0.5 in radians.
+```
+syntax: ACOS(number)
+acos = ACOS(-0.5)
+```
+#### acosh(θ) Trigonometric Function
+Returns a real number’s inverse hyperbolic cosine. It must be greater than or equal to one. ACOSH(COSH(number)) corresponds to a  number because the inverse hyperbolic cosine is the value whose hyperbolic cosine is a number.
+inverse hyperbolic of 60 cosine in radians.
+```
+syntax: ACOSH(number)
+acosh = ACOSH(60)
+```
+#### atan(θ) Trigonometric Function
+Provides a number’s arctangent, or inverse tangent. The angle whose tangent is a number is an arctangent. The returned angle is between -π/2 and π/2 in radians.
+inverse tangent of 48 in radians.
+```
+syntax: ATAN(number)
+atan = ATAN(48)
+```
+#### atanh(θ) Trigonometric Function
+The function ATANH() returns a number’s inverse hyperbolic tangent. The number must be ranged from -1 to 1. (excluding -1 and 1). In other words, ATANH(TANH(number)) equals number. The inverse hyperbolic tangent is the value whose hyperbolic tangent is a number.
+inverse hyperbolic tangent of 0.7 in radians.
+```
+syntax: ATNH(number)
+atanh = ATANH(0.7)
+```
+#### acot(θ) Trigonometric Function
+The function ACOT() returns the arccotangent or inverse cotangent, or principal value, of an integer.
+The inverse cotangent of 60 in radians.of
+```
+syntax: ACOT(number)
+acot = ACOT(60)
+```
+#### acoth(θ) Trigonometric Function
+ACOTH() returns a number of inverse hyperbolic cotangents.
+The inverses hyperbolic cotangent of 33 in radians.
+```
+syntax: COTH(number)
+acoth = ACOTH(33)
+```
 
 ## DAX Window Function
 The WINDOW function in DAX facilitates computations like Moving Averages or Running Sums, offering flexibility with absolute or relative positioning for extracting result slices based on ranges.
@@ -276,3 +401,29 @@ If used, all columns in orderBy and partitionBy must originate from this table.
 - orderBy: Optional clause for specifying sorting within each partition.
 - blanks: Specifies how to handle blank data when sorting (e.g., KEEP).
 - partitionBy: Optional clause defining partitioning columns for the relationship.
+
+## DAX COUPDAY Financial Function
+
+#### COUPDAYBS
+ACOTH() returns a number of inverse hyperbolic cotangents.
+The inverses hyperbolic cotangent of 33 in radians.
+```
+syntax: COTH(number)
+acoth = ACOTH(33)
+```
+#### COUPDAYS
+ACOTH() returns a number of inverse hyperbolic cotangents.
+The inverses hyperbolic cotangent of 33 in radians.
+```
+syntax: COTH(number)
+acoth = ACOTH(33)
+```
+#### COUPDAYSNC
+ACOTH() returns a number of inverse hyperbolic cotangents.
+The inverses hyperbolic cotangent of 33 in radians.
+```
+syntax: COTH(number)
+acoth = ACOTH(33)
+```
+
+
