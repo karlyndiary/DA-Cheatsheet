@@ -765,3 +765,53 @@ Returns the asset’s annualized depreciation over a given time period.
 Syntax: SYD(<cost>, <salvage>, <life>, <per>)
 SYD = EVALUATEANDLOG(SYD(30000.00, 7500.00, 10, 1))
 ```
+
+## DAX Counting Functions
+These functions calculate a (scalar) value such as the count for all rows in a column or table as defined by the expression. Measures are used in some of the most common data analyses.
+
+#### COUNT
+This function only accepts a column as an argument. The following types of values are counted in rows using the COUNT function:
+- Numbers
+- Dates
+- Strings
+```
+Syntax: COUNT(<column>)
+Count = COUNT(Data_Logical_Func[Country])
+```
+#### COUNTA
+Determines how many rows in the chosen column have non-blank values. The function returns a blank if it cannot locate any rows to count.
+```
+Syntax: COUNTA(<column>)
+CountA = COUNTA(Data_Logical_Func[Country])
+```
+#### CountX
+It evaluates an expression over a table and counts the number of rows that contain a number or an expression that evaluates to a number. It can be used to calculate the counts of rows based on certain expressions within FILTER. 
+```
+Syntax: COUNTX(<table, expression>) 
+Syntax: COUNTX(FILTER(<table, expression>, [column of which counts needs to be returned]))
+CountX = COUNTX(FILTER(Data_Logical_Func, Data_Logical_Func[Qty Sold]>=350), Data_Logical_Func[Product])
+```
+#### COUNTAX
+It counts non-blank results when evaluating the result of an expression over a table. When determining the outcome of an expression over a table, the COUNTAX function counts results that are not blank.
+```
+Syntax: COUNTAX(<table, expression>)
+CountAX = COUNTAX(Data_Logical_Func, Data_Logical_Func[Net Sales])
+```
+#### DistinctCount
+It determines how many unique values there are in a column. This function only accepts a column as an argument.
+```
+Syntax: DISTINCTCOUNT(<table>)
+DistinctCount = DISTINCTCOUNT(Data_Logical_Func[Country])
+```
+#### CountBlank
+It analyzes the outcome of an expression across a table and counts outcomes that are not blank. A column is the only argument this function accepts. Columns can include any kind of data, but only blank cells are counted. Due to the fact that zero is a valid numeric value and not a blank cell, cells with the value zero (0) are not counted.
+```
+Syntax: COUNTBLANK(<column>)
+CountBlank = COUNTBLANK(Data_Logical_Func[Country Code])
+```
+#### CountRows
+It determines how many rows there are in the supplied table or a table that has been defined using an expression.
+```
+Syntax: COUNTROWS([<table>])
+CountRows = COUNTROWS(Data_Logical_Func)
+```
