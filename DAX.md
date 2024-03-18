@@ -12,6 +12,20 @@
     - [DAX COUPDAY Financial Function](#dax-coupday-financial-function)
 - [DAX Window Function](#dax-window-function)
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Dax Functions](#dax-functions)
+    - [Date and Time Functions](#date-and-time-functions)
+    - [Logical Functions](#logical-functions)
+    - [Mathematical and Trigonometric Functions](#mathematical-and-trigonometric-functions)
+    - [Statistical Functions](#statistical-functions)
+    - [Text Functions](#text-functions)
+    - [Table Manipulation Functions](#table-manipulation-functions)
+    - [Filter Index](#filter-index)
+    - [DAX COUPDAY Financial Function](#dax-coupday-financial-function)
+- [DAX Window Function](#dax-window-function)
+
 ## Introduction
 
 - DAX stands for Data Analysis Expression.
@@ -147,7 +161,231 @@ Country Code = SWITCH(Data_Logical_Func[Country], "Canada", "CA", "Germany", "GE
 
 #### Mathematical Functions
 
-
+#### ABS Math Function
+This function returns a number’s absolute value.  Whether whole or decimal, a decimal number without its sign represents a number’s absolute value.
+```
+syntax: ABS(<number>) 
+ABS = ABS(572369.5499999996 - 943454.36)
+```
+#### Ceiling Math Function
+This function increases a number by rounding it up to the nearest integer or significant multiple.
+```
+syntax: CEILING(<number>, <significance>)
+ceiling = CEILING(572369.5499999996, 0.01)
+```
+#### Convert Math Function
+The convert function performs the transformation of a data type-specific expression.
+```
+syntax: CONVERT(<Expression>, <Datatype>)
+convert = CONVERT(DATE(1997,12,23), INTEGER)
+```
+#### Currency Math Function
+The currency function returns the result as a currency data type after evaluating the argument.
+```
+syntax: CURRENCY(<value>)
+currency = CURRENCY(23.44)
+```
+#### Degrees Math Function
+The degrees function converts a given angle from radians into degrees.
+```
+syntax: DEGREES (angle)
+degrees = DEGREES(PI())
+```
+#### Divide Math Function
+This function divides and provides a different result, or BLANK () when dividing by 0, as appropriate.
+```
+syntax: DIVIDE(<numerator>, <denominator> [, <alternate result>])
+divide = DIVIDE(234,12)
+```
+#### Even Math Function
+The number is given back and rounded to the next even integer. This function can be used to process objects that come in pairs.
+```
+syntax: EVEN (number)
+even = EVEN(23.44)
+```
+#### Exp Math Function
+Returns e to the power of the specified number. The natural logarithm’s base, 2.71828182845904, is equal to the constant e.
+```
+syntax: EXP(<number>)
+exp = EXP(4)
+```
+#### Fact Math Function
+The series 1*2*3*…*, ending in the provided number, is returned as the factorial of the supplied number.
+```
+syntax: FACT(<number>)
+fact = FACT(5)
+```
+#### Floor Math Function
+Brings a number down to its nearest multiple of importance by rounding it down toward zero.
+```
+syntax: FLOOR(<number>, <significance>)
+floor = FLOOR(245.33,0.3)
+```
+#### GCD Math Function
+This function returns the largest common divisor of two or more integers. The biggest integer that divides both numbers 1 and 2 without leaving a residual is known as the greatest common divisor.
+```
+syntax: GCD (number1, [number2], …)
+gcd = GCD(122,4)
+```
+#### INT Math Function
+Round and gives a number down to the nearest integer.
+```
+syntax: INT(<number>)
+int = INT(55.44)
+```
+#### Iso.Ceiling Math Function
+Increases a number by rounding it up to the nearest integer or significant multiple.
+```
+syntax: ISO.CEILING(<number> [, <significance>])
+iso.ceiling = ISO.CEILING(2.999,0.2)
+```
+#### LCM Math Function
+The least frequent multiple of integers is returned. The smallest positive integer that is a multiple of all the integer parameters (number1, number2, etc.) is known as the least common multiple. To add fractions with various denominators, use LCM.
+```
+syntax: LCM (number1, [number2], …)
+lcm = LCM(45,56)
+```
+#### LN Math Function
+Gives a number’s natural logarithm. Based on the value of the constant e, natural logarithms (2.71828182845904).
+```
+syntax: LN(<number>)
+ln = LN(0.004)
+```
+#### LN Math Function
+Gives a number’s natural logarithm. Based on the value of the constant e, natural logarithms (2.71828182845904).
+```
+syntax: LN(<number>)
+ln = LN(0.004)
+```
+#### LOG Math Function
+Gives a number’s logarithm to the base you specify.
+```
+syntax: LOG(<number>, <base>)
+log = LOG(1035,3)
+```
+#### LOG10 Math Function
+Gives the base-10 logarithm of a number.
+```
+syntax: LOG10(<number>)
+log10 = LOG10(1035)
+```
+#### LN Math Function
+Gives a number’s natural logarithm. Based on the value of the constant e, natural logarithms (2.71828182845904).
+```
+syntax: LN(<number>)
+ln = LN(0.004)
+```
+#### MOD Math Function
+Returns the leftover amount after dividing a number by a divisor. The sign of the result is always the same as the divisor.
+```
+syntax: MOD(<number>, <divisor>)
+mod = MOD(1035,5)
+```
+#### MOD Math Function
+Returns the leftover amount after dividing a number by a divisor. The sign of the result is always the same as the divisor.
+```
+syntax: MOD(<number>, <divisor>)
+mod = MOD(1035,5)
+```
+#### MROUND Math Function
+Gives you a number with the necessary multiple rounded off.
+```
+syntax: MROUND(<number>, <multiple>)
+mround = MROUND(455.6,5)
+```
+#### ODD Math Function
+The number is given back, rounded to the nearest odd integer.
+```
+syntax: ODD (number)
+odd = ODD(455.6)
+```
+#### Pi Math Function
+Gives Pi in decimal form, 3.14159265358979, with a 15-digit precision.
+```
+syntax: PI()
+pi = PI()
+```
+#### Power Math Function
+Returns the value of a number raised to a power of exponent.
+```
+syntax: POWER(<number>, <power>)
+power = POWER(5,3)
+```
+#### Quotient Math Function
+The division is done, and just the integer part of the result is returned. When you want to throw away the divisional leftover, use this function.
+```
+syntax: QUOTIENT(<numerator>, <denominator>)
+quotient = QUOTIENT(234,3)
+```
+#### Radians Math Function
+Converts an angle from degrees to radians.
+```
+syntax: RADIANS (angle)
+radians = RADIANS(90)
+```
+#### Rand Math Function
+Returns a uniformly distributed random number that is higher than or equal to 0 and less than 1. Every time the cell containing this function is recalculated, a different number is returned.
+```
+syntax: RAND ()
+rand = RAND()
+```
+#### Quotient Math Function
+The division is done, and just the integer part of the result is returned. When you want to throw away the divisional leftover, use this function.
+```
+syntax: QUOTIENT(<numerator>, <denominator>)
+quotient = QUOTIENT(234,3)
+```
+#### RandBetween Math Function
+Gives you a random number that falls between the two values you provide.
+```
+syntax: RANDBETWEEN(<bottom>, <top>)
+randbetween = RANDBETWEEN(23,44)
+```
+#### Round Math Function
+Rounds a value to the specified number of digits.
+- The number is rounded to the specified number of decimal places if num digits are higher than zero.
+- The number is rounded to the nearest integer if the num digit is 0.
+- The number is rounded to the left of the decimal point if the num digits are less than 0.
+```
+syntax: ROUND(<number>, <num_digits>)
+round = ROUND(23.44444,4)
+```
+#### RoundDown Math Function
+Rounds a number in the direction of zero
+```
+syntax: ROUNDDOWN(<number>, <num_digits>)
+round down = ROUNDDOWN(23.44444,1)
+```
+#### RoundUp Math Function
+It rounds a number up, away from 0 (zero).
+```
+syntax: ROUNDUP(<number>, <num_digits>)
+round up = ROUNDUP(23.44444,1)
+```
+#### Sign Math Function
+Identifies a number’s sign, a calculation’s outcome, or a value in a column. If the number is positive, the function returns 1, if it is zero, it returns 0, and if it is negative, it returns -1.
+```
+syntax: SIGN(<number>)
+sign = SIGN(23.44444)
+```
+#### Sqrt Math Function
+Gives the square root of a number.
+```
+syntax: SQRT(<number>)
+sqrt = SQRT(23.44444)
+```
+#### SqrtPi Math Function
+Gives the (number times pi) square root.
+```
+syntax: SQRTPI (number)
+sqrtpi = SQRTPI(23.44444)
+```
+#### Trunc Math Function
+Removes the fractional or decimal portion of a number to convert it to an integer.
+```
+syntax: TRUNC(<number>, <num_digits>)
+truncate = TRUNC(45.0000345,6)
+```
 #### Trigonometric Function
 
 #### sin(θ) Trigonometric Function
@@ -459,7 +697,6 @@ Coupdays = EVALUATEANDLOG({COUPDAYS(DATE(2011,1,25),DATE(2011,12,15),2,1)})
 | 3               | Actual/365           |
 | 4               | European 30/360      |
 
-
 #### COUPDAYSNC
 The number of days between the settlement date and the following coupon date is returned.
 ```
@@ -479,43 +716,66 @@ Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2
 | 3               | Actual/365           |
 | 4               | European 30/360      |
 
-
 ## DAX Depreciation Functions
 
 #### AMORDEGRC
 The function calculates depreciation for each accounting period, similar to AMORLINC, but with a depreciation coefficient applied based on the asset's lifespan.
 ```
 Syntax: AMORDEGRC(<cost>, <date_purchased>, <first_period>, <salvage>, <period>, <rate>[, <basis>])
-Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+Amordegrc = EVALUATEANDLOG(AMORDEGRC(2400, DATE(2008,8,19),DATE(2008,12,31), 300, 1, 0.15, 1)) 
 ```
+- Cost: The initial cost of the asset.
+- Purchase date: The date when the asset was acquired.
+- Date of the first period: The date when the first period starts.
+- Salvage: The value at the end of the depreciation (sometimes called the "residual value").
+- Period: The period of depreciation.
+- Rate: The rate of depreciation.
+- Basis: The type of day count basis to use.
+
+| Basis | Date system                    |
+|-------|--------------------------------|
+| 0     | 360 days (NASD method)         |
+| 1     | Actual                         |
+| 3     | 365 days in a year             |
+| 4     | 360 days in a year (European method) |
+
 #### AMORLINC
 This function provides the depreciation amount for each accounting period. It uses a depreciation coefficient based on the asset's lifespan, unlike AMORLINC.
 ```
 Syntax: AMORLINC(<cost>, <date_purchased>, <first_period>, <salvage>, <period>, <rate>[, <basis>])
-Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+Amorlinc = EVALUATEANDLOG(AMORLINC(2400, DATE(2008,8,9),DATE(2008,12,31),300,1,0.15,1))
 ```
 #### DB
 Gives back an asset’s depreciation over a given period using the fixed-declining balanced approach.	
 ```
 Syntax: DB(<cost>, <salvage>, <life>, <period>[, <month>])
-Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+DB = EVALUATEANDLOG(DB(1000000,0,6,1,2))
 ```
+- Cost: The asset’s initial price.
+- Salvage: The final value after depreciation (sometimes called the salvage value of the asset). This number may be zero.
+- Life: The length of time that an asset is depreciated (sometimes called the useful life of the asset).
+- Period: The time frame that you want to use to determine depreciation. The same un- its must be used for a period and life. between 1 and life, please (inclusive).
+- Month: The total number of months in the first year, if applicable. A month is taken to be 12 if it is absent.
+
 #### DDB
 This function calculates the asset's depreciation using the fixed-declining balance method for the given time period.
 ```
 Syntax: DDB(<cost>, <salvage>, <life>, <period>[, <factor>])
-Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+DBB = EVALUATEANDLOG(DDB(1000000, 0, 6, 1, 2))
 ```
 #### SLN
 Provides a one-time asset’s straight-line depreciation.	
 ```
 Syntax: SLN(<cost>, <salvage>, <life>)
-Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+SLN = EVALUATEANDLOG(SLN(30000,7500,10))
 ```
+- Cost- The asset’s initial price.
+- Salvage- The final value after depreciation (sometimes called the salvage value of the asset). This number may be zero.
+- Life- The length of time that an asset is depreciated (sometimes called the useful life of the asset).
+
 #### SYD
 Returns the asset’s annualized depreciation over a given time period.	
 ```
 Syntax: SYD(<cost>, <salvage>, <life>, <per>)
-Coupdaysnc = EVALUATEANDLOG({COUPDAYSNC(DATE(2011, 1, 25), DATE(2011, 11, 15), 2, 1)})
+SYD = EVALUATEANDLOG(SYD(30000.00, 7500.00, 10, 1))
 ```
-
