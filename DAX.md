@@ -12,20 +12,6 @@
     - [DAX COUPDAY Financial Function](#dax-coupday-financial-function)
 - [DAX Window Function](#dax-window-function)
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Dax Functions](#dax-functions)
-    - [Date and Time Functions](#date-and-time-functions)
-    - [Logical Functions](#logical-functions)
-    - [Mathematical and Trigonometric Functions](#mathematical-and-trigonometric-functions)
-    - [Statistical Functions](#statistical-functions)
-    - [Text Functions](#text-functions)
-    - [Table Manipulation Functions](#table-manipulation-functions)
-    - [Filter Index](#filter-index)
-    - [DAX COUPDAY Financial Function](#dax-coupday-financial-function)
-- [DAX Window Function](#dax-window-function)
-
 ## Introduction
 
 - DAX stands for Data Analysis Expression.
