@@ -48,15 +48,121 @@ Variable = Dax Function(Table Name[Columns]) Mathematical operators
 
 ## Dax Functions  
 ### Date and Time Functions 
-- DATE: It gives the current date in the DateTime format.
-- DATEDIFF: This function is used to get the difference in the number of days between two dates.
-- DAY: Returns the day of a month as a number from 1 to 31.
-- MONTH: Returns the month as a number from 1 to 12. 1 represents January and 12 represents December.
-- YEAR: Returns the year from a given date. The returned value is in the range of 1900-9999.
-- NOW: Returns the current date and time of the system.
-- QUARTER: Returns the quarter number of a year from a given date.
+#### DATE 
+It gives the current date in the DateTime format.
+```
+Syntax: DATE(<year>, <month>, <day>)
+date = DATE(2013,11,18)
+```
+#### Datevalue 
+It gives the current date in the DateTime format.
+```
+Syntax: DATEVALUE(date_text)
+datevalue = DATEVALUE(“25 12 2002”)
+```
+#### DATEDIFF
+Returns the number of boundaries between the time frame to compare dates with. Any of the following values may be the value of the Interval: Second, 
+Minute, 
+Hour, 
+Day, 
+Week, 
+Month, 
+Quarter,
+Year
+```
+Syntax: DATEDIFF(<Date1>, <Date2>, <Interval>)
+datediff = DATEDIFF(DATE (2001, 07, 01 ),DATE (2002, 12, 31 ),YEAR)
+```
+#### DAY
+A number between 1 and 31 represents the day of the month. The date of the day you’re looking for is an argument for the DAY function. Dates can be passed to the method by inputting them in a DateTime format, using another date function, or using an expression that yields a date. Additionally, you can type a date in one of the acceptable date string formats.
+```
+Syntax: DAY(<date>)
+day = DAY(“25-12-2002”)
+```
+#### Edate
+A date that is the specified number of months before or after the start date is returned. To determine maturity dates or due dates that occur on the same day of the month as the date of issue, use the EDATE function.
+```
+Syntax: EDATE(<start_date>, <months>)
+edate = EDATE(“28-11-1920”,4)
+```
+#### Eomonth
+Returns the date of the final day of the month, before or after a specified number of months, in DateTime format. To get maturity dates or due dates that fall on the last day of the month, use the EOMONTH function.
+```
+Syntax: EOMONTH(<start_date>, <months>)
+eomonth = EOMONTH(“28-11-1920”,3)
+```
+#### MONTH
+Returns the month as a number from 1 to 12. 1 represents January and 12 represents December.
+```
+Syntax: MONTH(<datetime>)
+month = MONTH(“28-11-1920”)
+```
+#### YEAR
+Returns the year from a given date. The returned value is in the range of 1900-9999.
+```
+Syntax: YEAR(<date>)
+year = YEAR(DATE(2022,3,12))
+```
+#### YearFrac
+Determines the fraction of the year that the number of full days between two dates corresponds to.
+```
+Syntax: YEARFRAC(<start_date>, <end_date>, <basis>)
+yearfrac = YEARFRAC(DATE(2022,3,12),DATE(2022,6,2),2)
+```
+#### NOW
+Returns the current date and time of the system.
+```
+Syntax: NOW()
+now = NOW()
+```
+#### Today
+Gives the current date back. The TODAY function comes in handy when you want the current date to be shown on a worksheet regardless of when the workbook is opened. It can be used to compute intervals as well.
+```
+Syntax: TODAY()
+now = NOW()
+```
+#### Utcnow
+Gives the current date and time in UTC. The UTCNOW function’s output only varies when the formula is updated. It isn’t always being updated.
+```
+Syntax: UTCNOW()
+utcnow = UTCNOW()
+```
+#### UtcToday
+Gives the current date in UTC.
+```
+Syntax: UTCTODAY()
+utctoday = UTCTODAY()
+```
+#### Weekday
+Gives a number between 1 and 7 indicating the date’s weekday. The day defaults to being from 1 (Sunday) to 7 (Saturday).
+```
+Syntax: WEEKDAY(<date>, <return_type>)
+weekday = WEEKDAY(DATE(2007,2,4))
+```
+#### Weeknum
+According to the return type value, returns the week number for the specified date
+```
+Syntax: WEEKNUM(<date>[, <return_type>])
+weeknum = WEEKNUM(DATE(2007,2,4))
+```
+#### UtcToday
+Gives the current date in UTC.
+```
+Syntax: UTCTODAY()
+utctoday = UTCTODAY()
+```
+#### QUARTER
+Gives back the quarter as a number between 1 (January through March) and 4. (October – December). The output value is also blank if the input value is blank.
+```
+Syntax: QUARTER(<date>)
+quarter = QUARTER(DATE(1990,02,14))
+```
 
-
+#### Calendar
+```
+Syntax: CALENDAR(<start_date>, <end_date>)
+calendar = CALENDAR(05-01-1980,31-01-1990)
+```
 ### Information Functions
 
 - ISBLANK: Returns the value as True and False depending upon if the value is blank or not.
@@ -766,9 +872,31 @@ Syntax: SYD(<cost>, <salvage>, <life>, <per>)
 SYD = EVALUATEANDLOG(SYD(30000.00, 7500.00, 10, 1))
 ```
 
-## DAX Counting Functions
+## DAX Aggregate & Counting Functions
 These functions calculate a (scalar) value such as the count for all rows in a column or table as defined by the expression. Measures are used in some of the most common data analyses.
-
+#### Average
+This function computes the average of the values contained in the provided column as input.
+```
+Syntax: AVERAGE(<column>)
+average = AVERAGE('SLS Order Detials_Master'[Image])
+```
+#### AverageA
+Gives the average (arithmetic mean) of the values in a column. The AVERAGEA function averages the values in a column and also manages non-numeric data types in accordance with the following guidelines:
+- Values that are TRUE, count as 1.
+- Empty text (“”) counts as 0 (zero). Non-numeric text values have a count of 0 (zero).
+- FALSE values are counted as 0 values (zero).
+```
+Syntax: AVERAGEA(<column>)
+averagea = AVERAGEA('SLS Order Detials_Master'[Unit Price (INR/Unit)])
+```
+#### AverageX
+Calculates the average (arithmetic mean) of a set of expressions evaluated over a table.
+```
+Syntax: AVERAGEX(<table>,<expression>)
+averagex = AVERAGEX('SLS Order Detials_Master',
+                    'SLS Order Detials_Master'[Unit Price (INR/Unit)]+
+                    'SLS Order Detials_Master'[Tax amount (INR)])
+```
 #### COUNT
 This function only accepts a column as an argument. The following types of values are counted in rows using the COUNT function:
 - Numbers
@@ -803,6 +931,12 @@ It determines how many unique values there are in a column. This function only a
 Syntax: DISTINCTCOUNT(<table>)
 DistinctCount = DISTINCTCOUNT(Data_Logical_Func[Country])
 ```
+#### DistinctCountNoBlank
+Counts the number of distinct values in a column.
+```
+Syntax: DISTICTCOUNTNOBLANK(<column>)
+distinct count no blank = DISTINCTCOUNTNOBLANK('SLS Order Detials_Master'[Product Name] )
+```
 #### CountBlank
 It analyzes the outcome of an expression across a table and counts outcomes that are not blank. A column is the only argument this function accepts. Columns can include any kind of data, but only blank cells are counted. Due to the fact that zero is a valid numeric value and not a blank cell, cells with the value zero (0) are not counted.
 ```
@@ -814,4 +948,68 @@ It determines how many rows there are in the supplied table or a table that has 
 ```
 Syntax: COUNTROWS([<table>])
 CountRows = COUNTROWS(Data_Logical_Func)
+```
+#### Max
+Returns the largest numeric value in a column, or between two scalar expressions.
+```
+Syntax: MAX(<column>)
+max = MAX('SLS Order Detials_Master'[Unit Price (INR/Unit)])
+```
+#### MaxA
+Returns the largest value in a column.
+```
+Syntax: MAXA(<column>)
+maxa = MAXA('SLS Order Detials_Master'[Total amount (INR)])
+```
+#### Maxx 
+Evaluates an expression for each row of a table and return the largest numeric value.
+```
+Syntax: MAXX(<table, expression>)
+maxx = MAXX('SLS Order Detials_Master', 
+                    'SLS Order Detials_Master'[Image] +
+                    'SLS Order Detials_Master'[Unit Price (INR/Unit)])
+```
+#### Min
+Returns the smallest numeric value in a column, or between two scalar expressions.
+```
+Syntax: MIN(<column>)
+min = MIN('SLS Order Detials_Master'[Unit Price (INR/Unit)])
+```
+#### MinA
+Returns the smallest value in a column, including any logical values and numbers represented as text.
+```
+Syntax: MINA(<column>)
+mina = MINA('SLS Order Detials_Master'[Tax amount (INR)])
+```
+#### MinX
+Returns the smallest numeric value that results from evaluating an expression for each row of a table.
+```
+Syntax: MINX(<table, expression>)
+minx = MINX('SLS Order Detials_Master', 
+                'SLS Order Detials_Master'[Image] +
+                'SLS Order Detials_Master'[Unit Price (INR/Unit)])
+```
+#### Product
+Returns the product of the numbers in a column.
+```
+Syntax: PRODUCT(<column>)
+product = PRODUCT(Sheet1[Unit Price (INR/Unit)])
+```
+#### ProductX
+Returns the product of an expression evaluated for each row in a table.
+```
+Syntax: PRODUCTX(<table, expression>)
+productx = PRODUCTX(Sheet1,Sheet1[Image]+Sheet1[Unit Price (INR/Unit)])
+```
+#### Sum
+Adds all the numbers in a column.
+```
+Syntax: SUM(<column>)
+sum = SUM(Sheet1[Unit Price (INR/Unit)])
+```
+#### SumX
+Returns the sum of an expression evaluated for each row in a table.
+```
+Syntax: SUMX(<table, expression>)
+sumx = SUMX(Sheet1,Sheet1[Image]+Sheet1[Unit Price (INR/Unit)])
 ```
