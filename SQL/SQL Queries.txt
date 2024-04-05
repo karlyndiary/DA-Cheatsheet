@@ -4,7 +4,7 @@ SELECT CONCAT(UPPER(SUBSTRING(customer_name, 1, 1)), LOWER(SUBSTRING(customer_na
 FROM atliq.customers
 ```
 +---------------------------+
-|       stores              |
+|       Store Name          |
 +---------------------------+
 |       Surge stores        |
 +---------------------------+
@@ -13,8 +13,6 @@ FROM atliq.customers
 |       Premium stores      |
 +---------------------------+
 |       Nomad stores        |
-+---------------------------+
-|       Info stores         |
 +---------------------------+
 
 2. Write down the query to display all employee name in one cell seprated by ',' ex:-"Vikas, nikita, Ashish, Nikhil , Danish"
