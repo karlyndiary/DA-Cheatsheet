@@ -17,8 +17,11 @@ FROM atliq.customers
 
 2. Write down the query to display all employee name in one cell seprated by ',' ex:-"Vikas, nikita, Ashish, Nikhil , Danish"
 ```
-select concat(group_concat(customer_name separator ', ')) as emp
+select concat(group_concat(customer_name separator ', ')) as customer_names
 from atliq.customers
 ```
-Surge Stores, Nomad Stores, Excel Stores, Surface Stores, Premium Stores, Electricalsara Stores, Info Stores, Acclaimed Stores, Electricalsquipo Stores, Atlas Stores, Flawless Stores, Integration Stores, Unity Stores, Forward Stores, Electricalsbea Store...
+customer_names
+-------------------------------
+Surge Stores, Nomad Stores, Excel Stores, Surface Stores, Premium Stores, Electricalsara Stores, Info Stores, Acclaimed Stores, Electricalsquipo Stores, Atlas Stores, 
+Flawless Stores, Integration Stores, Unity Stores, Forward Stores, Electricalsbea Store...
 
