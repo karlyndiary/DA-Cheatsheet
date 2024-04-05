@@ -25,3 +25,9 @@ customer_names
 Surge Stores, Nomad Stores, Excel Stores, Surface Stores, Premium Stores, Electricalsara Stores, Info Stores, Acclaimed Stores, Electricalsquipo Stores, Atlas Stores, 
 Flawless Stores, Integration Stores, Unity Stores, Forward Stores, Electricalsbea Store...
 
+3. Write down the query to retrieve the customer_name and the respective customer_name values, where multiple customers of the same type are listed in the same cell separated by commas.
+```
+SELECT customer_name,  GROUP_CONCAT(customer_name SEPARATOR ', ') AS customer_name
+FROM atliq.customers
+GROUP BY customer_type;
+```
