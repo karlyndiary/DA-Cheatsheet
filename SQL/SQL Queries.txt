@@ -53,3 +53,15 @@ JOIN FuelDetail c1 ON c1.`Date` = (
 )
 WHERE c1.fuel > c.fuel;
 ```
+
+5. Suppose that you have table Employee with a column EName which contain
+Records Employee name(EName) as A,B,A,A,B,D,C,M,A, Write a query which will
+change/Swap the EName A to B and B to A.
+```
+UPDATE Employee
+set EName = (CASE
+WHEN EName='A' THEN 'B'
+WHEN EName='B' THEN 'A'
+ELSE EName
+END)
+```
