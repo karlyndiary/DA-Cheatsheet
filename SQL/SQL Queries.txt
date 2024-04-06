@@ -31,3 +31,25 @@ SELECT customer_name,  GROUP_CONCAT(customer_name SEPARATOR ', ') AS customer_na
 FROM atliq.customers
 GROUP BY customer_type;
 ```
+
+4. You have a table(FuelDetail) with ID, Fuel, And Date columns.
+--Fuel column is contain fuel quantity at a particular time when car start traveling. So we need to find out
+that when the driver fill Petrol in his/her car.
+--By FuelDetail Table image on the top of this post, you can understand the query.
+--Car start driving at 10 Am on 25th April with petrol(10 liter)
+--at 11 AM Petrol was 9 liters
+--at 12 AM petrol was 8 liters
+--at 2 PM (14) petrol was 12 liters...
+--This means that he/she fill the petrol at 25th April 2014 at 2PM
+--Next time he fill petrol at 7PM 25th April 2014
+--and Next time he fill petrol at 11PM 25th April 2014
+```
+SELECT c1.fuel AS `Fuel quantity Now`, c1.`Date`, c.fuel AS `Fuel quantity Before`, c.`Date`
+FROM FuelDetail c
+JOIN FuelDetail c1 ON c1.`Date` = (
+    SELECT MIN(`Date`) 
+    FROM FuelDetail 
+    WHERE `Date` > c.`Date`
+)
+WHERE c1.fuel > c.fuel;
+```
