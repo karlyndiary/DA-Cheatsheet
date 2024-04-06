@@ -65,3 +65,9 @@ WHEN EName='B' THEN 'A'
 ELSE EName
 END)
 ```
+
+6. Write a query to create a clone of existing table.
+```
+CREATE TABLE customer_data2.cust_address SELECT * FROM customer_data2.customer_address WHERE 1=0; -> clones only the structure
+CREATE TABLE customer_data2.cust_add SELECT * FROM customer_data2.customer_address -> clones the structure and data
+```
