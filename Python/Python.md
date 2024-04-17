@@ -155,3 +155,8 @@ df.resample()
 ### Difference between count() and value_counts()
 - count() counts all non-null entries in a DataFrame or Series.
 - value_counts() returns the count for each unique category in a categorical column (Series), showing how many times each unique value appears.
+
+### Difference between mean() and transform('mean')
+- By using transform('mean'), the calculation is performed element-wise, meaning that each row in the original DataFrame receives the corresponding average salary for its department, preserving the shape and alignment of the DataFrame. This ensures that each employee's average salary is correctly assigned based on their department.
+- The mean() function calculates the average salary for each department, resulting in a Series where the index corresponds to the department and the values are the average salaries.
+
