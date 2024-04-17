@@ -151,3 +151,7 @@ Simplify frequency conversion and resampling of time series data.
 ```
 df.resample()
 ```
+
+### Difference between count() and value_counts()
+- count() counts all non-null entries in a DataFrame or Series.
+- value_counts() returns the count for each unique category in a categorical column (Series), showing how many times each unique value appears.
