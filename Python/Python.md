@@ -160,3 +160,54 @@ df.resample()
 - By using transform('mean'), the calculation is performed element-wise, meaning that each row in the original DataFrame receives the corresponding average salary for its department, preserving the shape and alignment of the DataFrame. This ensures that each employee's average salary is correctly assigned based on their department.
 - The mean() function calculates the average salary for each department, resulting in a Series where the index corresponds to the department and the values are the average salaries.
 
+### Datetime
+.dt.year: Extracts the year component.
+.dt.month: Extracts the month component.
+.dt.day: Extracts the day of the month.
+.dt.hour: Extracts the hour component.
+.dt.minute: Extracts the minute component.
+.dt.second: Extracts the second component.
+.dt.weekday: Returns the day of the week as an integer (Monday=0, Sunday=6).
+.dt.dayofweek: Same as .dt.weekday.
+.dt.dayofyear: Returns the day of the year.
+.dt.date: Extracts the date part from a datetime (ignores time component).
+.dt.time: Extracts the time part from a datetime (ignores date component).
+
+### Difference between unique() and drop_duplicates()
+- unique(): specific to pandas Series. | It extracts and returns an array of all unique values from the Series. | Analyze the distinct values from a column. 
+- drop_duplicates(): used on both Series and DataFrames. | it removes duplicate rows based on all columns or a subset of specified columns. | retains the original data structure 
+```
+import pandas as pd
+
+# Creating a DataFrame
+data = pd.DataFrame({
+    'ID': [1, 2, 2, 3, 4, 4, 4],
+    'Value': ['A', 'B', 'B', 'C', 'D', 'D', 'E']
+})
+
+# Using .unique() on a Series
+unique_ids = data['ID'].unique()
+print("Unique IDs:", unique_ids)
+# Output: Unique IDs: [1 2 3 4]
+
+# Using .drop_duplicates() on the whole DataFrame
+unique_rows = data.drop_duplicates()
+print("Unique rows based on all columns:\n", unique_rows)
+# Output:
+#    ID Value
+# 0   1     A
+# 1   2     B
+# 3   3     C
+# 4   4     D
+# 6   4     E
+
+# Using .drop_duplicates() specifying a column
+unique_ids_df = data[['ID']].drop_duplicates()
+print("Unique IDs as DataFrame:\n", unique_ids_df)
+# Output:
+#    ID
+# 0  1
+# 1  2
+# 3  3
+# 4  4
+```
