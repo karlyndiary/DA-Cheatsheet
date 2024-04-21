@@ -217,3 +217,36 @@ print("Unique IDs as DataFrame:\n", unique_ids_df)
 # 3  3
 # 4  4
 ```
+### Pivot Table
+A pivot table is a data summarization tool commonly used in data processing programs like pandas. It aggregates a table of data by one or more keys, arranging the data in a rectangle with some of the group keys along the rows and the other group keys along the columns. Pivot tables in pandas are especially useful for quickly summarizing large datasets and for performing complex grouping operations.
+
+The DataFrame you want to use.
+- The index or keys to group by along the rows.
+- The columns or keys to group by along the columns.
+- The values on which to perform the aggregation.
+- The aggfunc, which defines the aggregation function to be applied (e.g., sum, mean, count, etc.).
+
+```
+import numpy as np
+
+# Example sales data
+data = {
+    'Region': ['North', 'South', 'South', 'East', 'North', 'West', 'West', 'South'],
+    'Category': ['Fruit', 'Vegetables', 'Fruit', 'Dairy', 'Fruit', 'Dairy', 'Vegetables', 'Fruit'],
+    'Sales': [100, 150, 200, 200, 300, 250, 400, 300]
+}
+
+df_sales = pd.DataFrame(data)
+
+# Pivot table to find average sales by region and category
+pivot_sales = pd.pivot_table(df_sales, values='Sales', index='Category', columns='Region', aggfunc=np.mean)
+
+print(pivot_sales)
+```
+
+Result:
+| Category   | East | North | South | West |
+|------------|------|-------|-------|------|
+| Dairy      | 200  | NaN   | NaN   | 250  |
+| Fruit      | NaN  | 200   | 250   | NaN  |
+| Vegetables | NaN  | NaN   | 150   | 400  |
