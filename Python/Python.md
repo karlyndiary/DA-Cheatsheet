@@ -178,7 +178,7 @@ df.resample()
     - Specific to pandas Series.
     - It extracts and returns an array of all unique values from the Series.
     - Analyze the distinct values from a column. 
-- drop_duplicates(): U
+- drop_duplicates():
     - Used on both Series and DataFrames.
     - It removes duplicate rows based on all columns or a subset of specified columns.
     - Retains the original data structure 
