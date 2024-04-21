@@ -161,17 +161,17 @@ df.resample()
 - The mean() function calculates the average salary for each department, resulting in a Series where the index corresponds to the department and the values are the average salaries.
 
 ### Datetime
-.dt.year: Extracts the year component.
-.dt.month: Extracts the month component.
-.dt.day: Extracts the day of the month.
-.dt.hour: Extracts the hour component.
-.dt.minute: Extracts the minute component.
-.dt.second: Extracts the second component.
-.dt.weekday: Returns the day of the week as an integer (Monday=0, Sunday=6).
-.dt.dayofweek: Same as .dt.weekday.
-.dt.dayofyear: Returns the day of the year.
-.dt.date: Extracts the date part from a datetime (ignores time component).
-.dt.time: Extracts the time part from a datetime (ignores date component).
+- .dt.year: Extracts the year component.
+- .dt.month: Extracts the month component.
+- .dt.day: Extracts the day of the month.
+- .dt.hour: Extracts the hour component.
+- .dt.minute: Extracts the minute component.
+- .dt.second: Extracts the second component.
+- .dt.weekday: Returns the day of the week as an integer (Monday=0, Sunday=6).
+- .dt.dayofweek: Same as .dt.weekday.
+- .dt.dayofyear: Returns the day of the year.
+- .dt.date: Extracts the date part from a datetime (ignores time component).
+- .dt.time: Extracts the time part from a datetime (ignores date component).
 
 ### Difference between unique() and drop_duplicates()
 - unique():
