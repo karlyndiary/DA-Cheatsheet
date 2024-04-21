@@ -174,8 +174,12 @@ df.resample()
 .dt.time: Extracts the time part from a datetime (ignores date component).
 
 ### Difference between unique() and drop_duplicates()
-- unique(): specific to pandas Series. | It extracts and returns an array of all unique values from the Series. | Analyze the distinct values from a column. 
-- drop_duplicates(): used on both Series and DataFrames. | it removes duplicate rows based on all columns or a subset of specified columns. | retains the original data structure 
+- unique(): specific to pandas Series.
+    - It extracts and returns an array of all unique values from the Series.
+    - Analyze the distinct values from a column. 
+- drop_duplicates(): used on both Series and DataFrames.
+    - It removes duplicate rows based on all columns or a subset of specified columns.
+    - Retains the original data structure 
 ```
 import pandas as pd
 
