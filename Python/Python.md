@@ -257,3 +257,28 @@ The assign() method in Pandas is used to add new columns to a DataFrame or to mo
 
 - Non destructive and flexible
 
+```
+import pandas as pd
+
+# Sample data
+data = {
+    'name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'age': [23, 35, 45, 12]
+}
+
+df = pd.DataFrame(data)
+
+# Using assign() to add new columns
+new_df = df.assign(
+    age_group=lambda x: pd.cut(x['age'], bins=[0, 18, 30, 40, 50, 100], labels=['Child', 'Young Adult', 'Adult', 'Middle Aged', 'Senior']),
+    decade=lambda x: (x['age'] // 10) * 10
+)
+
+print(new_df)
+```
+| name    | age | age_group   | decade |
+|---------|-----|-------------|--------|
+| Alice   | 23  | Young Adult | 20     |
+| Bob     | 35  | Adult       | 30     |
+| Charlie | 45  | Middle Aged | 40     |
+| David   | 12  | Child       | 10     |
