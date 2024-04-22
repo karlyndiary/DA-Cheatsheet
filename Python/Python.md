@@ -270,7 +270,8 @@ df = pd.DataFrame(data)
 
 # Using assign() to add new columns
 new_df = df.assign(
-    age_group=lambda x: pd.cut(x['age'], bins=[0, 18, 30, 40, 50, 100], labels=['Child', 'Young Adult', 'Adult', 'Middle Aged', 'Senior']),
+    age_group=lambda x: pd.cut(x['age'], bins=[0, 18, 30, 40, 50, 100],
+                    labels=['Child', 'Young Adult', 'Adult', 'Middle Aged', 'Senior']),
     decade=lambda x: (x['age'] // 10) * 10
 )
 
