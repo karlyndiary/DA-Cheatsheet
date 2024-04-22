@@ -250,3 +250,10 @@ Result:
 | Dairy      | 200  | NaN   | NaN   | 250  |
 | Fruit      | NaN  | 200   | 250   | NaN  |
 | Vegetables | NaN  | NaN   | 150   | 400  |
+
+### Explain assign()
+
+The assign() method in Pandas is used to add new columns to a DataFrame or to modify existing ones, all while returning a new DataFrame and leaving the original unaltered. This method is especially useful when you want to perform data transformations cleanly and functionally without affecting the underlying data structure.
+
+- Non destructive and flexible
+
