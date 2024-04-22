@@ -283,3 +283,7 @@ print(new_df)
 | Bob     | 35  | Adult       | 30     |
 | Charlie | 45  | Middle Aged | 40     |
 | David   | 12  | Child       | 10     |
+
+Bins: The purpose of using bins in this context is to convert a continuous numerical variable (age) into categorical data, which can make analysis and visualization easier.
+0 to 18: This interval includes ages from 0 up to but not including 18. The label for this bin is "Child."
+18 to 30: This interval includes ages from 18 up to but not including 30. The label for this bin is "Young Adult." and so on.
