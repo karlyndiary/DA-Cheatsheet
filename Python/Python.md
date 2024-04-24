@@ -294,3 +294,10 @@ The .copy() method in pandas is used to create a deep copy of a DataFrame. This 
 # Make a copy of the DataFrame
 df_copy = df.copy()
 ```
+### notna()
+The notna() method in pandas is used to detect existing (non-missing) values in a DataFrame or Series. It is useful for identifying where data is not null (i.e., it's not NaN, None, or NaT depending on the data type). This method returns a boolean mask of the same shape as the original data, with True for entries that are not null and False for entries that are null.
+```
+# Use notna() to check non-null values across the DataFrame
+non_nulls_df = df.notna()
+print(non_nulls_df)
+```
