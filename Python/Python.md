@@ -287,3 +287,10 @@ print(new_df)
 Bins: The purpose of using bins in this context is to convert a continuous numerical variable (age) into categorical data, which can make analysis and visualization easier.
 - 0 to 18: This interval includes ages from 0 up to but not including 18. The label for this bin is "Child."
 - 18 to 30: This interval includes ages from 18 up to but not including 30. The label for this bin is "Young Adult." and so on.
+
+### copy()
+The .copy() method in pandas is used to create a deep copy of a DataFrame. This means that it creates a completely independent copy of the DataFrame, including the data and the indices. Any changes made to the copy will not affect the original DataFrame, and vice versa.
+```
+# Make a copy of the DataFrame
+df_copy = df.copy()
+```
