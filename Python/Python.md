@@ -326,3 +326,12 @@ Grouped without Index
 |-------|-------|-------|
 | 0     | Alice |  8.67 |
 | 1     | Bob   |  7.83 |
+
+### Differences between Lists and Tuples
+| Feature          | Lists                              | Tuples                            |
+|------------------|------------------------------------|-----------------------------------|
+| Enclosure        | Square brackets `[]`               | Parentheses `()`                  |
+| Mutability       | Mutable (can be modified)          | Immutable (cannot be modified)    |
+| Operations       | More functionalities (insert, pop, sort) | Fewer functionalities            |
+| Size & Performance | Require more memory, generally slower | Require less memory, generally faster |
+
