@@ -335,3 +335,13 @@ Grouped without Index
 | Operations       | More functionalities (insert, pop, sort) | Fewer functionalities            |
 | Size & Performance | Require more memory, generally slower | Require less memory, generally faster |
 
+### Explain loc and iloc
+| Feature | `iloc` | `loc` |
+|---------|--------|-------|
+| **Description** | Integer location based indexing | Label-based location indexing |
+| **Indexing Type** | Integer indexes (position-based) | Labels (name or key-based) |
+| **Use Cases** | When you know the exact position of the data in the DataFrame. | When your DataFrame has meaningful row/column labels. |
+| **Input Type** | Integers or arrays of integers. | Labels, slices of labels, or boolean arrays. |
+| **Flexibility** | Select data by position, not sensitive to row/column names. | Works with label names, can slice using labels, supports boolean selection. |
+| **Error Handling** | Throws error if indices are out of bounds. | Throws error if labels are not found in the DataFrame's index. |
+| **Example** | `df.iloc[0, 1]` retrieves the element at first row, second column. | `df.loc['2024-01-01']` retrieves data for the row with index label '2024-01-01'. |
