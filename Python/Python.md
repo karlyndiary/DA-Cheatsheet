@@ -348,3 +348,15 @@ Grouped without Index
 | **Index Adjustment for N-th Item** | Using `iloc[N-1]` retrieves the N-th item, adjusting for zero-based indexing. Example: `iloc[2]` for the 3rd item. | Using `loc` with exact labels, no adjustment needed for indexing. Example: `loc['item_label']`. |
 | **Application in Pandas** | `iloc[N-1]` retrieves the N-th item from a one-dimensional Series. `iloc[:, N-1]` retrieves the N-th column in a DataFrame. | Direct access using row or column labels. Can utilize boolean arrays for more complex selections. |
 
+### Difference between Series and Dataframe
+| Feature           | Series                                                       | DataFrame                                                      |
+|-------------------|--------------------------------------------------------------|----------------------------------------------------------------|
+| **Type**          | 1-dimensional labeled array                                  | 2-dimensional labeled data structure                           |
+| **Dimensions**    | Single dimension                                             | Two dimensions (rows and columns)                              |
+| **Data Storage**  | Capable of storing data of any type (integer, string, etc.)  | Can store multiple columns of different data types             |
+| **Indexing**      | Has a single axis index                                      | Has both row index and column labels                           |
+| **Construction**  | Can be created from a list, dictionary, or scalar value      | Can be created from a dictionary of Series, lists, arrays, etc.|
+| **Use Case**      | Useful for operations involving a single column or row       | Suitable for more complex data manipulations with multiple columns and rows |
+| **Flexibility**   | Less flexible for complex operations involving multiple columns | More flexible for complex operations and transformations involving multiple columns |
+| **Functionality** | Limited to 1-dimensional operations and manipulations        | Supports extensive functionalities including merging, reshaping, pivoting, and more |
+| **Visualization** | Basic plotting capabilities (line, bar, etc.)                | More robust plotting capabilities and easier integration with plotting libraries like Matplotlib and Seaborn |
