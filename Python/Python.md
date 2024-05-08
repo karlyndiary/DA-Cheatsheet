@@ -226,6 +226,13 @@ The DataFrame you want to use.
 - The values on which to perform the aggregation.
 - The aggfunc, which defines the aggregation function to be applied (e.g., sum, mean, count, etc.).
 
+A pivot table takes a DataFrame as input and performs the following operations:
+
+- Grouping: It groups the data based on one or more columns, known as the “index” or “row” values.
+- Aggregating: It applies an aggregation function to calculate summary statistics on a specific column or set of columns.
+      The aggregation function can be sum, mean, count, min, max, etc.
+- Reshaping: It reshapes the data by creating a new table with the grouped values as rows and columns.
+
 ```
 import numpy as np
 
