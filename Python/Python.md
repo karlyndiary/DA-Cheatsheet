@@ -367,3 +367,62 @@ Grouped without Index
 | **Flexibility**   | Less flexible for complex operations involving multiple columns | More flexible for complex operations and transformations involving multiple columns |
 | **Functionality** | Limited to 1-dimensional operations and manipulations        | Supports extensive functionalities including merging, reshaping, pivoting, and more |
 | **Visualization** | Basic plotting capabilities (line, bar, etc.)                | More robust plotting capabilities and easier integration with plotting libraries like Matplotlib and Seaborn |
+
+### Explain Upsampling and Downsampling
+Upsampling and downsampling are techniques used to adjust the time frequency of data in time series analysis. Here are examples to clarify each process:
+
+### 1. Upsampling
+
+**Upsampling** refers to increasing the frequency of the data samples. This is typically done when you have lower frequency data (such as monthly data) and you want to convert it into a higher frequency (such as daily data). This often introduces missing values, which may need to be filled.
+
+**Example**:
+
+Suppose you have a time series of monthly sales data and you want to convert it into daily data.
+
+```python
+import pandas as pd
+
+# Create monthly data
+data = {'Sales': [200, 240, 310]}
+index = pd.date_range('2024-01-01', periods=3, freq='M')
+df = pd.DataFrame(data, index=index)
+
+print("Monthly Data:")
+print(df)
+
+# Upsample to daily data
+daily_data = df.resample('D').ffill()  # Forward fill to handle missing values
+
+print("\nDaily Data:")
+print(daily_data.head(10))  # Show the first 10 days
+```
+
+In this example, we upsample from monthly to daily frequency using forward fill to replace NaN values with the last observed value.
+
+### 2. Downsampling
+
+**Downsampling** refers to decreasing the frequency of the data samples. This is common when you have high frequency data (such as daily data) and you want to summarize it into lower frequency (such as monthly or quarterly data).
+
+**Example**:
+
+Suppose you have daily sales data and you want to aggregate it into monthly totals.
+
+```python
+import pandas as pd
+
+# Create daily data
+index = pd.date_range('2024-01-01', periods=90, freq='D')
+data = {'Sales': range(1, 91)}
+df = pd.DataFrame(data, index=index)
+
+print("Daily Data:")
+print(df.head())
+
+# Downsample to monthly data, summing up the daily sales
+monthly_data = df.resample('M').sum()
+
+print("\nMonthly Data:")
+print(monthly_data)
+```
+
+In this example, daily sales data is aggregated into monthly totals using the `sum()` function after resampling to monthly frequency.
