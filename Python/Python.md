@@ -426,3 +426,13 @@ print(monthly_data)
 ```
 
 In this example, daily sales data is aggregated into monthly totals using the `sum()` function after resampling to monthly frequency.
+Some of the most commonly used aggregation functions include:
+
+- Sum: Aggregates by summing the values within each resampled period. Commonly used for totaling sales, counts, or any other quantitative data over time.
+- Mean: Calculates the average of values within each period. Useful for finding the typical value when data points are dense and continuous over time.
+- Max: Determines the maximum value within each period. Useful in scenarios where you need to know the peak or maximum observed value, such as temperature readings.
+- Min: Finds the minimum value within each period. Like max, it is useful for data such as temperature, pricing, or other measurements where the extremes are important.
+- Count: Counts the number of non-null data points within each period. This is particularly useful for attendance records, log entries, or any scenario where the volume of activity is relevant.
+- Median: Computes the statistical median (the middle value) of the values in each period. This can be more robust than the mean in the presence of outliers.
+- Std: Computes the standard deviation of the values, which indicates how much the values are spread out over each period.
+- Var: Calculates the variance of the data points, providing a measure of the spread of the data relative to the mean.
