@@ -436,3 +436,29 @@ Some of the most commonly used aggregation functions include:
 - Median: Computes the statistical median (the middle value) of the values in each period. This can be more robust than the mean in the presence of outliers.
 - Std: Computes the standard deviation of the values, which indicates how much the values are spread out over each period.
 - Var: Calculates the variance of the data points, providing a measure of the spread of the data relative to the mean.
+
+Here are all the frequencies that can be used with the resample() function in Python:
+- B: - business day
+- C: - custom business day
+- D: - calendar day
+- W: - weekly
+- M: - monthly
+- SM: - semi-monthly
+- BM: - business month
+- CBM: - custom business month
+- MS: - month start
+- BMS: - business month start
+- Q: - quarter
+- BQ: - business quarter
+- QS: - quarter start
+- BQS: - business quarter start
+- A: - year
+- BA: - business year
+- AS: - year start
+- BAS: - business year start
+- H: - hour
+- T: - minute
+- S: - second
+- L: - millisecond
+- U: - microsecond
+- N: - nanosecond
