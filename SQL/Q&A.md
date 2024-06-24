@@ -128,43 +128,27 @@
     Here are a few examples of aggregate functions and when they are used:
     
     1. **COUNT()**: Counts the number of rows in a result set or the number of non-null values in a specific column.
-        
         ```sql
         SELECT COUNT(*) AS total_rows FROM table_name;
         SELECT COUNT(column_name) AS non_null_values FROM table_name;
-        
         ```
-        
     2. **SUM()**: Calculates the sum of values in a column.
-        
         ```sql
         SELECT SUM(sales_amount) AS total_sales FROM sales_table;
-        
         ```
-        
     3. **AVG()**: Calculates the average of values in a column.
-        
         ```sql
         SELECT AVG(salary) AS average_salary FROM employees;
-        
         ```
-        
     4. **MIN()**: Returns the minimum value in a column.
-        
         ```sql
         SELECT MIN(age) AS youngest_age FROM students;
-        
         ```
-        
     5. **MAX()**: Returns the maximum value in a column.
-        
         ```sql
         SELECT MAX(price) AS highest_price FROM products;
-        
         ```
-        
-    
-    Aggregate functions are used whenever you need to perform calculations on groups of rows, such as finding totals, averages, or extremes (minimum/maximum values), and when generating summary statistics from a dataset. They are essential tools for data analysis and reporting in SQL.
+          Aggregate functions are used whenever you need to perform calculations on groups of rows, such as finding totals, averages, or extremes (minimum/maximum values), and when generating summary statistics from a dataset. They are essential tools for data analysis and reporting in SQL.
     
 - Which is faster between CTE and Subquery?
     - The speed difference between Common Table Expressions (CTEs) and subqueries can vary depending on the specific query, database engine, indexing, and other factors. However, in many cases, there isn't a significant performance difference between them, as modern SQL database engines are optimized to handle both efficiently.
@@ -256,8 +240,7 @@
     | One-to-One (1:1) Relationship | One-to-Many Relationship | Many-to-Many Relationship |
     | --- | --- | --- |
     | Each record in the first table (parent table) is related to exactly one record in the second table (child table), and vice versa | Each record in the parent table can be related to one or more records in the child table, but each record in the child table is related to only one record in the parent table. | Each record in the first table can be related to one or more records in the second table, and vice versa. |
-    | Example: Employee and Employee_Details tables, where each employee has exactly one set of details. | Example: Department and Employee tables, where each department can have multiple employees, but each employee belongs to only one department. | Example: Student and Course tables, where each student can enroll in multiple courses, and each course can have multiple students.
-     |
+    | Example: Employee and Employee_Details tables, where each employee has exactly one set of details. | Example: Department and Employee tables, where each department can have multiple employees, but each employee belongs to only one department. | Example: Student and Course tables, where each student can enroll in multiple courses, and each course can have multiple students.|
 - Difference between Primary Key and Secondary Key?
 - Find the second highest salary of an employee?
     
