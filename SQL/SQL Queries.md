@@ -3,9 +3,42 @@
     select max(salary) from emp where salary < (select max(salary) from emp)
     ```
 - Write a SQL query to find the numbers which consecutively occurs 3 times. (Column name – id, numbers)
-   ```
-    
     ```
+    SELECT DISTINCT t1.numbers
+    FROM (
+        SELECT numbers,
+               LAG(numbers, 1) OVER (ORDER BY id) AS prev_num1,
+               LAG(numbers, 2) OVER (ORDER BY id) AS prev_num2
+        FROM your_table_name
+    ) t1
+    WHERE t1.numbers = t1.prev_num1
+      AND t1.numbers = t1.prev_num2;
+    ```
+    Input
+    | id | numbers |
+    |----|---------|
+    | 1  |    5    |
+    | 2  |    1    |
+    | 3  |    2    |
+    | 4  |    2    |
+    | 5  |    2    |
+    | 6  |    3    |
+    | 7  |    3    |
+    | 8  |    3    |
+    | 9  |    4    |
+    | 10 |    5    |
+    | 11 |    5    |
+    | 12 |    5    |
+    | 13 |    6    |
+    | 14 |    6    |
+    
+    Output
+    | numbers |
+    | ------- |
+    |    2    |
+    |    3    |
+    |    5    |
+
 - Write a SQL query to find the days when temperature was higher than its previous dates. (Column name – Days, Temp)
     ```
     
