@@ -108,7 +108,25 @@
     ```
 - Write a query to get mean, median and mode for earning? (Column – Emp_id, salary)
     ```
-        
+    WITH median_salary AS (
+    SELECT 
+        salary, 
+        ROW_NUMBER() OVER (ORDER BY salary ASC, emp_id ASC) AS RowAsc,
+        ROW_NUMBER() OVER (ORDER BY salary DESC, emp_id DESC) AS RowDesc
+    FROM employeesalary
+    ),
+    mode_salary AS (
+        SELECT salary, COUNT(*) AS frequency
+        FROM median_salary
+        GROUP BY salary
+        ORDER BY frequency DESC
+        LIMIT 1
+    )
+    SELECT round(AVG(salary),2) AS median_salary,
+        (SELECT salary FROM mode_salary) AS mode_salary, 
+        (select round(AVG(salary),2) from employeesalary) as avg_salary
+    FROM median_salary
+    WHERE RowAsc IN (RowDesc, RowDesc - 1, RowDesc + 1);
     ```
 - Given: Table X: Columns: ids with values 1, 1, 1, 1. Table Y: Columns: ids with values 1, 1, 1, 1, 1, 1, 1, 1. Task: Determine the count of rows in the output of the following queries:
     
