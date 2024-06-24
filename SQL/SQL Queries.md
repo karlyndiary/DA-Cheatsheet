@@ -41,7 +41,11 @@
 
 - Write a SQL query to find the days when temperature was higher than its previous dates. (Column name – Days, Temp)
     ```
-    
+    Select t1.Days, t1.Temp
+    From temperaturedata t1
+    Join temperaturedata t2
+    On t1.Days = t2.Days + 1
+    Where t1.Temp > t2.Temp
     ```
 - Write a SQL query to delete Duplicate rows in a table.
     ```
