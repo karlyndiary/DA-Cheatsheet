@@ -267,12 +267,7 @@
     ```
     
 - Write retention query in SQL?
-    - Retention Rate = (No of customers at the end of the month - No of new customers) * 100
-    
-    ---
-    
-    - No of customers at the start of the month
-    
+    - Retention Rate = (No of customers at the end of the month - No of new customers) * 100 / No of customers at the start of the month
     ```
     SELECT 
         ((end_customers - new_customers) / start_customers) * 100 AS retention_rate
