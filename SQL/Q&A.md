@@ -282,3 +282,16 @@
     
 - Difference between Function and Store procedure ?
 - What are Views? Do we use variable in views? What are the limitations of views?
+  ```
+  create view order_summary   --> Create view
+  as
+  select o.ord_id, o.date, p.prod_name,
+      c.cust_name - (p.priceo.quantity) ((p.price o.quantity) disc_percent : : float/100) as cost
+  from tb_customer_data c
+  join tb_order_details o
+  on o.cust_id=c.cust_id
+  join tb_product_info p
+  on p.prod_id = o.prod_id;
+
+  select from order_summary;  --> Calling the view
+  ```
