@@ -282,8 +282,17 @@
 - Difference between Function and Store procedure ?
 - What are Views? Do we use variable in views? What are the limitations of views?
     - A view in SQL is a virtual table that does not store data itself. Instead, it executes the SQL query used to define it every time it is accessed, presenting the result set of that query as a table. This allows users to simplify complex queries, encapsulate business logic, and present data in a specific format without duplicating storage.
+    - Limitations
+    - Use Case
+        - Security
+          - Hide the query used to generate the view
+          - Give only read-only access to the new_person
+          - To restrict external users from accessing the original database structure and data.  
+        - To simplify complex queries
+          - Sharing a view is better than sharing a complex query
+          - Avoid re-writing the same complex query multiple times
   ```
-  create view order_summary   --> Creating the view
+  create or replace view order_summary   --> Creating the view --> Replace - If the view has been created, it creates a new one or if the view already exists, it updates it
   as
   select o.ord_id, o.date, p.prod_name,
       c.cust_name - (p.priceo.quantity) ((p.price o.quantity) disc_percent : : float/100) as cost
@@ -294,4 +303,10 @@
   on p.prod_id = o.prod_id;
 
   select from order_summary;  --> Calling the view
+
+  create role new_person --> creating credentials to the new_person to access only the order_summary data
+  login
+  password 'new_person'
+
+  grant select on order_summary to new_person
   ```
