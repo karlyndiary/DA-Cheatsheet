@@ -279,11 +279,11 @@
     select date, amount, sum(amount) over(order by date) as cummulative_sum
     from sales
     ```
-    
 - Difference between Function and Store procedure ?
 - What are Views? Do we use variable in views? What are the limitations of views?
+    - A view in SQL is a virtual table that does not store data itself. Instead, it executes the SQL query used to define it every time it is accessed, presenting the result set of that query as a table. This allows users to simplify complex queries, encapsulate business logic, and present data in a specific format without duplicating storage.
   ```
-  create view order_summary   --> Create view
+  create view order_summary   --> Creating the view
   as
   select o.ord_id, o.date, p.prod_name,
       c.cust_name - (p.priceo.quantity) ((p.price o.quantity) disc_percent : : float/100) as cost
