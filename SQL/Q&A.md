@@ -233,6 +233,7 @@
     - NVARCHAR [National Variable-length Character Data] is suitable for storing character data that may include characters from different languages and require support for multilingual text, such as Chinese, Japanese, Arabic, or any other language that uses Unicode characters.
 - Similar for char and nchar?
 - What is an index? Explain its different types.
+  
 - Differentiate between UNION and UNION ALL.
 - What are the various types of relationships in SQL?
     
