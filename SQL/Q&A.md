@@ -360,5 +360,5 @@
             insert into apple_products values ('P22', 'Macbook air 2', 'Apple', 2500, null); -> This will run and won't throw an error.
             ```
 
-    - Recursive CTE
-        - 
+- Recursive CTE
+  - 
