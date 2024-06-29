@@ -370,3 +370,5 @@
       )
       SELECT FROM CTE_name;
       ```
+    - The base query sets the initial condition. The base query for the pattern P(20) starts with the highest level (20 stars)
+
