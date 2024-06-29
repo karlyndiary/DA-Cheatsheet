@@ -325,3 +325,40 @@
     - Updating the original table with new columns, but this new column won't appear in the view because when the view is initially created, it store the structure of the database.
         - In order for the new column to be visible in the view, add ```or replace``` to the create view and run it again.
     - When any new data has been added, the view has no issues in returning these new rows of data. Since the view is mainly concerned with the structure of the table.  
+    - Updatable View
+        - Views should be created using only one table/view.
+        - ```update expensive products set prod_name = 'Airpods Pro', brand = 'Apple' where prod id = 'P10'``` -> Updating the view's columns
+        - Here we updated the view but when the view was created, it was created using another table. So the updated data is reflected in both the view and the underlying table that was used in creating the view. -> This will work
+        - But when the original query that is used to create views has joins, this will throw an error and won't work. -> Limitation
+        - View query can't have distinct clause -> Limitation
+        - View will be created if the query has a group by clause but data can't be updated if it has a group by -> Limitation
+        - If the query has With clause -> Can't update the view -> Limitation
+        - If the query has Window Functions -> Can't update the view -> Limitation
+      - With check option
+          - ```
+            create view apple_products
+            as
+            SELECT from tb_product_info where brand = 'Apple';
+
+            insert into apple_products values ('P20', 'Note 20', 'Samsung', 2500, null);
+
+            select from tb_product_info;
+            select from apple_products;
+
+            The tb_product_info table now has the new record
+            but this new record won't appear in the apple_products view table because of the where clause
+            This happened because there were no check given to the person who entered this data
+
+            create or replace view apple_products
+            as
+            SELECT from tb_product_info where brand = 'Apple'
+            with check option; --> when a new row of data is being inserted into the table, this with check option checks if it satisfies the where clause or not.
+
+            So with this, those insert statements where it satisfies the where condition, only these get executed.
+            If the condition doesn't match, it will throw an error.
+
+            insert into apple_products values ('P22', 'Macbook air 2', 'Apple', 2500, null); -> This will run and won't throw an error.
+            ```
+
+    - Recursive CTE
+        - 
