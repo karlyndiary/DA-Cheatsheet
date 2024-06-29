@@ -310,3 +310,18 @@
 
   grant select on order_summary to new_person
   ```
+    - After creating the view
+        - Cannot reorder the columns or give an alias to the columns -> this will throw an error.
+        - Cannot change the data type -> this will throw an error.
+        - Cannot add new columns in between the existing columns, but you can add new columns after the last column
+        - The query will run fine after these changes but when run along with the view clause -> this will throw an error.
+    - To change the order of columns
+        - ```alter view order_summary rename column date to order_date```
+    - To change the name of the view
+        - ```alter view order_summary rename to order_summary_2```
+            - order_summary view now doesn't exist and is updated to order_summary_2
+    - To drop view
+        - ```drop view order_summary_2```
+    - Updating the original table with new columns, but this new column won't appear in the view because when the view is initially created, it store the structure of the database.
+        - In order for the new column to be visible in the view, add ```or replace``` to the create view and run it again.
+    - When any new data has been added, the view has no issues in returning these new rows of data. Since the view is mainly concerned with the structure of the table.  
