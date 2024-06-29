@@ -361,4 +361,12 @@
             ```
 
 - Recursive CTE
-  - 
+    - Syntax
+      ``` 
+      WITH ([RECURSIVE] CTE_name AS
+          SELECT query (Non-Recursive query or the Base query)
+          UNION [ALL]
+          SELECT query (Recursive query using CTE_name [with a termination condition])
+      )
+      SELECT FROM CTE_name;
+      ```
