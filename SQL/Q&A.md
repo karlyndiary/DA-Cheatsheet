@@ -382,7 +382,7 @@
           )
       select * from numbers
       ```
-  - Query 2: Return the hierarchy of employees under given name
+  - Query 2: Return the hierarchy of employees under given manager
     ```
     with recursive emp_hierarchy as
         ( select id, emp_name, manager_id, designation, 1 as level
@@ -394,6 +394,25 @@
           join emp_details D
           on H.id = D.manager_id
         )
-    select * from emp_hierarchy
+    select H2.id as emp_id, H2.name as emp_name, D2.name as manager_name, H2.level as level
+    from emp hierarchy H2
+    join emp_details D2
+    on D2.id = H2.manager_id;
     ```
-  - Query 3: Return
+  - Query 3: Return the hierarchy of managers for a given employee
+    ```
+    with recursive emp_hierarchy as
+        ( select id, emp_name, manager_id, designation, 1 as level
+          from emp_details
+          where emp_name = 'David'
+          union
+          select D.id, D.emp_name, D.manager_id, D.designation, H.level + 1 as level
+          from emp_hierarchy H
+          join emp_details D
+          on H.manager_id = D.id
+        )
+    select H2.id as emp_id, H2.name as emp_name, D2.name as manager_name, H2.level as level
+    from emp hierarchy H2
+    join emp_details D2
+    on D2.id = H2.manager_id;
+    ```
