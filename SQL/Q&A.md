@@ -371,4 +371,29 @@
       SELECT FROM CTE_name;
       ```
     - The base query sets the initial condition. The base query for the pattern P(20) starts with the highest level (20 stars)
-
+    - Query 1: Print 1 to 10 without use of any built in functions
+      ```
+      with recursive numbers as
+          ( select 1 as n
+          union
+          select n + 1
+          from numbers
+          where n < 10
+          )
+      select * from numbers
+      ```
+  - Query 2: Return the hierarchy of employees under given name
+    ```
+    with recursive emp_hierarchy as
+        ( select id, emp_name, manager_id, designation, 1 as level
+          from emp_details
+          where emp_name = 'Asha'
+          union
+          select D.id, D.emp_name, D.manager_id, D.designation, H.level + 1 as level
+          from emp_hierarchy H
+          join emp_details D
+          on H.id = D.manager_id
+        )
+    select * from emp_hierarchy
+    ```
+  - Query 3: Return
