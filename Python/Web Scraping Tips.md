@@ -1,0 +1,7 @@
+- Switch User-Agents
+- Slow down the scraping
+  - Add time delay
+  - Set random time delay
+- Use proxy servers
+- Clear cookies
+- 
