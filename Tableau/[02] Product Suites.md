@@ -1,5 +1,8 @@
 ## Developer Products
   - Tableau Desktop
+    - Can connect to multiple sources
+    - Share to Tableau server, cloud or public cloud
+    - Save workbooks locally 
   - Tableau Public Desktop
   - Tableau Prep
 
