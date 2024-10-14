@@ -22,11 +22,11 @@
 - Data Visualization
   - Convert raw data into bar charts, pie charts, and more to make the raw data easier to understand. This helps in making decisions
 
-- **Excel**
-  - Data can be stored up to a million rows.
-  - Manually needs to be refreshed.
-- **Tableau**
-  - Can handle more than millions of rows of data.
-  - Can schedule refresh data time.
-  - Row-level security and user security.
-  - Multiple data sources.
+### Difference between Excel and Tableau
+| **Excel**                                   | **Tableau**                                   |
+|---------------------------------------------|-----------------------------------------------|
+| Data can be stored up to a million rows.    | Can handle more than millions of rows.        |
+| Manually needs to be refreshed.             | Can schedule data refresh times.              |
+| N/A for security features.                  | Row-level security and user security.         |
+| N/A for multiple data sources.              | Supports multiple data sources.               |
+
