@@ -1,15 +1,16 @@
 ## Developer Products
-- Used for Data visualization.
   - Tableau Desktop
   - Tableau Public Desktop
   - Tableau Prep
 
-#### Data Visualization 
-- Tableau Desktop
-- Tableau Public Desktop
-
 #### Data Engineering
-- Tableau Prep
+- Used for data cleaning and preparation
+  - Tableau Prep
+  
+#### Data Visualization 
+- Used for Data visualization.
+  - Tableau Desktop
+  - Tableau Public Desktop
 
 ## Sharing Products
 - Used to share and collaborate the data visualization.
