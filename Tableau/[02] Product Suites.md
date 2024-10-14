@@ -1,10 +1,15 @@
 ## Developer Products
   - Tableau Desktop
-    - Can connect to multiple sources
+    - Can connect to 90+ sources
     - Share to Tableau server, cloud or public cloud
-    - Save workbooks locally 
+    - Save workbooks locally
+    - Requires Licenses
   - Tableau Public Desktop
+    - Same as Desktop but it's free
+    - 10 Data Connectors
+    - 
   - Tableau Prep
+    -  
 
 #### Data Engineering
 - Used for data cleaning and preparation
