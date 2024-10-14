@@ -1,3 +1,4 @@
+### Terminology
 - Internet of Things (IOT)
   - Connecting any thing to the internet to exchange data
 - Big Data
