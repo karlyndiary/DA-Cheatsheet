@@ -1,6 +1,6 @@
-- **Internet of Things (IOT)**
+- Internet of Things (IOT)
   - Connecting any thing to the internet to exchange data
-- **Big Data**
+- Big Data
   - Any device connected to the internet is sending out data. Each click is data. 
   - 3 V's to indicate its Big Data
   - Volume: Millions of millions of rows of data. Data is now curated in MB, GB, TG, PB.
@@ -19,10 +19,10 @@
 - Machine Learning
   - We are providing raw and historical data, together with mathematical models and algorithms. This can then provide predictions upon training. 
 - Data Visualization
-  - 
+  - Convert raw data into bar charts, pie charts, and more to make the raw data easier to understand. This helps in making decisions
 
 - **Excel**
-  - Data can be stored upto a million rows.
+  - Data can be stored up to a million rows.
   - Manually needs to be refreshed.
 - **Tableau**
   - Can handle more than millions of rows of data.
