@@ -36,4 +36,6 @@
   - Connect to API, Cloud, DB, Server? -> No -> Data Can be Public -> No -> **Tableau Desktop**
   - Connect to API, Cloud, DB, Server? -> No -> Data Can be Public -> Yes -> More than 15 million rows -> Yes -> **Tableau Desktop**
   - Connect to API, Cloud, DB, Server? -> No -> Data Can be Public -> Yes -> More than 15 million rows -> No -> **Tableau Desktop Public**
+  - Connect to API, Cloud, DB, Server? -> No -> Data Can be Public -> Yes -> More than 15 million rows -> Yes -> Need Live Connections -> Yes -> **Tableau Desktop**
+  - Connect to API, Cloud, DB, Server? -> No -> Data Can be Public -> Yes -> More than 15 million rows -> No -> Need Live Connections -> No -> **Tableau Desktop Public**
   - Connect to API, Cloud, DB, Server? -> Yes -> **Tableau Desktop**
