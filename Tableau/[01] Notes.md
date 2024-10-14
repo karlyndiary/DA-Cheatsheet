@@ -28,5 +28,5 @@
 | Data can be stored up to a million rows.    | Can handle more than millions of rows.        |
 | Manually needs to be refreshed.             | Can schedule data refresh times.              |
 | N/A for security features.                  | Row-level security and user security.         |
-| N/A for multiple data sources.              | Supports multiple data sources.               |
+|  Supports multiple data sources.            | Supports multiple data sources.               |
 
