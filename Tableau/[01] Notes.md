@@ -8,13 +8,24 @@
   - Variety: Data comes in different forms, structured [Excel, Database], Semi-Structured [XML, Websites], Unstructured [Video, Image]
   - Big Data means how we can efficiently store, process and analyse our data when it has huge volume, high speed and different types.
 
-- Data Architecture 
-- Data Engineering 
+- Data Architecture
+  - It is the process of creating a blueprint for how we organize, process and store our data into different layers for different purposes so that architecture makes it easier to manage, protect and access the data.
+- Data Engineering
+  - It is a complex process of designing and building data pipelines and data storage. It includes ETL processes to extract the raw data from multiple sources, and then transform it and load it to the storage in order to make it highly available and usable.
 - Data Modelling
-- Data Visualization 
+  - It is the process of connecting the dots between multiple entities to make a connection and build relationships between them.
+- Data Mining
+  - It is the process of analysing massive amounts of raw data in order to discover knowledge, to discover business intelligence like patterns and trends, to solve problems and to mitigate risks. 
+- Machine Learning
+  - We are providing raw and historical data, together with mathematical models and algorithms. This can then provide predictions upon training. 
+- Data Visualization
+  - 
 
 - **Excel**
   - Data can be stored upto a million rows.
   - Manually needs to be refreshed.
 - **Tableau**
-  -
+  - Can handle more than millions of rows of data.
+  - Can schedule refresh data time.
+  - Row-level security and user security.
+  - Multiple data sources.
