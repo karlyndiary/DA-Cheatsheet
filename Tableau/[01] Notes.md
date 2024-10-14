@@ -5,7 +5,8 @@
   - 3 V's to indicate its Big Data
   - Volume: Millions of millions of rows of data. Data is now curated in MB, GB, TG, PB.
   - Velocity: For normal data processing, use the process slow data or batch data. For big data workloads, the sources are generating streams of data at a very high speed. This means we have to process and analyze the data in real time and then we store it in memory.
-  - Variety
+  - Variety: Data comes in different forms, structured [Excel, Database], Semi-Structured [XML, Websites], Unstructured [Video, Image]
+  - Big Data means how we can efficiently store, process and analyse our data when it has huge volume, high speed and different types.
 
 - Excel
   - 
