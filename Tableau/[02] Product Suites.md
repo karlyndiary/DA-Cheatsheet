@@ -6,6 +6,11 @@
 #### Data Engineering
 - Used for data cleaning and preparation
   - Tableau Prep
+      - Build flow(clean, combine, aggregate and more)
+      - Requires license
+      - Over 90 connectors
+      - Multiple outputs: File, Tableau Data Source, Database Table
+      - No free version 
   
 #### Data Visualization 
 - Used for Data visualization.
