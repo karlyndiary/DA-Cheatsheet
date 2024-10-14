@@ -8,6 +8,11 @@
   - Variety: Data comes in different forms, structured [Excel, Database], Semi-Structured [XML, Websites], Unstructured [Video, Image]
   - Big Data means how we can efficiently store, process and analyse our data when it has huge volume, high speed and different types.
 
+- Data Architecture 
+- Data Engineering 
+- Data Modelling
+- Data Visualization 
+
 - **Excel**
   - Data can be stored upto a million rows.
   - Manually needs to be refreshed.
