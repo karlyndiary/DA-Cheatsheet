@@ -29,3 +29,11 @@
   - Tableau Public Cloud
   - Tableau Reader
   - Tableau Mobile
+
+### Purpose
+- Purpose -> Data Engineering -> **Prep**
+- Purpose -> Data Visualization 
+  - Connect to API, Cloud, DB, Server? -> No -> Data Can be Public -> No -> **Tableau Desktop**
+  - Connect to API, Cloud, DB, Server? -> No -> Data Can be Public -> Yes -> More than 15 million rows -> Yes -> **Tableau Desktop**
+  - Connect to API, Cloud, DB, Server? -> No -> Data Can be Public -> Yes -> More than 15 million rows -> No -> **Tableau Desktop Public**
+  - Connect to API, Cloud, DB, Server? -> Yes -> **Tableau Desktop**
