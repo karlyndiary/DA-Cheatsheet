@@ -25,8 +25,10 @@
 ### Difference between Excel and Tableau
 | **Excel**                                   | **Tableau**                                   |
 |---------------------------------------------|-----------------------------------------------|
-| Data can be stored up to a million rows.    | Can handle more than millions of rows.        |
+| Data can be stored in up to a million rows. | Can handle more than millions of rows.        |
 | Manually needs to be refreshed.             | Can schedule data refresh times.              |
-| N/A for security features.                  | Row-level security and user security.         |
-|  Supports multiple data sources.            | Supports multiple data sources.               |
+| Easy to hack on even password-protected sheets            | Row-level security [RLS]        |
+| Manual data importing                       | Data extraction can be automated              |
+| Supports multiple data sources.             | Supports multiple data sources.               |
+| Static visuals                              | Advanced visuals and dynamic. Drag and drop   |
 
