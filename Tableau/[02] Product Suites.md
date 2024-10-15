@@ -43,6 +43,11 @@
   - Tableau Public Cloud
     - You want to publish the dashboard for everyone to see and use.   
   - Tableau Reader
-    - If you want to share your reports with individual users with the file format [.twbx] 
+    - If you want to share your reports with individual users with the file format [.twbx]
+    - Free tool
+    - Only to view the visualization, no editing, can't refresh data, no security features.
   - Tableau Mobile
-
+    - Can download the app on mobile or tablet for free
+    - Can only view the visualization
+    - Requires a license to use
+    - Can connect to server and cloud
