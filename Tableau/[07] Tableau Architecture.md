@@ -14,6 +14,11 @@
       - Extract
       - Live
     - Data Model
-      - Join tables together using joins, relationships and union. 
+      - Join tables together using joins, relationships and union.
+    - Visualizations
+      - Tableau organizes the viz in three levels
+        - Worksheets: These worksheets can also be created using two data sources[Extract and live] together called Data Blending
+        - 
   - Server
+    - 
   - Consumer
