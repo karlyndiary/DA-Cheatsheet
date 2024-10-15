@@ -6,3 +6,12 @@
     - Send extract + Data Source -> .tdsx
     - Visualization -> Data Source + visualization [.twb]
   - For a combination of all 3 -> Data + Data Source + Visualization [.twbx] Tableau packaged workbook
+
+- With Data
+  - Data Source -> Extract -> [.hyper]
+  - Data + Data Source -> [.tdsx]
+  - Data + Data Source + Visualization [.twbx] 
+
+- Without Data
+  - Data Source -> Live -> [.tds]
+  - Data + Data Source -> [.twb]
