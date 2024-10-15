@@ -1,0 +1,3 @@
+- On-Prem
+- IaaS
+- SaaS
