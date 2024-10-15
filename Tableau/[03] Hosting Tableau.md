@@ -1,6 +1,12 @@
-- On-Prem
-  -  
-- IaaS
-  - 
-- SaaS
-  - 
+- **On-Prem**
+  - Hardware: servers, storage, network
+  - Software: operating systems, applications
+  - Project: user access, schedule, job monitoring
+  - If you manage all the above layers, then it is the **On-Prem** Model
+- **IaaS**
+  - If you don't have the resources or the time to manage them at the start.
+  - Can outsource the hardware where you can buy servers from Amazon AWS, Azure or Google Cloud [they manage the hardware] and you manage the software and project.
+- **SaaS**
+  - If the IT team is small/ doesn't have time to keep the softwares updated.
+  - Can outsource the software and hardware
+  - Can buy the service from Tableau called Tableau Cloud. The Tableau cloud team will manage everything [software and hardware].
