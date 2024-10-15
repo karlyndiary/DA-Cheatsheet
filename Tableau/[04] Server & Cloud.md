@@ -1,4 +1,4 @@
-### WHERE TO SHARE?
+WHERE TO SHARE?
 - It should be secure, scalable, robust and fast
 
 To build this, we have two tableau products: server and cloud
