@@ -15,3 +15,11 @@
 - Without Data
   - Data Source -> Live -> [.tds]
   - Data + Data Source -> [.twb]
+    
+| **File Type** | **Tableau Desktop** | **Tableau Reader** | **Tableau Public** |
+|---------------|---------------------|--------------------|--------------------|
+| .HYPER        | ✓                   | ✓                  | ✗                  |
+| .TDSX         | ✓                   | ✓                  | ✗                  |
+| .TWBX         | ✓                   | ✓                  | ✓                  |
+| .TDS          | ✓                   | ✗                  | ✗                  |
+| .TWB          | ✓                   | ✗                  | ✗                  |
