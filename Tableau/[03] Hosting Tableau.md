@@ -3,10 +3,28 @@
   - Software: operating systems, applications
   - Project: user access, schedule, job monitoring
   - If you manage all the above layers, then it is the **On-Prem** Model
+  - Advantages
+    - Full Control
+    - Data behind firewalls
+  - Disadvantages
+    - High upfront costs
+    - Inflexibility  
 - **IaaS**
   - If you don't have the resources or the time to manage them at the start.
   - Can outsource the hardware where you can buy servers from Amazon AWS, Azure or Google Cloud [they manage the hardware] and you manage the software and project.
-- **SaaS**
-  - If the IT team is small/ doesn't have time to keep the softwares updated.
+  - Advantages
+    - Inflexibility
+    - No upfront costs
+  - Disadvantages
+    - Software Administration
+    - Unexpected costs
+ - **SaaS**
+  - If the IT team is small/ doesn't have time to keep the software updated.
   - Can outsource the software and hardware
   - Can buy the service from Tableau called Tableau Cloud. The Tableau cloud team will manage everything [software and hardware].
+  - Advantages
+    - Focus on core business
+    - Always up to date
+  - Disadvantages
+    - Loss of Control
+    - Potential networking problems.
