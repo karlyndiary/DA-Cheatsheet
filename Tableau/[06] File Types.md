@@ -23,3 +23,6 @@
 | .TWBX         | ✓                   | ✓                  | ✓                  |
 | .TDS          | ✓                   | ✗                  | ✗                  |
 | .TWB          | ✓                   | ✗                  | ✗                  |
+
+Metadata: Data about the data. Stored as XML file. It describes your data and what you have done in the workbook, anything you click.
+Data: The actual data stored as .hyper file. Data is stored in columns in the memory of Tableau.
