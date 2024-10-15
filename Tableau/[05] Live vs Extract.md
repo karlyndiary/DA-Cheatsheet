@@ -1,1 +1,11 @@
+- Live
+  - Do you want to save a copy of the data in Tableau?
+    - No -> Stay in the source system
+      - Each time the visualization needs data, it will send out a query to the source system and then the database will send the results back to the visualization.  
+  - Data Freshness is more important than the performance 
 
+- Extract
+  - Do you want to save a copy of the data in Tableau?
+    - Yes -> Copy to the Tableau system
+      - Each time the visualization needs data, it will send out a query to the extract instead of the database.
+    - Data performance is more important than the freshness of data
