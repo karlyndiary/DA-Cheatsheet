@@ -28,3 +28,24 @@
   - Disadvantages
     - Loss of Control
     - Potential networking problems.
+   
+- Can data be public? -> Yes -> Frequent data refresh? -> No -> Public
+- Can data be public? -> Yes -> Frequent data refresh? -> Yes -> You manage the hardware? -> Yes -> Server [On-Prem]
+- Can data be public? -> No -> You manage the hardware? -> Yes -> Server [On-Prem]
+- Can data be public? -> No -> You manage the hardware? -> No -> You manage the software? -> Yes -> Server [IaaS]
+- Can data be public? -> No -> You manage the hardware? -> No -> You manage the software? -> No -> Cloud
+- Can data be public? -> No -> You manage hardware? -> Yes -> Server
+
+- Can data be public?
+  - Yes → Frequent data refresh?
+    - No → Public
+    - Yes → You manage the hardware?
+      - Yes → Server (On-Prem)
+      - No → You manage the software?
+        - Yes → Server (IaaS)
+        - No → Cloud (SaaS)
+    - No → You manage the hardware?
+      - Yes → Server (On-Prem)
+      - No → You manage the software?
+        - Yes → Server (IaaS)
+        - No → Cloud (SaaS)
