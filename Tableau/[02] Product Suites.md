@@ -34,10 +34,15 @@
   - Connect to API, Cloud, DB, Server? -> Yes -> **Tableau Desktop**
 
 ## Sharing Products
-- Used to share and collaborate the data visualization.
+- Used to share and collaborate on data visualization.
   - Tableau Server
+    -  The built visualizations can be shared on the server which can be viewed on tablets/ mobiles/ web
+    -  Or we can install tableau server on the cloud service provider like Amazon AWS, Azure or Google cloud and on here, the dashboards can be published and viewed on tablets/ mobiles/ web. 
   - Tableau Cloud
+    -  Or we can upload on private cloud, here everything is ready, you can just upload the dashboard and users can view it on tablets/ mobiles/ web.
   - Tableau Public Cloud
+    - You want to publish the dashboard for everyone to see and use.   
   - Tableau Reader
+    - If you want to share your reports with individual users with the file format [.twbx] 
   - Tableau Mobile
 
