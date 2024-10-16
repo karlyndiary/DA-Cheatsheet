@@ -78,5 +78,17 @@
       - One to Many - Results are not correct, unnecessary scans.
       - One-to-One - Results are not correct, no unnecessary scans.
  - Integrity:
+   ![2024-10-16 - 16_50_38 - Course_ Tableau Ultimate Course A-Z_ From Zero to Hero (2024) _ Udemy](https://github.com/user-attachments/assets/82402522-46c3-4adf-acc3-6ff5171c37d5)
    
 - Data Profiling: The process of examining and investigating the data to understand the contents of the table.
+
+### Data Blending
+- It takes place at the visualization layer, not in the logical layer.
+- Data source imported into Tableau is the primary data source and the secondary data source is external.
+- Only Left Join by default.
+- Steps:
+  - Import primary data source as usual. Click on the database icon next to the primary data source name -> click on New Data Source
+- Data Blending works by sheet by sheet only. So each worksheet, you can make a new decision[eg: Can switch between which table is the primary or the secondary table]
+- Primary table -> Denoted in Blue
+- Secondary table -> Denoted in Orange
+- Broken Link chain -> Primary key not activated. To activate it, click on it, and to deactivate it, again click on it.
