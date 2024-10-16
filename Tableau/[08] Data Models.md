@@ -47,3 +47,12 @@
   - Logical layer - relationships
   - Double-click on one of the tables in the logical layer to enter the physical layer.
   - In the physical layer, joins and unions.
+
+### Joins
+- Table A and Table B -> Table A is the left table and Table B is the right table
+- For joins, we need a key field available in both tables, and we need to decide on the type of join.
+  - Inner Join: Returns only the common rows that exist in both tables (i.e., where the join condition is satisfied in both the left and right tables).
+  - Left Join (or Left Outer Join): Returns all rows from the left table, and the matching rows from the right table. If there is no match, NULLs are returned for columns from the right table.
+  - Right Join (or Right Outer Join): Returns all rows from the right table, and the matching rows from the left table. If there is no match, NULLs are returned for columns from the left table.
+  - Full Join (or Full Outer Join): Returns all rows from both the left and right tables. If there’s no match, NULLs are returned for the non-matching side.
+
