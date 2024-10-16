@@ -69,3 +69,13 @@
 ### Relationship
 - Relationship stays in the logical layer.
 - After placing the first table in the white space, drag and drop the second table as well. It automatically forms a connection between the two tables.
+- Need to set up 3 things at the relationship level
+  - Key  
+  - Performance Options: Cardinality and Integrity
+    - Cardinality
+      - Many to Many - Full scan[results are good, too long to compute] [Default if not sure]
+      - Many to One - Correct relationship and results are good.
+      - One to Many - Results are not correct, unnecessary scans.
+      - One-to-One - Results are not correct, no unnecessary scans.
+ 
+- Data Profiling: The process of examining and investigating the data to understand the contents of the table.
