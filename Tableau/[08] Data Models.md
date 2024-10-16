@@ -62,4 +62,9 @@
 - No key is required for a Union; it simply concatenates the tables based on the order of the rows.
 - The column names and data types must match for the Union to be successful. If the column names differ, Tableau will still create the Union, but the mismatched columns will be filled with NULLs.
 - Same structure
-- For union, drag and drop the second table right below the first table to create a union.
+- For union, drag and drop the second table right below the first table to create a union. Two grey lines would appear, indicating the union was a success.
+- A new column would be created to tell us that each row belongs to which of the two tables we just merged.
+- New Union -> Wildcard [Automatic] -> Example: Orders* [* indicated nothing or anything after Orders]
+
+### Relationship
+- 
