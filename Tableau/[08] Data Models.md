@@ -55,9 +55,11 @@
   - Left Join (or Left Outer Join): Returns all rows from the left table, and the matching rows from the right table. If there is no match, NULLs are returned for columns from the right table.
   - Right Join (or Right Outer Join): Returns all rows from the right table, and the matching rows from the left table. If there is no match, NULLs are returned for columns from the left table.
   - Full Join (or Full Outer Join): Returns all rows from both the left and right tables. If there’s no match, NULLs are returned for the non-matching side.
-
+- For joins, drag and drop the second table in the physical layer on the white space
+  
 ### Union
 - A Union combines two or more tables by appending the rows of the right table beneath the left table, effectively stacking them vertically.
 - No key is required for a Union; it simply concatenates the tables based on the order of the rows.
 - The column names and data types must match for the Union to be successful. If the column names differ, Tableau will still create the Union, but the mismatched columns will be filled with NULLs.
 - Same structure
+- For union, drag and drop the second table right below the first table to create a union.
