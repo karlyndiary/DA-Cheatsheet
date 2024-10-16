@@ -36,7 +36,8 @@
   - Union
   - Data Blending
 
-- Visualization 
+- Visualization
+  - The visualizations can be built using the tables in the logical layer
 - Data Source
   - Logical Layer: Top-level layer that hides all the details in the physical layer. This is good when we have a ton of tables in the physical layer. Here the two physical tables can now be merged using a relationship.
   - Physical Layer: A few physical tables and we can combine them using joins or unions
