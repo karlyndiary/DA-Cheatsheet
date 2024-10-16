@@ -29,3 +29,15 @@
 | Represents **business events/transactions** | Represents **business entities** |
 | Rows are **numerous and large**     | Rows are **fewer and smaller**       |
 | Contains **quantitative data** (e.g., revenue) | Contains **qualitative data** (e.g., customer name) |
+
+- How to combine and connect the table?
+  - Relationship
+  - Joins
+  - Union
+  - Data Blending
+
+- Visualization 
+- Data Source
+  - Logical Layer: Top-level layer that hides all the details in the physical layer. This is good when we have a ton of tables in the physical layer. Here the two physical tables can now be merged using a relationship.
+  - Physical Layer: A few physical tables and we can combine them using joins or unions
+  
