@@ -77,5 +77,6 @@
       - Many to One - Correct relationship and results are good.
       - One to Many - Results are not correct, unnecessary scans.
       - One-to-One - Results are not correct, no unnecessary scans.
- 
+ - Integrity:
+   
 - Data Profiling: The process of examining and investigating the data to understand the contents of the table.
