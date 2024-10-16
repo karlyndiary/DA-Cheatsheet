@@ -43,4 +43,7 @@
   - Logical Layer: The top-level abstraction that hides the details of the physical layer. It’s beneficial when there are multiple tables in the physical layer. In this layer, tables are combined using relationships rather than traditional joins, enabling better flexibility and performance.
   - Physical Layer: This is where the actual physical tables reside. These tables can be combined using joins or unions, depending on the data integration needs.
 
-  
+  - All tables that are dragged and dropped onto the data source are in the logical layer.
+  - Logical layer - relationships
+  - Double-click on one of the tables in the logical layer to enter the physical layer.
+  - In the physical layer, joins and unions.
