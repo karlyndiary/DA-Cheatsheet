@@ -3,7 +3,7 @@
     - High-level representation of the data model without going into details on how the data model is implemented.
   - Logical Data Model:
     - Go into detail on how the data is structured and organized.
-    - We define each attribute of each entity and it includes constraints as well and more.
+    - We define each attribute of each entity and it includes constraints as well as more.
     - This data model is used by database designers and developers as a blueprint for implementation
   - Physical Data Model
     - This represents the actual representation of the data model.
@@ -21,3 +21,11 @@
       - The fact table in the middle is surrounded by dim tables, the dimensions here are broken down into subdimensions.
       - More Complex
       - Large Dataset
+
+| Fact Table                         | Dimension Table                      |
+|-------------------------------------|--------------------------------------|
+| Stores **measurable metrics**       | Stores **descriptive attributes**    |
+| Contains **foreign keys** to dimensions | Contains the **primary keys**      |
+| Represents **business events/transactions** | Represents **business entities** |
+| Rows are **numerous and large**     | Rows are **fewer and smaller**       |
+| Contains **quantitative data** (e.g., revenue) | Contains **qualitative data** (e.g., customer name) |
