@@ -92,3 +92,7 @@
 - Primary table -> Denoted in Blue
 - Secondary table -> Denoted in Orange
 - Broken Link chain -> Primary key not activated. To activate it, click on it, and to deactivate it, again click on it.
+
+### Difference between Joins and Unions
+- Join combines Fields
+- Union combines Rows
