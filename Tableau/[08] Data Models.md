@@ -67,4 +67,5 @@
 - New Union -> Wildcard [Automatic] -> Example: Orders* [* indicated nothing or anything after Orders]
 
 ### Relationship
-- 
+- Relationship stays in the logical layer.
+- After placing the first table in the white space, drag and drop the second table as well. It automatically forms a connection between the two tables.
