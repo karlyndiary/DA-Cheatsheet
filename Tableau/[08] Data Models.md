@@ -96,3 +96,7 @@
 ### Difference between Joins and Unions
 - Join combines Fields
 - Union combines Rows
+
+### Difference between Joins and Data Blending
+- Joins: First combine then aggregate
+- Data Blending: First aggregate then combine
