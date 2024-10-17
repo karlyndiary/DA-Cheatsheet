@@ -112,3 +112,14 @@
 ### Difference between Joins and Relationship
 - Joins
 - Relationship
+
+### Difference between Union, Joins, Relationship and Data Blending
+|                | **UNION**       | **JOINS**       | **RELATIONSHIP**  | **BLENDING**     |
+|----------------|-----------------|-----------------|-------------------|------------------|
+| **Layer**      | Physical Layer   | Physical Layer  | Logical Layer     | Visualization Level |
+| **Multi-Data Sources** | ❌       | ❌              | ❌                | ✅               |
+| **Merge Tables?** | ✅            | ✅              | ❌                | ❌               |
+| **Flexibility** | Static          | Static          | Flexible          | Very Flexible (Page by Page) |
+| **Join Types**  | n/a             | Inner, Left, Right, Full | All   | Left             |
+| **Rank**       | n/a             | 3               | 1 (Default)       | 2                |
+
