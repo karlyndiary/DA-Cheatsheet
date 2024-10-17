@@ -13,8 +13,12 @@ After loading the data to the data source, tableau will now start analysing the 
       - Changing the date format in the Data pane -> drop-down -> Default Properties -> Date format -> Predefined or custom. This applies to all the worksheets.
     - Boolean [True or False]
   - Roles
-    - Geographic Roles
-    - Image Roles
+    - Geographic Roles: City, Country, Pin Code
+    - Image Roles:
+      - png, jpeg, jpg
+      - URL should begin with http or https
+      - Image file must be > 128kb
+      - Max no of images in each field will be 500
   - Advanced Data Types
     - Groups
     - Cluster Groups
