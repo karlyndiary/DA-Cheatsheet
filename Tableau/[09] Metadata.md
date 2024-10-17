@@ -5,8 +5,9 @@ After loading the data to the data source, tableau will now start analysing the 
     - Decimal Numbers
     - String [Text]
     - Date
-    - Date & Time
         ![image](https://github.com/user-attachments/assets/0fd76827-7d70-4a2b-9d10-b49440444be3)
+    - Date & Time
+        ![image](https://github.com/user-attachments/assets/f2b505f5-ab55-4cf1-b583-bf93d0f2e5cf)
     - Boolean [True or False]
   - Roles
     - Geographic Roles
