@@ -1,1 +1,11 @@
-
+- Data Types [Operation Calculation]
+  - Numbers
+  - String
+  - Date
+  - Boolean 
+- Role I
+  - Dimension: Level of Detail 
+  - Measure: Aggregation
+- Role II
+  - Discrete [Separate Values]
+  - Continuous [Connected Values]
