@@ -108,3 +108,7 @@
 - Data Blending: First aggregate then combine
   - * means multiple values
   ![2024-10-17 - 11_13_19 - Course_ Tableau Ultimate Course A-Z_ From Zero to Hero (2024) _ Udemy](https://github.com/user-attachments/assets/56e519b4-cf7f-437f-9754-ad7401ba0779)
+
+### Difference between Joins and Relationship
+- Joins
+- Relationship
