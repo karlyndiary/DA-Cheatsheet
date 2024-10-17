@@ -78,7 +78,12 @@
       - One to Many - Results are not correct, unnecessary scans.
       - One-to-One - Results are not correct, no unnecessary scans.
  - Integrity:
-   ![2024-10-16 - 16_50_38 - Course_ Tableau Ultimate Course A-Z_ From Zero to Hero (2024) _ Udemy](https://github.com/user-attachments/assets/82402522-46c3-4adf-acc3-6ff5171c37d5)
+  | Left Table           | Right Table          | Join Types      |
+  |----------------------|----------------------|-----------------|
+  | Some Record Match    | Some Record Match    | Inner Join, Left Join, Right Join, Full Join      |
+  | All Record Match     | Some Record Match    | Inner Join, Right Join       |
+  | Some Record Match    | All Record Match     | Inner Join, Left Join      |
+  | All Record Match     | All Record Match     | Inner Join       |
    
 - Data Profiling: The process of examining and investigating the data to understand the contents of the table.
 
