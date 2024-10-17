@@ -7,7 +7,14 @@ After loading the data to the data source, tableau will now start analysing the 
     - Date
     - Date & Time
     - Boolean [True or False]
-  - 
+  - Roles
+    - Geographic Roles
+    - Image Roles
+  - Advanced Data Types
+    - Groups
+    - Cluster Groups
+    - Bins
+    - Sets
 - Role I
   - Dimension: Level of Detail 
   - Measure: Aggregation
