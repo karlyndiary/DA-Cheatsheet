@@ -1,3 +1,4 @@
+After loading the data to the data source, tableau will now start analysing the content of the data to make assumptions about the datatype and roles.
 - Data Types [Operation Calculation]
   - Numbers
   - String
