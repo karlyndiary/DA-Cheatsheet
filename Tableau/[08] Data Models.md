@@ -78,7 +78,8 @@
       - One to Many - Results are not correct, unnecessary scans.
       - One-to-One - Results are not correct, no unnecessary scans.
  - Integrity:
-  | Left Table           | Right Table          | Join Types      |
+   
+| Left Table           | Right Table          | Join Types      |
   |----------------------|----------------------|-----------------|
   | Some Record Match    | Some Record Match    | Inner Join, Left Join, Right Join, Full Join      |
   | All Record Match     | Some Record Match    | Inner Join, Right Join       |
