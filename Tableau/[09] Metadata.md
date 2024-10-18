@@ -27,7 +27,10 @@ After loading the data to the data source, tableau will now start analysing the 
 - Role I
   - Dimension: Level of Detail 
   - Measure: Aggregation
-- Role II
+  - OLAP: Online Analytical Processing
+    - The core concept is the multidimensional OLAP online analytical processing. So the concept says if you want to answer the business questions or do data analysis, first, we have to build the data model that has the shape of a cube with multidimensions.
+    - First we have the dimensions of the cube and the second informations we have those cells. Those cells can store informations like data numbers and we call it measures. So each cube has two informations the dimensions and the cells the measures.
+- Role II+
   - Discrete [Separate Values]
   - Continuous [Connected Values]
 
