@@ -30,6 +30,7 @@ After loading the data to the data source, tableau will now start analysing the 
   - OLAP: Online Analytical Processing
     - The core concept is the multidimensional OLAP online analytical processing. So the concept says if you want to answer the business questions or do data analysis, first, we have to build the data model that has the shape of a cube with multidimensions.
     - First we have the dimensions of the cube and the second informations we have those cells. Those cells can store informations like data numbers and we call it measures. So each cube has two informations the dimensions and the cells the measures.
+    - Example: We have the cube of sales and it has three dimensions. The first dimension is the locations. And inside the locations we have three members USA, France and Germany. Those three values are the member of the dimension location. And we have another dimension called time. And it has three members in the dimension January, February and March. And the third dimension we have the categories. And now inside the sales of the cube we have the measure sales. So now our cube is ready with the dimensions and measure.
 - Role II+
   - Discrete [Separate Values]
   - Continuous [Connected Values]
