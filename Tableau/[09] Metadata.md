@@ -51,7 +51,9 @@ After loading the data to the data source, tableau will now start analysing the 
 
 - Role II
   - Discrete [Separate Values] [Blue]
+    - 1 to 10 -> 10 values
   - Continuous [Connected Values] [Green]
+    - 1 to 2 -> more than 2 values, decimals are counted in. 
 
 - The primary key should be of the same data type. [Tableau would indicate if the datatypes don't match]
 - You can change the data type on the data source page or the worksheet page.
