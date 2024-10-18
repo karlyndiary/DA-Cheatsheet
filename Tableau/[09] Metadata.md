@@ -25,16 +25,23 @@ After loading the data to the data source, tableau will now start analysing the 
     - Bins
     - Sets
 - Role I
-  - Dimension: Level of Detail 
+  - Dimension: Level of Detail
+    - Dimensions contain qualitative or categorial values
+    - Example: Product Name, Product Category, Location
+    - Use of Dimensions: Categorize, Filtering, Level of Details
   - Measure: Aggregation
+    - Contains Quantitative and numerical values
+    - Example: Sales, Profit, Quantity
+    - Measures can be aggregated
+  - All fields that can be aggregated are a measure otherwise it's a dimension.
   - OLAP: Online Analytical Processing
     - The core concept is the multidimensional OLAP online analytical processing. So the concept says if you want to answer the business questions or do data analysis, first, we have to build the data model that has the shape of a cube with multidimensions.
     - First we have the dimensions of the cube and the second informations we have those cells. Those cells can store informations like data numbers and we call it measures. So each cube has two informations the dimensions and the cells the measures.
     - Example: We have the cube of sales and it has three dimensions. The first dimension is the locations. And inside the locations we have three members USA, France and Germany. Those three values are the member of the dimension location. And we have another dimension called time. And it has three members in the dimension January, February and March. And the third dimension we have the categories. And now inside the sales of the cube we have the measure sales. So now our cube is ready with the dimensions and measure.
     - For example find the total sales in USA. So what can happen? We can select the dimension location and filter the dimension to have only the member USA. This operation in the cube we call it slicing the cube. And then we're going to aggregate the measure and we will get the total sales of 120. And if we have cube, we can do multiple operations like slicing, dicing, roll up, drill down and pivot.
 - Role II+
-  - Discrete [Separate Values]
-  - Continuous [Connected Values]
+  - Discrete [Separate Values] [Blue]
+  - Continuous [Connected Values] [Green]
 
 - The primary key should be of the same data type. [Tableau would indicate if the datatypes don't match]
 - You can change the data type on the data source page or the worksheet page.
