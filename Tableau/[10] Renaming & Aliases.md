@@ -20,3 +20,11 @@ Renaming Fields
 - Reset Names
   - Right click -> Reset name
 - Discrete Renaming: double click the pill -> //Orders[Order ID] -> Shift Enter -> Now the visualization have the name Orders
+
+Renaming Tables
+- Rename in Worksheet
+  - 1st method: Right click -> Rename
+  - 2nd method: Click on the field -> F2 -> Rename
+  - 3rd method: Click and hold -> Rename
+- Rename in the Data Source
+  - 
