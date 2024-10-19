@@ -29,3 +29,10 @@ Renaming Tables
 - Rename in the Data Source
   - 1st method: Right-click on the table in the data model -> Rename
   - 2nd method: Rename it in the Metadata section
+
+Aliases
+- Works only on the worksheet page
+  - Right-click on the field -> Aliases -> Edit the alias -> click ok
+  - To reset alias -> Aliases -> Clear Alias
+  - To create an alias from the view -> Right-click on the value -> Edit Alias
+- Can only create aliases globally
