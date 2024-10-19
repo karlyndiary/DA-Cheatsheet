@@ -27,4 +27,5 @@ Renaming Tables
   - 2nd method: Click on the field -> F2 -> Rename
   - 3rd method: Click and hold -> Rename
 - Rename in the Data Source
-  - 
+  - 1st method: Right-click on the table in the data model -> Rename
+  - 2nd method: Rename it in the Metadata section
