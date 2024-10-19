@@ -1,1 +1,5 @@
-
+- Hierarchies
+  - Level 0 - All - Root Node
+  - Level 1 - Country
+  - Level 2 - City
+  - Level 3 - Pin Code - Leaf Node
