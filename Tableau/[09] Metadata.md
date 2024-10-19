@@ -58,6 +58,7 @@ After loading the data to the data source, tableau will now start analysing the 
 | **Filter Type**                       | Category Filter (Distinct Values)                | Date Filter (Range Values)                      |
 | **Sorting Options**                   | Many options: Ascending, Descending, Data Source Order, Alphabetic, Field, Manual, Nested | Limited options: Ascending, Descending           |
 | **Purpose**                           | Deep Dive Analysis                               | Big Picture Analysis                            |
+| **View**                           | Header                               | Continuous range axis                            |
 | **Recommended Chart Type**            | Bar Chart                                        | Line Chart                                      |
 
 - The primary key should be of the same data type. [Tableau would indicate if the datatypes don't match]
