@@ -50,12 +50,15 @@ After loading the data to the data source, tableau will now start analysing the 
 | **Granularity**           | LOD: Level of Details             | Determine Quantity being Measured   |
 
 - Role II
-  - Discrete [Separate Values] [Blue]
-    - 1 to 10 -> 10 values
-    - Filter - Category -> Distinct Values
-  - Continuous [Connected Values] [Green]
-    - 1 to 2 -> more than 2 values, decimals are counted in.
-    - Filter - Date -> Range Values
+
+| **Category**                          | **Discrete [Blue]**                              | **Continuous [Green]**                          |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------|
+| **Value Type**                        | Disconnected Values                              | Connected Values                                |
+| **Example**                           | 1 to 10 (10 distinct values)                     | 1 to 2 (continuous, decimals included)          |
+| **Filter Type**                       | Category Filter (Distinct Values)                | Date Filter (Range Values)                      |
+| **Sorting Options**                   | Many options: Ascending, Descending, Data Source Order, Alphabetic, Field, Manual, Nested | Limited options: Ascending, Descending           |
+| **Purpose**                           | Deep Dive Analysis                               | Big Picture Analysis                            |
+| **Recommended Chart Type**            | Bar Chart                                        | Line Chart                                      |
 
 - The primary key should be of the same data type. [Tableau would indicate if the datatypes don't match]
 - You can change the data type on the data source page or the worksheet page.
