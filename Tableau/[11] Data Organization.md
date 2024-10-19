@@ -20,3 +20,14 @@
     - L5: Hour
     - L6: Minute
     - L7: Second
+
+- Groups
+  - Groups combine similar related values into higher-level categories, creating new dimension for data analysis.
+  - How to create groups
+    - In the Data Pane
+      - Select the field -> Right Click -> Create -> Group -> Rename the field -> Select the similar distinct values and click on group -> Rename the group
+    - In the View
+      - Create the visualization -> Cluster -> Select the data points -> Right click -> Group
+      - The new group will be created in the data pane, right-click to edit the name of the group in the group made.
+- Cluster Groups
+- Sets
