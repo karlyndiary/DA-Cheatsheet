@@ -1,3 +1,5 @@
+Naming Conventions
+
 | Case Type   | Separator      | Example     |Application |
 |-------------|----------------|-------------|-----------------|
 | Snake Case  | Underscore "_"  | first_name  |Python, PHP, Ruby|
