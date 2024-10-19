@@ -29,5 +29,8 @@
     - In the View
       - Create the visualization -> Cluster -> Select the data points -> Right click -> Group
       - The new group will be created in the data pane, right-click to edit the name of the group in the group made.
+    - Groups combine similar related values into higher-level categories.
+    - Groups are created using dimensions only.
+    - Groups simplify data by categorizing data points into clear, relevant categories.
 - Cluster Groups
 - Sets
