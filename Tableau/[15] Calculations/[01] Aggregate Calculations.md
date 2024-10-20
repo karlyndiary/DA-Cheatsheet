@@ -9,7 +9,7 @@
 - Comment line -> //
 
 - Colors
-  - Logical Expression:  Black
+  - Logical Expression and Operators:  Black
   - Parameter:  Purple
   - Functions:  Blue
   - Dimensions and measures: Orange
