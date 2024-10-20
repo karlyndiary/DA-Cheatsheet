@@ -29,7 +29,7 @@
 
 - LOD Expressions
   - Control LOD = {Fixed category: sum[Revenue]}
-    - Category A has 3 products of revenue, 40, 60, and 20 -> since its a fixed category -> it will sum these up -> 120
+  - Category A has 3 products of revenue, 40, 60, and 20 -> since its a fixed category -> it will sum these up -> 120
 
 - Table Calculations
   - 
