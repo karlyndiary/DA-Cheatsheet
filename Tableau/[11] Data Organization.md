@@ -33,4 +33,9 @@
     - Groups are created using dimensions only.
     - Groups simplify data by categorizing data points into clear, relevant categories.
 - Cluster Groups
+  - A statistical technique is used to group similar data points.
+  - Cluster Algorithms: K-means [Tableau pick], Hierarchical and Density-Based.
+  - How it works?
+    - We're going to go with three clusters. And after that, the algorithm going to pick three points. And we call them centroids. And then it's going to assign the data points to the nearest centroid. So for this data point, it can belong to the green cluster. And then it's going to go to the next data point and calculate the length between it and the three centroids. And then it can assign it to the nearest centroid for this is going to be the red cluster. So the algorithm can do that for all data points and assign them to the closest centroid. So in the end, we will have three clusters green red and blue.
 - Sets
+  - 
