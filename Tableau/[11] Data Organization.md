@@ -50,3 +50,8 @@
       - Inner: In both sets
       - Left: member in set1 but not member in set2
       - Right: member in set2 but not member in set1
+  - How to create sets?
+    - Fixed: Right-click on field -> Create -> Sets [Manual Selection]
+    - Dynamic Set [Condition]: Right-click on field -> Create -> Sets -> Condition -> By field -> Enter the condition and click on ok
+    - Dynamic Set [Rank]: Right-click on field -> Create -> Sets -> Top -> By field -> Enter the top value or bottom value and click on ok
+    - Combined set: Right-click on the created set -> Combined sets -> Give it a name -> Select the sets from both dropdowns -> Opt one of the four options -> click on ok
