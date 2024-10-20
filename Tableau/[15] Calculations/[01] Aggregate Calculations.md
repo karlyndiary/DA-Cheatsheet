@@ -17,3 +17,12 @@
 
 - Nested Calculations
   - The result of one calculation used as an input in another calculation
+
+- Row Level Calculations:
+  - Processes rows individually
+  - Doesn't aggregate data
+  - Stores data in the data source
+  - Example: Price * Quantity = Revenue
+  - Aggregation will happen in the visualization view, sum[Revenue]
+
+- 
