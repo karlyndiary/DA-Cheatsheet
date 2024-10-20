@@ -23,8 +23,13 @@
   - Doesn't aggregate data
   - Stores data in the data source
   - Example: Price * Quantity = Revenue
-  - Aggregation will happen in the visualization view, sum[Revenue]
-  - Control LOD = {Fixed category: sum[Revenue]}
-    - Category A has 3 products of revenue, 40, 60, 20 -> since its fixed category -> it will sum of these up -> 120
 
-- 
+- Aggregate Calculations:
+  - Aggregation will happen in the visualization view, sum[Revenue]
+
+- LOD Expressions
+  - Control LOD = {Fixed category: sum[Revenue]}
+    - Category A has 3 products of revenue, 40, 60, and 20 -> since its a fixed category -> it will sum these up -> 120
+
+- Table Calculations
+  - 
