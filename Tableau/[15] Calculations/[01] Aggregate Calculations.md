@@ -24,5 +24,7 @@
   - Stores data in the data source
   - Example: Price * Quantity = Revenue
   - Aggregation will happen in the visualization view, sum[Revenue]
+  - Control LOD = {Fixed category: sum[Revenue]}
+    - Category A has 3 products of revenue, 40, 60, 20 -> since its fixed category -> it will sum of these up -> 120
 
 - 
