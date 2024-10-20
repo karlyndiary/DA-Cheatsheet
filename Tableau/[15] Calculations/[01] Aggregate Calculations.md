@@ -14,3 +14,6 @@
   - Functions:  Blue
   - Dimensions and measures: Orange
   - Comments: Grey
+
+- Nested Calculations
+  - The result of one calculation used as an input in another calculation
