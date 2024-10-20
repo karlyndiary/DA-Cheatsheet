@@ -4,4 +4,5 @@
   - Analysis Tab
   - Right-click on the field -> Calculated Field
 
--
+- The calculated field created under the analysis tab is global
+- Calculated field - locally - double click on the field in the view -> Upper([First Name])
