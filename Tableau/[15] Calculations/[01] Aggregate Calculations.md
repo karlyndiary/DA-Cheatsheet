@@ -6,3 +6,11 @@
 
 - The calculated field created under the analysis tab is global
 - Calculated field - locally - double click on the field in the view -> Upper([First Name])
+- Comment line -> //
+
+- Colors
+  - Logical Expression:  Black
+  - Parameter:  Purple
+  - Functions:  Blue
+  - Dimensions and measures: Orange
+  - Comments: Grey
