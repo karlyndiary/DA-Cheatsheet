@@ -55,5 +55,7 @@
     - Dynamic Set [Condition]: Right-click on field -> Create -> Sets -> Condition -> By field -> Enter the condition and click on ok
     - Dynamic Set [Rank]: Right-click on field -> Create -> Sets -> Top -> By field -> Enter the top value or bottom value and click on ok
     - Combined set: Right-click on the created set -> Combined sets -> Give it a name -> Select the sets from both dropdowns -> Opt one of the four options -> Click on ok
+  - Sets Use Case
+    - To showcase only specific data points
 - Bins & Histogram
   - 
