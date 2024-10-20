@@ -45,4 +45,8 @@
   - Methods to create sets
     - Fixed set [Manual Selection]
     - Dynamic set [Condition, Rank]
-    - Combined set [Fill | All members, Inner | Shared members, Left | set1 except shared members, Right | set2 except shared members]
+    - Combined set
+      - Fill: In at least one set
+      - Inner: In both sets
+      - Left: member in set1 but not member in set2
+      - Right: member in set2 but not member in set1
