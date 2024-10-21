@@ -23,13 +23,36 @@
   - Doesn't aggregate data
   - Stores data in the data source
   - Example: Price * Quantity = Revenue
+  - Number Functions: Abs, Floor
+  - String Functions: Trim, Split
+  - Date Functions: Datename, Dateadd
+  - Null Functions: zn, isnull
+  - Logical Functions: if-else, case when
 
 - Aggregate Calculations:
   - Aggregation will happen in the visualization view, sum[Revenue]
+  - Max, Min, Avg, Count, Count Distinct, Sum, Attribute
 
-- LOD Expressions
+- Level of Details Expressions
+  - LOD Expressions will happen in the visualization view
   - Control LOD = {Fixed category: sum[Revenue]}
-  - Category A has 3 products of revenue, 40, 60, and 20 -> since its a fixed category -> it will sum these up -> 120
+  - Category A has 3 products of revenue, 40, 60, and 20 -> since it's a fixed category -> it will sum these up -> 120
+  - Fixed, Include, Exclude
 
 - Table Calculations
-  - 
+  - Table Calculations will happen in the visualization view
+  - Example: Rank(sum(revenue))
+  - Returns rank to each row
+  - Data will not be stored in the data source
+  - Running, Window, Rank, First, Last, Index, Lookup
+  - The values calculated depend on the view
+
+- Order of computation
+  - Row Level Calculation
+  - Aggregate Calculations
+  - Table Calculations
+
+- How do you choose the right calculations?
+  - Do you have to aggregate data -> No -> Row Level Calculation
+  - Do you have to aggregate data -> Yes -> Is all the required data already on the viz? -> Yes -> Table Calculation
+  - Do you have to aggregate data -> Yes -> Is all the required data already on the viz? -> No -> Does the LOD in the viz match the question -> Yes -> Aggregate Calculation else LOD Calculation
