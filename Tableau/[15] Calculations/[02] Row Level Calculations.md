@@ -24,11 +24,20 @@
   - Mid: Mid(Canon-456-cer5, start, length) => Mid(Canon-456-cer5, 7, 3) => 456
 
 - Search for patterns
-  - Startwith:
-  - Endwith:
-  - Contains:
-  - Find:
-  - Findnth:
+  - Startwith: Returns True or False.
+    - Startwith(string, substring)
+    - startwith(Canon-456-cer5, "Canon") => True
+    - startwith(Canon-456-cer5, "non") => False
+  - Endwith: Returns True or False.
+    - Endwith(string, substring)
+    - endwith(Canon-456-cer5, "cer5") => True
+    - endwith(Canon-456-cer5, "cer") => False
+  - Contains: Returns True or False.
+    - Contains(string, substring)
+    - Contains(Canon-456-cer5, "-") => returns True
+    - Contains(Canon-456-cer5, "54") => returns False
+  - Find: Returns the position. Contains(Canon-456-cer5, "-") => returns 6 
+  - Findnth: Returns the position.
 
 - Combine and split
   - Concat
