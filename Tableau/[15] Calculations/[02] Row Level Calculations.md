@@ -19,9 +19,9 @@
   - Trim: Removes leading and trailing spaces. Trim( Product ) => Product
 
 - Extract
-  - Left
-  - Right
-  - Mid
+  - Left: Left(Canon-456-cer5, 5) => Canon
+  - Right: Right(Canon-456-cer5, 4) => cer5
+  - Mid: Mid(Canon-456-cer5, start, length) => Mid(Canon-456-cer5, 7, 3) => 456
 
 - Search for patterns
   - Startwith:
