@@ -7,7 +7,7 @@
 - Round: Round the number to its nearest integer. Round(1.8) => 2
   - Round([Sales]), Round([Sales], 2)
 
-# String Function
+### String Function
 
 - Change Case
   - Upper: Uppercase
