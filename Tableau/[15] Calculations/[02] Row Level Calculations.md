@@ -36,9 +36,11 @@
     - Contains(string, substring)
     - Contains(Canon-456-cer5, "-") => returns True
     - Contains(Canon-456-cer5, "54") => returns False
-  - Find: Returns the position. Contains(Canon-456-cer5, "-") => returns 6 
-  - Findnth: Returns the position.
-
+  - Find: Returns the first position.
+    - Find(Canon-456-cer5, "-") => returns 6
+  - Findnth: Returns the nth position.
+    - Findnth(string, substring, occurrence) 
+    - Findnth(Canon-456-cer5, "-", 7) => returns 10
 - Combine and split
   - Concat
   - Split
