@@ -9,4 +9,30 @@
 
 # String Function
 
-- 
+- Change Case
+  - Upper: Uppercase
+  - Lower: Lowercase
+
+- Remove Spaces
+  - LTrim:
+  - RTrim:
+  - Trim:
+
+- Extract
+  - Left
+  - Right
+  - Mid
+
+- Search for patterns
+  - Startwith:
+  - Endwith:
+  - Contains:
+  - Find:
+  - Findnth:
+
+- Combine and split
+  - Concat
+  - Split
+
+- Replace
+  - Replace
