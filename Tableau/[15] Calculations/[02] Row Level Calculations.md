@@ -10,13 +10,13 @@
 ### String Function
 
 - Change Case
-  - Upper: Uppercase
-  - Lower: Lowercase
+  - Upper: Uppercase. Upper(Name) => LOLA. Good for Codes
+  - Lower: Lowercase. Lower(Name) => lola. Good for long sentences.
 
 - Remove Spaces
-  - LTrim:
-  - RTrim:
-  - Trim:
+  - LTrim: Removes leading spaces. LTrim( Product) => Product
+  - RTrim: Removes trailing spaces. RTrim(Product ) => Product
+  - Trim: Removes leading and trailing spaces. Trim( Product ) => Product
 
 - Extract
   - Left
