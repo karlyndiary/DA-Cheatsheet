@@ -58,11 +58,18 @@
 - Extract Datepart
   - Datepart: Global change -> Calculated field. Local change -> Format
     - Datepart(date_part, date) => Returns a number
+    - DATEPART("year", [Order Date])
+    - DATEPART("month", [Order Date])
   - Datename: Datename(date_part, date) => Returns a string
-  - Datetranu
-  - Day: Day(date) => Returns a number
-  - Month: Month(date) => Returns a number
-  - Year: Year(date) => Returns a number
+    - DATENAME("month", [Order Date])
+    - LEFT(DATENAME("month",[Order Date]), 3) => Returns the month name with just 3 letters
+  - Datetrunc: Datetrunc(date_part, date) => Returns a date and time
+    - DATETRUNC("month", [Order Date])
+    - Right-click -> Change datatype to date to get rid of time.
+  - Day: Day([Order Date]=> Returns a number
+  - Month: Month([Order Date]) => Returns a number
+  - Quarter: QUARTER([Order Date]) => Returns a number
+  - Year: Year([Order Date]) => Returns a number
 - Add Subtract
   - DateAdd
   - Datediff
