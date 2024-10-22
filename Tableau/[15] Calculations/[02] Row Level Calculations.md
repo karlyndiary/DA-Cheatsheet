@@ -71,8 +71,23 @@
   - Quarter: QUARTER([Order Date]) => Returns a number
   - Year: Year([Order Date]) => Returns a number
 - Add Subtract
-  - DateAdd
-  - Datediff
-- Current Date & Time
-  - Today
-  - Now
+  - DateAdd: Dateadd(date_part, interval, date) => Returns a date
+    - DATEADD("year", 1, [Order Date]) => Increments a year
+  - Datediff: Subtracts two dates.
+    - DateDiff(Date_part, start_data, end_date) => Returns a number
+    - DATEDIFF("day", [Order Date], [Shipping Date])
+- Current Date & Time: Returns current date and time
+  - Today: today()
+  - Now: now()
+
+- Null Functions
+  - The main purpose of null functions is to handle missing values
+  - Calculation Accuracy
+  - Data Quality and completeness
+  - ZN: Replaces nulls with 0. ZN([Sales])
+  - IFNULL: Replaces null with a specific value.
+    - IFNULL([Sales], 0)
+    - IFNULL([Country], "N/A")
+  - ISNULL: Replaces null with.
+    - Returns true if the value is null else false
+    - ISNULL([Country])
