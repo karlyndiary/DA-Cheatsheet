@@ -92,3 +92,6 @@
   - ISNULL: Replaces null with.
     - Returns true if the value is null else false
     - ISNULL([Country])
+
+- Logical Functions
+  - 
