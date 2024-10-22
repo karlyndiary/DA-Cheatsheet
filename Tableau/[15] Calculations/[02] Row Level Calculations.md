@@ -52,3 +52,20 @@
 - Replace
   - Replace(string, substring, replacement)
   - If no substring is found, it returns null
+
+### Date Functions
+
+- Extract Datepart
+  - Datepart: Global change -> Calculated field. Local change -> Format
+    - Datepart(date_part, date) => Returns a number
+  - Datename: Datename(date_part, date) => Returns a string
+  - Datetranu
+  - Day: Day(date) => Returns a number
+  - Month: Month(date) => Returns a number
+  - Year: Year(date) => Returns a number
+- Add Subtract
+  - DateAdd
+  - Datediff
+- Current Date & Time
+  - Today
+  - Now
