@@ -84,7 +84,8 @@
   - The main purpose of null functions is to handle missing values
   - Calculation Accuracy
   - Data Quality and completeness
-  - ZN: Replaces nulls with 0. ZN([Sales])
+  - ZN: Replaces nulls with 0.
+    - ZN([Sales])
   - IFNULL: Replaces null with a specific value.
     - IFNULL([Sales], 0)
     - IFNULL([Country], "N/A")
