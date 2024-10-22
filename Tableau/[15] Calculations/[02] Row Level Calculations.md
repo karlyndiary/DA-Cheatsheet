@@ -42,8 +42,13 @@
     - Findnth(string, substring, occurrence) 
     - Findnth(Canon-456-cer5, "-", 7) => returns 10
 - Combine and split
-  - Concat
-  - Split
+  - Concat: [First Name] + " " + [Last Name]
+  - Split: split(string, delimiter, token number). The token number is the part of the section in the string.
+    - 3 Methods
+      - Calculated Field: SPLIT([Customer Email], "_", 1)
+      - Automatic Split: Right-click on the field -> Transform -> Split
+      - Customized Split: Right-click on the field -> Transform -> Custom Split
 
 - Replace
-  - Replace
+  - Replace(string, substring, replacement)
+  - If no substring is found, it returns null
