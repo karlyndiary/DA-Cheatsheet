@@ -101,12 +101,23 @@
       - If [Sales] > 1000 THEN 'High' Else 'Low' END
     - ElseIf:
       - If [Sales] > 1000 THEN 'High' ElseIf [Sales] > 500 THEN 'Medium' Else 'Low' END
+      - KPI Colors
+      - IF SUM([Sales]) > 200000 THEN 'green'
+        ELSEIF SUM([Sales]) > 100000 THEN 'orange'
+        ELSEIF SUM([Sales]) <= 100000 THEN 'red'
+        END
     - IIF:
       - IIF([Sales] > 1000, 'High', 'Low')
     - Case When:
       - Case [Country] When "Germany" Then "DE" When "Franee" Then "FR" When "United States" Then "US" ELSE "Other" END
       - Accepts only string values
-  - Logical Operators
+  - Logical Operators: Returns True or False. Used to combine multiple conditions
     - AND:
+      - Both the values should be true
+      - If [Sales] > 1000 AND [Country] = 'Germany' Then 'High' END
     - OR:
-    - NOT: 
+      - One of the values should be true
+      - If [Sales] > 1000 OR [Country] = 'Germany' Then 'High' END
+    - NOT:
+      - It returns a reverse value. If it's true then it returns false.
+      - IF NOT [Country] = 'Germany' THEN [Sales] END
