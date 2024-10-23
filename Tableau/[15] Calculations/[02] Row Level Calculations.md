@@ -102,7 +102,7 @@
     - ElseIf:
       - If [Sales] > 1000 THEN 'High' ElseIf [Sales] > 500 THEN 'Medium' Else 'Low' END
     - IIF:
-      - 
+      - IIF([Sales] > 1000, 'High', 'Low')
     - Case When:
       - Case [Country] When "Germany" Then "DE" When "Franee" Then "FR" When "United States" Then "US" ELSE "Other" END 
   - Logical Operators
