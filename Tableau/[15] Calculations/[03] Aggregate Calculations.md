@@ -1,9 +1,10 @@
 - Aggregate Measure
-  - Sum:
-  - Avg:
-  - Count:
-  - CountD:
-  - Max:
-  - Min:
+  - Aggregate the data at the visualization level of details (VIZ LOD)
+  - SUM: Returns the total sum of all values. SUM()
+  - AVG: Returns the average of all values. AVG()
+  - COUNT: Counts the number of values. COUNT()
+  - COUNTD: Counts the number of unique values. COUNTD()
+  - MAX: Returns the maximum value. MAX()
+  - MIN: Returns the minimum value. MIN()
 - Aggregate Dimension
   - Attr: 
