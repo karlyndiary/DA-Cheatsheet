@@ -104,7 +104,8 @@
     - IIF:
       - IIF([Sales] > 1000, 'High', 'Low')
     - Case When:
-      - Case [Country] When "Germany" Then "DE" When "Franee" Then "FR" When "United States" Then "US" ELSE "Other" END 
+      - Case [Country] When "Germany" Then "DE" When "Franee" Then "FR" When "United States" Then "US" ELSE "Other" END
+      - Accepts only string values
   - Logical Operators
     - AND:
     - OR:
