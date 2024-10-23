@@ -1,5 +1,8 @@
 - Aggregate Measure
   - Aggregate the data at the visualization level of details (VIZ LOD)
+  - Global: Calculated Field
+  - Local: Text under Marks
+  - Executed on the fly and gets calculated when it is dropped on the view.
   - SUM: Returns the total sum of all values. SUM()
   - AVG: Returns the average of all values. AVG()
   - COUNT: Counts the number of values. COUNT()
