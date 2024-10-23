@@ -1,1 +1,9 @@
-
+- Aggregate Measure
+  - Sum:
+  - Avg:
+  - Count:
+  - CountD:
+  - Max:
+  - Min:
+- Aggregate Dimension
+  - Attr: 
