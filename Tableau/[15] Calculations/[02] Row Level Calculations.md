@@ -94,4 +94,18 @@
     - ISNULL([Country])
 
 - Logical Functions
-  - 
+  - Conditional Operations
+    - If:
+      - If [Sales] > 1000 THEN 'High' END [Else it will return null]
+    - Else:
+      - If [Sales] > 1000 THEN 'High' Else 'Low' END
+    - ElseIf:
+      - If [Sales] > 1000 THEN 'High' ElseIf [Sales] > 500 THEN 'Medium' Else 'Low' END
+    - IIF:
+      - 
+    - Case When:
+      - Case [Country] When "Germany" Then "DE" When "Franee" Then "FR" When "United States" Then "US" ELSE "Other" END 
+  - Logical Operators
+    - AND:
+    - OR:
+    - NOT: 
