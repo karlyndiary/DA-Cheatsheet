@@ -18,3 +18,5 @@
     - If there are multiple values, then it returns Asterisk*
     - Can identify the relationship of the product to customers.
       - Example: P1 - John, P2 - *, P3 - *, P4 - Mia -> P1 and P4 have one customer each whole P2 and P3 have multiple customers.
+    - Use Case
+      - Tooltip: Attr(Postal code) -> Add this to detail mark.
