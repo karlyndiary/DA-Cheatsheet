@@ -1,1 +1,3 @@
-
+- Fixed
+- Include
+- Exclude
