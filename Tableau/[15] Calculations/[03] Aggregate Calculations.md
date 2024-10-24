@@ -10,4 +10,8 @@
   - MAX: Returns the maximum value. MAX()
   - MIN: Returns the minimum value. MIN()
 - Aggregate Dimension
-  - Attr: 
+  - Attribute
+    - Attr()
+    - Attribute Function ATTR () aggregates the values of Dimensions
+    - If all values are same, then it returns single value
+    - If there are multiple values, then it returns Asterisk*
