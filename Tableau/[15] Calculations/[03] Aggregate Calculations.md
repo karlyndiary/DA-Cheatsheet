@@ -15,3 +15,5 @@
     - Attribute Function ATTR () aggregates the values of Dimensions
     - If all values are same, then it returns single value
     - If there are multiple values, then it returns Asterisk*
+    - Can identify the relationship of the product to customers.
+      - Example: P1 - John, P2 - *, P3 - *, P4 - Mia -> P1 and P4 have one customer each whole P2 and P3 have multiple customers.
