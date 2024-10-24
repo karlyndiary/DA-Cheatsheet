@@ -13,6 +13,7 @@
   - Attribute
     - Attr()
     - Attribute Function ATTR () aggregates the values of Dimensions
+    - Depends on the visualization view
     - If all values are same, then it returns single value
     - If there are multiple values, then it returns Asterisk*
     - Can identify the relationship of the product to customers.
