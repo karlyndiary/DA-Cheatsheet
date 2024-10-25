@@ -3,6 +3,7 @@
   - Level of Details is the LOD Expression
   - The calculations are performed on the data within the data source
   - Results will be calculated on the FLY
+- Syntax: {Fixed | Include | Exclude <List of Dimensions> : <Aggregation>}
 - Static
   - Fixed
     - 
