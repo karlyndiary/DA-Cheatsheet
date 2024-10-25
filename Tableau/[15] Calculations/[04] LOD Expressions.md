@@ -6,7 +6,8 @@
 - Syntax: {Fixed | Include | Exclude List of Dimensions : Aggregation}
 - Static
   - Fixed
-    - 
+    - {Fixed [Category] : SUM([Sales])}
+    - {Fixed [Category], [Product Name] : SUM([Sales])}
 - Dynamic
   - Include
     -
