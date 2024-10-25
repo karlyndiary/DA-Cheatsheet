@@ -3,9 +3,11 @@
   - Level of Details is the LOD Expression
   - The calculations are performed on the data within the data source
   - Results will be calculated on the FLY
-- Fixed
-  -
-- Include
-  -
-- Exclude
-  - 
+- Static
+  - Fixed
+    - 
+- Dynamic
+  - Include
+    -
+  - Exclude
+    - 
