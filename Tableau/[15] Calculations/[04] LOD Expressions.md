@@ -3,6 +3,9 @@
   - Level of Details is the LOD Expression
   - The calculations are performed on the data within the data source
   - Results will be calculated on the FLY
+- Two Types of LOD:
+  - One mentioned in the view is LOD (VIZ)
+  - One mentioned in the calculated field is LOD (Expression)
 - Syntax: {Fixed | Include | Exclude List of Dimensions : Aggregation}
 - Static
   - Fixed
