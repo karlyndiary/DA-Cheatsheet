@@ -3,14 +3,16 @@
   - Level of Details is the LOD Expression
   - The calculations are performed on the data within the data source
   - Results will be calculated on the FLY
-- Two Types of LOD:
-  - One mentioned in the view is LOD (VIZ)
-  - One mentioned in the calculated field is LOD (Expression)
 - Syntax: {Fixed | Include | Exclude List of Dimensions : Aggregation}
 - Static
   - Fixed
     - {Fixed [Category] : SUM([Sales])}
-    - {Fixed [Category], [Product Name] : SUM([Sales])}
+    - {Fixed [Category], [Product Name]: SUM([Sales])}
+    - It works similarly to group by and aggregate in SQL. Groups by category and returns the sum of sales.
+    - The values calculated here wont change even with the change in filters
+    - Two Types of LOD:
+      - One mentioned in the view is LOD (VIZ)
+      - One mentioned in the calculated field is LOD (Expression)
 - Dynamic
   - Include
     -
