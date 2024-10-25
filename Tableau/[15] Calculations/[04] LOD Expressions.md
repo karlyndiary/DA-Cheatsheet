@@ -9,10 +9,12 @@
     - {Fixed [Category] : SUM([Sales])}
     - {Fixed [Category], [Product Name]: SUM([Sales])}
     - It works similarly to group by and aggregate in SQL. Groups by category and returns the sum of sales.
-    - The values calculated here wont change even with the change in filters
+    - The values calculated here won't change even with the change in filters
     - Two Types of LOD:
       - One mentioned in the view is LOD (VIZ)
       - One mentioned in the calculated field is LOD (Expression)
+    - Use Case:
+      - Customer Order Frequency: Show the description of customers by number of orders.
 - Dynamic
   - Include
     -
