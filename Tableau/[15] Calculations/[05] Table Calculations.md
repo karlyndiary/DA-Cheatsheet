@@ -1,1 +1,4 @@
-
+- Table Calculations are calculated after the aggregation
+- Aggregate the Aggregation!
+- Level of Details is the Visualization | VIZ LOD
+- The calculations are performed on the data displayed in the Visualization
