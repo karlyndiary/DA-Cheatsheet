@@ -17,6 +17,8 @@
       - Customer Order Frequency: Show the description of customers by number of orders.
 - Dynamic
   - Include
-    -
-  - Exclude
     - 
+    - {Include [Category] : SUM([Sales])}
+  - Exclude
+    - Calculate the aggregation, excluding the dimension.
+    - {Exclude [Category] : SUM([Sales])}
