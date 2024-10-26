@@ -17,7 +17,7 @@
       - Customer Order Frequency: Show the description of customers by number of orders.
 - Dynamic
   - Include
-    - 
+    - The INCLUDE Level of Detail (LOD) expression in Tableau calculates an aggregation by including additional dimensions, regardless of whether they are present in the current view or visualization.
     - {Include [Category] : SUM([Sales])}
   - Exclude
     - Calculate the aggregation, excluding the dimension.
