@@ -2,3 +2,12 @@
 - Aggregate the Aggregation!
 - Level of Details is the Visualization | VIZ LOD
 - The calculations are performed on the data displayed in the Visualization
+- Scope
+  - Table
+  - Pane
+  - Cell
+- Direction
+  - Top to Bottom
+  - Left to Right
+  - Top to bottom and then left to right
+  - Left to right and then next row left to right
