@@ -38,11 +38,12 @@
   - How it works?
     - We're going to go with three clusters. And after that, the algorithm going to pick three points. And we call them centroids. And then it's going to assign the data points to the nearest centroid. So for this data point, it can belong to the green cluster. And then it's going to go to the next data point and calculate the length between it and the three centroids. And then it can assign it to the nearest centroid for this is going to be the red cluster. So the algorithm can do that for all data points and assign them to the closest centroid. So in the end, we will have three clusters green red and blue.
 - Sets
-  - We can use data sets to group up those data points. So sets can define your data based on specific criteria or selection into two groups of data.The first group we call the in group. And this group you're going to find all the data points that are included in the subsets of data. These data points are the members of the set. And the other group is the out-group. This group contains all the data points that are not included in the subsets of the data. So that means the data points in this group are not the members of the set. So the sets in Tableau divide our data into two groups the in and out groups.
+  - We can use data sets to group up those data points. So sets can define your data based on specific criteria or selection into two groups of data. The first group we call the in group. And this group you're going to find all the data points that are included in the subsets of data. These data points are the members of the set. And the other group is the out-group. This group contains all the data points that are not included in the subsets of the data. So that means the data points in this group are not the members of the set. So the sets in Tableau divide our data into two groups the in and out groups.
   - When to use Sets?
     - To focus on specific data points
     - Compare the subset data to the remaining data
     - Actions
+
   - Methods to create sets
     - Fixed set [Manual Selection]
     - Dynamic set [Condition, Rank]
@@ -51,6 +52,7 @@
       - Inner: In both sets
       - Left: member in set1 but not member in set2
       - Right: member in set2 but not member in set1
+
   - How to create sets?
     - Fixed: Right-click on field -> Create -> Sets [Manual Selection]
     - Dynamic Set [Condition]: Right-click on field -> Create -> Sets -> Condition -> By field -> Enter the condition and click on ok
@@ -60,5 +62,12 @@
     - To showcase only specific data points
     - To focus on a specific subset
     - Set as a filter
+
+- Sets divide data based on specific criteria into two subsets :
+  - IN: contains all members of the set.
+  - Out: contains members not included in the set.
+- Sets are useful for focusing on a subset of the data and comparing it with the remaining data.
+- Sets add interactivity and dynamics to views by allowing users define which subset they want to focus on.
+
 - Bins & Histogram
   - 
