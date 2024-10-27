@@ -57,5 +57,7 @@
     - Combined set: Right-click on the created set -> Combined sets -> Give it a name -> Select the sets from both dropdowns -> Opt one of the four options -> Click on ok
   - Sets Use Case
     - To showcase only specific data points
+    - To focus on a specific subset
+    - Set as a filter
 - Bins & Histogram
   - 
