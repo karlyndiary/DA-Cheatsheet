@@ -42,6 +42,7 @@
   - Findnth: Returns the nth position.
     - Findnth(string, substring, occurrence) 
     - Findnth(Canon-456-cer5, "-", 7) => returns null
+    - FINDNTH("abracadabra", "a", 3) => Returns 6 
 - Combine and split
   - Concat: [First Name] + " " + [Last Name]
   - Split: split(string, delimiter, token number). The token number is the part of the section in the string.
