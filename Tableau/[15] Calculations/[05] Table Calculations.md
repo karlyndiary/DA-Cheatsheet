@@ -11,3 +11,51 @@
   - Left to Right
   - Top to bottom and then left to right
   - Left to right and then next row left to right
+- Table Calculations
+  - Quick
+    - Running Total
+    - Difference
+    - Percent Difference
+    - Percent of Total
+    - Rank
+    - Percentile
+    - Moving Average
+    - YTD Total
+    - Compound Growth Rate
+    - Year Over Year Growth
+    - YTD Growth
+  - Types
+    - Difference From
+    - Percent Difference From
+    - Percent From
+    - Percent of Total
+    - Rank
+    - Percentile
+    - Running Total
+    - Moving Calculation
+  - Functions
+    - FIRST
+    - INDEX
+    - LAST
+    - LOOKUP
+    - MODEL EXTENSION
+    - MODEL EXTENSION
+    - MODEL EXTENSION
+    - MODEL EXTENSION
+    - MODEL PERCENTILE
+    - MODEL QUANTILE
+    - PREVIOUS_VALUE
+    - RANK
+    - RANK DENSE
+    - RANK_MODIFIED
+    - RANK_PERCENTILE
+    - RANK_UNIQUE
+    - RUNNING AVG
+    - RUNNING_COUNT
+    - RUNNING MAX
+    - RUNNING MIN
+    - RUNNING SUM
+    - SCRIPT_BOOL
+    - SCRIPT_INT
+    - SCRIPT_REAL
+    - SCRIPT STR
