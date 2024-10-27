@@ -1,3 +1,4 @@
+- Table Calculations are context-sensitive and operate based on the data displayed in the visualization.
 - Table Calculations are calculated after the aggregation
 - Aggregate the Aggregation!
 - Level of Details is the Visualization | VIZ LOD
