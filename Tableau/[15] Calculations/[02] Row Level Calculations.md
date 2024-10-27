@@ -24,7 +24,8 @@
   - Mid: Mid(Canon-456-cer5, start, length) => Mid(Canon-456-cer5, 7, 3) => 456
 
 - Search for patterns
-  - Startwith: Returns True or False.
+  - Startwith: It checks if the string begins with a specific substring
+    - Returns True or False.
     - Startwith(string, substring)
     - startwith(Canon-456-cer5, "Canon") => True
     - startwith(Canon-456-cer5, "non") => False
