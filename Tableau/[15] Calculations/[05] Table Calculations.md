@@ -11,6 +11,7 @@
   - Left to Right
   - Top to bottom and then left to right
   - Left to right and then next row left to right
+- Table Calculations on the view -> Right-click on the measure under the marks pane -> Click on Add table calculation [Need to configure stuff], Quick Table Calculation
 - Table Calculations
   - Quick
     - Running Total
