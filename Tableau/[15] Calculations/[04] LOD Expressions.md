@@ -15,11 +15,25 @@
       - One mentioned in the calculated field is LOD (Expression)
     - Use Case:
       - Customer Order Frequency: Show the description of customers by number of orders.
+      - Suppose you are using [Country] and [Category] dimensions in the view and then used the following LOD Calculation:
+      FIXED [Category] : SUM([Sales])}
+      What is the level of details that tableau will use to aggregate the sales?
+      Answer: Category
 - Dynamic
   - Include
     - The INCLUDE Level of Detail (LOD) expression in Tableau calculates an aggregation by including additional dimensions, regardless of whether they are present in the current view or visualization.
     - The "include" function includes the specified dimension in the calculation, making it dependent on the dimensions present in the view.
     - {Include [Category] : SUM([Sales])}
-  - Exclude
+    - Suppose you are using [Country] and [Category] dimensions in the view and then used the following LOD Calculation:
+      INCLUDE [Category] : SUM([Sales])}
+      What is the level of details that tableau will use to aggregate the sales?
+      Answer: Both Category and Country
+      
+   - Exclude
+    - The "exclude" function in LOD expressions is used to remove specific dimensions from the calculation based on the dimensions in the view, making it dynamic and dependent on the view.
     - Calculate the aggregation, excluding the dimension.
     - {Exclude [Category] : SUM([Sales])}
+    - Suppose you are using [Country] and [Category] dimensions in the view and then used the following LOD Calculation:
+      EXCLUDE [Category] : SUM([Sales])}
+      What is the level of details that tableau will use to aggregate the sales?
+      Answer: Country
