@@ -9,6 +9,7 @@
   - COUNTD: Counts the number of unique values. COUNTD()
   - MAX: Returns the maximum value. MAX()
   - MIN: Returns the minimum value. MIN()
+  - (100+150+200) + ((20+30+null)/2) => Null is not taken into consideration 
 - Aggregate Dimension
   - Attribute
     - Attr()
