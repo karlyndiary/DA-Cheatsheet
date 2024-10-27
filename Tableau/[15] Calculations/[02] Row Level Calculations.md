@@ -50,6 +50,7 @@
       - Calculated Field: SPLIT([Customer Email], "_", 1)
       - Automatic Split: Right-click on the field -> Transform -> Split
       - Customized Split: Right-click on the field -> Transform -> Custom Split
+      - SPLIT("Baraa-Khatib-Salkini", "-", "2") => Returns Khatib
 
 - Replace
   - Replace(string, substring, replacement)
