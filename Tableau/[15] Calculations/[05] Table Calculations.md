@@ -2,6 +2,7 @@
 - Aggregate the Aggregation!
 - Level of Details is the Visualization | VIZ LOD
 - The calculations are performed on the data displayed in the Visualization
+- Based on the visualization and not on the data source
 - Scope
   - Table
   - Pane
@@ -36,8 +37,11 @@
     - Moving Calculation
   - Functions
     - FIRST
+     - Use Case: Use as a filter and Reference Line
     - INDEX
+      - Use Case: Use as a filter and Reference Line
     - LAST
+      - Use Case: Use as a filter and Reference Line
     - LOOKUP
     - MODEL EXTENSION
     - MODEL EXTENSION
@@ -46,7 +50,9 @@
     - MODEL PERCENTILE
     - MODEL QUANTILE
     - PREVIOUS_VALUE
-    - RANK: RANK(SUM([Sales]))
+    - RANK:
+      - Use Case: Use as a filter and Reference Line
+      - RANK(SUM([Sales]))
     - RANK DENSE
     - RANK_MODIFIED
     - RANK_PERCENTILE
