@@ -42,6 +42,7 @@
   - When to use Sets?
     - To focus on specific data points
     - Compare the subset data to the remaining data
+    - Actions
   - Methods to create sets
     - Fixed set [Manual Selection]
     - Dynamic set [Condition, Rank]
