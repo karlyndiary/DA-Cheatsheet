@@ -63,9 +63,11 @@
     - Datepart(date_part, date) => Returns a number
     - DATEPART("year", [Order Date])
     - DATEPART("month", [Order Date])
+
   - Datename: Datename(date_part, date) => Returns a string
     - DATENAME("month", [Order Date])
-    - LEFT(DATENAME("month",[Order Date]), 3) => Returns the month name with just 3 letters
+    - LEFT(DATENAME("month", [Order Date]), 3) => Returns the month name with just 3 letters
+
   - Datetrunc: Datetrunc(date_part, date) => Returns a date and time
     - DATETRUNC("month", [Order Date])
     - Right-click -> Change datatype to date to get rid of time.
@@ -80,6 +82,7 @@
 - Add Subtract
   - DateAdd: Dateadd(date_part, interval, date) => Returns a date
     - DATEADD("year", 1, [Order Date]) => Increments a year
+    - DATEADD('day', 10, #2024-05-20#) => Returns 2024-05-30
   - Datediff: Subtracts two dates.
     - DateDiff(Date_part, start_data, end_date) => Returns a number
     - DATEDIFF("day", [Order Date], [Shipping Date])
