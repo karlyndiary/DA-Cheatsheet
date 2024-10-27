@@ -15,7 +15,7 @@
 - Table Calculations on the view -> Right-click on the measure under the marks pane -> Click on Add table calculation [Need to configure stuff], Quick Table Calculation
 - Table Calculations
   - Quick
-    - Running Total
+    - Running Total: Calculates cumulative measure totals within a defined dimension, allowing incremental tracking in the data
     - Difference
     - Percent Difference
     - Percent of Total
