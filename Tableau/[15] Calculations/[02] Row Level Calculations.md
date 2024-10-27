@@ -69,6 +69,10 @@
   - Datetrunc: Datetrunc(date_part, date) => Returns a date and time
     - DATETRUNC("month", [Order Date])
     - Right-click -> Change datatype to date to get rid of time.
+    - DATETRUNC("Year", #2024-05-15#) -> returns 2024-01-01
+    - DATETRUNC("Month", #2024-05-15#) -> returns 2024-05-01
+    - DATETRUNC("Day", #2024-05-15#) -> returns 2024-05-15
+
   - Day: Day([Order Date]=> Returns a number
   - Month: Month([Order Date]) => Returns a number
   - Quarter: QUARTER([Order Date]) => Returns a number
