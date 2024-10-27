@@ -16,6 +16,7 @@
 - Table Calculations
   - Quick
     - Running Total: Calculates cumulative measure totals within a defined dimension, allowing incremental tracking in the data
+      - Current Running Total = Previous Running Total + Sales Value
     - Difference
     - Percent Difference
     - Percent of Total
