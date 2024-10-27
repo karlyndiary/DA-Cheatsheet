@@ -41,7 +41,7 @@
     - Find(Canon-456-cer5, "-") => returns 6
   - Findnth: Returns the nth position.
     - Findnth(string, substring, occurrence) 
-    - Findnth(Canon-456-cer5, "-", 7) => returns 10
+    - Findnth(Canon-456-cer5, "-", 7) => returns null
 - Combine and split
   - Concat: [First Name] + " " + [Last Name]
   - Split: split(string, delimiter, token number). The token number is the part of the section in the string.
