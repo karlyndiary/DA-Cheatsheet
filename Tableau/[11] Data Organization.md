@@ -67,7 +67,10 @@
   - IN: contains all members of the set.
   - Out: contains members not included in the set.
 - Sets are useful for focusing on a subset of the data and comparing it with the remaining data.
-- Sets add interactivity and dynamics to views by allowing users define which subset they want to focus on.
+- Sets add interactivity and dynamics to views by allowing users to define which subset they want to focus on.
 
 - Bins & Histogram
-  - 
+  - Divide the data into groups of equal-sized containers resulting in a systematic data distribution.
+  - Bins used to create charts called Histograms
+  - Right-click on field -> Create -> Bins -> Mention the size of bins -> ok
+  - Make the created bins continous by clicking on the arrow 
