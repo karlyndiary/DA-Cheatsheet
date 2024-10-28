@@ -21,5 +21,6 @@
       WHEN 'Category' THEN [Category]
       END
       ```
+    - Replace the field with this calculated field
   - Dynamic Texts
   - Dynamic Bins in Histogram
