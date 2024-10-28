@@ -7,7 +7,7 @@
   - Go to another sheet or dashboard
     - Actions -> Add Action -> Go to Sheet -> Give it a name -> Select the target sheet -> Select the run action -> click ok
   - Filter
-    - Actions -> Add Action -> Go to Sheet -> Give it a name -> Select the target sheet -> Select the run action -> click ok
+    - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
   - Highlight
   - Change Set values
   - Change Parameter values
