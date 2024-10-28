@@ -36,3 +36,5 @@
     
     ```Top <Parameters.Choose Top N Products> Products```
   - Dynamic Bins in Histogram
+    - Create the view -> Click on field(bins) -> Edit Bins -> Create a new parameter -> Give it a name -> Give a current value -> Select range -> Mention min, max and step value -> Click ok
+    - Show Parameter
