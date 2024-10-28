@@ -31,5 +31,7 @@
     - Replace the fields with this calculated field
   - Dynamic Texts for Sheet Name
     - Double click on the sheet name above the chart -> Clear the name -> Click on Insert -> Click on Parameters.Choose Measure -> Type by and Click on Parameters.Choose Dimension -> Click on ok
+    
     ```<Parameters.Choose Measure> by <Parameters.Choose Dimension>```
+    
   - Dynamic Bins in Histogram
