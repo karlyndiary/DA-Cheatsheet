@@ -2,17 +2,24 @@
 - Start point: Source Sheet
 - Trigger: Hover, Select, Menu
 - Action:
+
   - Go to URL
-    - Actions -> Add Action -> Go to URL -> Give it a name [Use the insert option to select the field], Select the sheet, select the run action, enter a URL -> click ok -> click ok
+    - Worksheet ->  Actions -> Add Action -> Go to URL -> Give it a name [Use the insert option to select the field], Select the sheet, select the run action [Menu], enter a URL -> click ok -> click ok
+
   - Go to another sheet or dashboard
-    - Actions -> Add Action -> Go to Sheet -> Give it a name -> Select the target sheet -> Select the run action -> click ok
+    - Worksheet -> Actions -> Add Action -> Go to Sheet -> Give it a name -> Select the target sheet -> Select the run action [Menu] -> click ok
+
   - Filter
-    - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
+    - Worksheet -> Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action [Select] -> click ok
+
   - Highlight
-    - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
+    - Dashboard -> Actions -> Add Action -> Highlight -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action [Hover] -> Target Highlighting [All fields] -> click ok
+
   - Change Set values
     - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
+
   - Change Parameter values
     - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
+
 - How to create
   - Worksheet tab -> Actions
