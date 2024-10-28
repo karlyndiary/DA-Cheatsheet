@@ -24,3 +24,13 @@
     - Sales by month, sheet 3, dashboard 1, Total Sales Parameter, Total Selected Sales Calculated Field
 - How to create
   - Worksheet tab -> Actions
+- Action Trigger
+  - Menu
+    - Go to Sheet
+    - Go to URL
+  - Select
+    - Parameter
+    - Filter
+    - Set
+  - Hover
+    - Highlight
