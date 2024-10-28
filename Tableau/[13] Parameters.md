@@ -1,5 +1,9 @@
 - Parameters are variables that allow users to replace a fixed constant value
 - Parameters can be used in calculations, filters, text, bins, reference lines, etc.
+- Parameters are independent of the data source
+- Add dynamic, flexibility and interactivity
+- Enables the user to customize the view
+- Reduce the number of views
 - Use Case
   - Dynamic Calculations
     ```
