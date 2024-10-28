@@ -1,1 +1,10 @@
-
+- Action: An Event (Trigger) that changes the status of an object from A to B.
+- Start point: Source Sheet
+- Trigger: Hover, Select, Menu
+- Action:
+  - Go to URL
+  - Go to another sheet or dashboard
+  - Filter
+  - Highlight
+  - Change Set values
+  - Change Parameter values
