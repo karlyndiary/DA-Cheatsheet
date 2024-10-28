@@ -5,7 +5,9 @@
   - Go to URL
     - Actions -> Add Action -> Go to URL -> Give it a name [Use the insert option to select the field], Select the sheet, select the run action, enter a URL -> click ok -> click ok
   - Go to another sheet or dashboard
+    - Actions -> Add Action -> Go to Sheet -> Give it a name -> Select the target sheet -> Select the run action -> click ok
   - Filter
+    - Actions -> Add Action -> Go to Sheet -> Give it a name -> Select the target sheet -> Select the run action -> click ok
   - Highlight
   - Change Set values
   - Change Parameter values
