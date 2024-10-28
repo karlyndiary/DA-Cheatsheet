@@ -9,7 +9,10 @@
   - Filter
     - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
   - Highlight
+    - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
   - Change Set values
+    - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
   - Change Parameter values
+    - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
 - How to create
   - Worksheet tab -> Actions
