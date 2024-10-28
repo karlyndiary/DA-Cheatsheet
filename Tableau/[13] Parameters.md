@@ -34,4 +34,5 @@
     
     ```<Parameters.Choose Measure> by <Parameters.Choose Dimension>```
     
+    ```Top <Parameters.Choose Top N Products> Products```
   - Dynamic Bins in Histogram
