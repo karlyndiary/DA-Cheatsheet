@@ -19,7 +19,8 @@
     - Worksheet -> Actions -> Add Action -> Set -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action [Select] -> Select running the action will and select clearing the action will -> click ok
 
   - Change Parameter values
-    - Worksheet -> Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
-
+    - Dashboard -> Actions -> Add Action -> Parameter -> Give it a name ->  Select the source sheet -> Select the target parameter -> Select the source field -> Select the run action [Select] -> click ok
+    - https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/BigandSmallDataSourceDataModelling2/Dashboard1?publish=yes
+    - Sales by month, sheet 3, dashboard 1, Total Sales Parameter, Total Selected Sales Calculated Field
 - How to create
   - Worksheet tab -> Actions
