@@ -21,6 +21,13 @@
       WHEN 'Category' THEN [Category]
       END
       ```
-    - Replace the field with this calculated field
+      ```
+      CASE [Choose Measure]
+      WHEN 'Sales' THEN [Sales]
+      WHEN 'Profit' THEN [Profit]
+      WHEN 'Quantity' THEN [Quantity]
+      END
+      ```
+    - Replace the fields with this calculated field
   - Dynamic Texts
   - Dynamic Bins in Histogram
