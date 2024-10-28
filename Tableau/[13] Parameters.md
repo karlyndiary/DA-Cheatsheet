@@ -1,1 +1,2 @@
-
+- Parameters are variables that allow users to replace a fixed constant value
+- Parameters can be used in calculations, filters, text, bins, reference lines and more.
