@@ -10,6 +10,16 @@
   - Dynamic Reference Lines
     - Analytics pane -> Double click on Reference Line -> choose the parameter created -> Click on value as label -> ok
   - Dynamic Filters
-  - Dynamic swap between dimensions and dynamic swap between measures
+    - Top N Products -> Create the view -> Add the field to filter -> Top tab -> By field -> Click on the value drop-down -> Create a new parameter -> Give it a name, current value [start min value from 0], step size -> Click on ok
+  - Dynamic swap between dimensions and swap between measures
+    - Create the view -> Create a parameter -> Give it a name -> Select string -> Select list -> Mention the different dimensions -> Click ok
+    - Show Parameter
+    - Create a calculated field to make the parameter dynamic
+      ```
+      CASE [Choose Dimension] 
+      WHEN 'Country' THEN [Country]
+      WHEN 'Category' THEN [Category]
+      END
+      ```
   - Dynamic Texts
   - Dynamic Bins in Histogram
