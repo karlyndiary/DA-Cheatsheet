@@ -3,7 +3,7 @@
 - Trigger: Hover, Select, Menu
 - Action:
   - Go to URL
-    - Actions -> Add Action -> Go to URL -> Give it a name, Select the sheet, select the run action, enter a URL -> click ok -> click ok
+    - Actions -> Add Action -> Go to URL -> Give it a name [Use the insert option to select the field], Select the sheet, select the run action, enter a URL -> click ok -> click ok
   - Go to another sheet or dashboard
   - Filter
   - Highlight
