@@ -16,10 +16,10 @@
     - Dashboard -> Actions -> Add Action -> Highlight -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action [Hover] -> Target Highlighting [All fields] -> click ok
 
   - Change Set values
-    - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
+    - Worksheet -> Actions -> Add Action -> Set -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action [Select] -> Select running the action will and select clearing the action will -> click ok
 
   - Change Parameter values
-    - Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
+    - Worksheet -> Actions -> Add Action -> Filter -> Give it a name ->  Select the source sheet -> Select the target sheet -> Select the run action -> click ok
 
 - How to create
   - Worksheet tab -> Actions
