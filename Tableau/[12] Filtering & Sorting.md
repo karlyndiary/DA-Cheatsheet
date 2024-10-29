@@ -3,3 +3,13 @@
   - Reduce the size of the dataset to optimize performance
   - Interactivity and analysis by offering filters to users.
   - Data Security by removing sensitive data.
+  - Data Access Control by applying RLS (Row Level Security)
+- Filter Type
+  - Optimize Performance
+    - Extract Filer
+    - Data Source Filter
+    - Context Filter
+  - Interactivity
+    - Dimension Filter
+    - Measure Filter
+    - Table Calculation Filter
