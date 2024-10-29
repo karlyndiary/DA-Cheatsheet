@@ -5,7 +5,7 @@
   - Data Security by removing sensitive data.
   - Data Access Control by applying RLS (Row Level Security)
 - Filter Type
-  - Optimize Performance
+  - Optimize & Performance
     - Extract Filer
       - Filter between the source system and data source 
     - Data Source Filter
