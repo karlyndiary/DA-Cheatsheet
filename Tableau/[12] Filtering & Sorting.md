@@ -12,7 +12,7 @@
       - Filter between the data source and the worksheet
     - Context Filter
       - Filter on the worksheet
-  - Interactivity
+  - Interactivity: Offer on the Dashboard
     - Dimension Filter
     - Measure Filter
     - Table Calculation Filter
