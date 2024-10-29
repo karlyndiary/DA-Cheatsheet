@@ -28,3 +28,4 @@
   - Data Source Tab -> Filter -> Add -> Select the field -> Select the rows to exclude -> Click on exclude -> Click ok -> Click ok
 - Context Filter
   - Filter on the worksheet
+  - Context filters don't help protect sensitive data -> the show filter option also has the option to list all the values in the database
