@@ -1,1 +1,5 @@
-
+- Filter means removing or selecting specific data subsets for different purposes and use cases.
+- Use Case
+  - Reduce the size of the dataset to optimize performance
+  - Interactivity and analysis by offering filters to users.
+  - Data Security by removing sensitive data.
