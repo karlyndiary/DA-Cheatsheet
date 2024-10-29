@@ -13,3 +13,9 @@
     - Dimension Filter
     - Measure Filter
     - Table Calculation Filter
+
+| Filter Type       | Extract Filter                                  | Data Source Filter                           |
+|-------------------|-------------------------------------------------|----------------------------------------------|
+| Connection Type   | Only Extract Connection                         | Extract & Live Connection                    |
+| Availability      | Only Tableau Desktop                            | Tableau Desktop & Public                     |
+| Purpose           | - Optimize Load Performance<br>- Optimize Performance in Views | - Optimize Performance in Views<br>- Hide Sensitive Data |
