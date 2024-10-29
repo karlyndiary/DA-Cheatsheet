@@ -7,8 +7,11 @@
 - Filter Type
   - Optimize Performance
     - Extract Filer
+      - Filter between the source system and data source 
     - Data Source Filter
+      - Filter between the data source and the worksheet
     - Context Filter
+      - Filter on the worksheet
   - Interactivity
     - Dimension Filter
     - Measure Filter
