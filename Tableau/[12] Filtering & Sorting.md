@@ -32,4 +32,6 @@
 - Dimension Filter
   - Click on the down arrow -> Show Filter
 - Measure Filter
+  - Click on the down arrow -> Show Filter. Check the aggregation of the field and choose the same from the menu.
+- Table Calculation Filter
   - 
