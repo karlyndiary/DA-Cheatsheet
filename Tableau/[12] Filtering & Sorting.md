@@ -22,3 +22,9 @@
 | Connection Type   | Only Extract Connection                         | Extract & Live Connection                    |
 | Availability      | Only Tableau Desktop                            | Tableau Desktop & Public                     |
 | Purpose           | - Optimize Load Performance<br>- Optimize Performance in Views | - Optimize Performance in Views<br>- Hide Sensitive Data |
+
+- The filters affect all the worksheets
+- Data Source Filter
+  - Data Source Tab -> Filter -> Add -> Select the field -> Select the rows to exclude -> Click on exclude -> Click ok -> Click ok
+- Context Filter
+  - Filter on the worksheet
