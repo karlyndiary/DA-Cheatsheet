@@ -38,3 +38,5 @@
 
 - Apply one filter to multiple visualizations or worksheets
   - Click on the drop-down arrow -> Apply to worksheets -> 4 Options
+  - Only this worksheet is the default option for the filter
+  - 
