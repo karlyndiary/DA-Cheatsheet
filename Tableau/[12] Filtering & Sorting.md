@@ -35,3 +35,6 @@
   - Click on the down arrow -> Show Filter. Check the aggregation of the field and choose the same from the menu.
 - Table Calculation Filter
   - Click the down arrow -> Quick Table Calculation -> Aggregation -> Ctrl + field to filters -> Show Filter
+
+- Apply one filter to multiple visualizations or worksheets
+  - Click on the drop-down arrow -> Apply to worksheets -> 4 Options
