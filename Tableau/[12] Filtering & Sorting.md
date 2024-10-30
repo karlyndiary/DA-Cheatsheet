@@ -23,6 +23,14 @@
 | Availability      | Only Tableau Desktop                            | Tableau Desktop & Public                     |
 | Purpose           | - Optimize Load Performance<br>- Optimize Performance in Views | - Optimize Performance in Views<br>- Hide Sensitive Data |
 
+| Feature                  | Normal Filter                                  | Context Filter                                           |
+|--------------------------|-----------------------------------------------|----------------------------------------------------------|
+| **Filter Order**         | Applied independently; each filter acts on the entire dataset | Applied first, creating a subset of data for other filters |
+| **Effect on Other Filters** | No effect on other filters                 | Limits data for all subsequent filters                    |
+| **Use Case**             | General filtering                             | Dependent filtering; improves performance with large datasets |
+| **Performance Impact**   | May slow down with multiple complex filters   | Can enhance performance by reducing data processed by other filters |
+| **Typical Example**      | Filtering for a single region or category     | Filtering a specific region as a context before applying further category filters |
+
 - The filters affect all the worksheets
 - Data Source Filter
   - Data Source Tab -> Filter -> Add -> Select the field -> Select the rows to exclude -> Click on exclude -> Click ok -> Click ok
