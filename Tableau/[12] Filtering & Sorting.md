@@ -54,3 +54,5 @@
   - Shows values filtered by the context filter if one is applied. Any values that don’t meet the context filter criteria are excluded from this list.
 - Only Relevant Values
   - Shows only the values that are relevant based on the current view or visualization filters. This is dynamic and updates based on selections or filters currently applied to the visualization.
+
+- Higher level dimensions in the hierarchy will affect the lower level dimension and not vice versa.
