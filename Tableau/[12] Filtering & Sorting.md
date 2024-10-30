@@ -47,4 +47,10 @@
 - Apply one filter to multiple visualizations or worksheets
   - Click on the drop-down arrow -> Apply to worksheets -> 4 Options
   - Only this worksheet is the default option for the filter
-  - 
+
+- All values in the Database
+  - Shows all possible values from the database, regardless of other filters or contexts applied.
+- All values in Context
+  - Shows values filtered by the context filter if one is applied. Any values that don’t meet the context filter criteria are excluded from this list.
+- Only Relevant Values
+  - Shows only the values that are relevant based on the current view or visualization filters. This is dynamic and updates based on selections or filters currently applied to the visualization.
