@@ -56,3 +56,12 @@
   - Shows only the values that are relevant based on the current view or visualization filters. This is dynamic and updates based on selections or filters currently applied to the visualization.
 
 - Higher level dimensions in the hierarchy will affect the lower level dimension and not vice versa.
+
+- Tips
+  - Avoid using "Only Relevant values"
+    - All Values in Database: 1 Initial Query
+    - Only Relevant Values: Multiple Queries for each interaction
+  - Avoid using dimensions with high cardinality as a quick filter
+    - The columns are long and have numerous rows of data.
+    - Use columns that are of category kind.
+  - 
