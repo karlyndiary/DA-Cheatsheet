@@ -64,4 +64,6 @@
   - Avoid using dimensions with high cardinality as a quick filter
     - The columns are long and have numerous rows of data.
     - Use columns that are of category kind.
+  - Use wildcard match for high cardinality
+    - For product name where the values are unique and long
   - 
