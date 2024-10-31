@@ -75,6 +75,11 @@
 - Convert the date to continuous and keep it as a range filter
 
 - Sorting
-  - 1st click: Descending
-  - 2nd click: Ascending
-  - 3rd click: Data Source
+  - Header Sorting
+    - 1st click: Ascending
+    - 2nd click: Descending
+    - 3rd click: Data Source
+  - Axis Sorting
+    - 1st click: Descending
+    - 2nd click: Ascending
+    - 3rd click: Data Source
