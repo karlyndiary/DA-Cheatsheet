@@ -69,3 +69,4 @@
   - Use the Apply button
     - Each click in the quick filter is a query
   - Minimize the number of quick filters
+  - Arrange the filters in the proper order
