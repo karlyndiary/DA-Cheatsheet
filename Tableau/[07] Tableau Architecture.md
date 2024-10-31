@@ -1,8 +1,8 @@
 - 4 Layers
   - Source
-    - Data could be in MySQL, Orcale, Excel, Json, API or Cloud. Data could be anywhere.
+    - Data could be in MySQL, Oracle, Excel, JSON, API or Cloud. Data could be anywhere.
   - Desktop
-    - First thing to do in Tableau Desktop is connect to Data Source
+    The first thing to do in Tableau Desktop is connect to the Data Source
     - Data Connectors
       - 90 Connectors
     - Access Information will be stored inside the data source
@@ -14,11 +14,10 @@
       - Extract
       - Live
     - Data Model
-      - Join tables together using joins, relationships and union.
+      - Join tables together using joins, relationships and unions.
     - Visualizations
       - Tableau organizes the viz in three levels
         - Worksheets: These worksheets can also be created using two data sources[Extract and live] together called Data Blending
-        - 
   - Server
     - 
   - Consumer
