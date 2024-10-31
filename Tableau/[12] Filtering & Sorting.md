@@ -71,3 +71,6 @@
   - Minimize the number of quick filters
   - Arrange the filters in the proper order
   - Don't use "All" in the filters where it has low cardinality
+
+- Convert date to continuous and keep it as a range filter
+- 
