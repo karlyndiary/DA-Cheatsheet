@@ -21,3 +21,11 @@
   - Server
     - 
   - Consumer
+    - Workbook to consumers: .twbx
+    - Workbook to Dev Team: .hyper, .tdsx, .twbx, .tds, .twb
+
+  - Server Publish
+    - The workbook with the extracted data to be published is sent to the gateway as a .twbx file, which contains both the data and the associated XML metadata.
+    - This .twbx file is transmitted to the application server.
+    - The XML file within the workbook stores the metadata of the workbook and is then sent to the repository.
+    - The .hyper file, which contains the actual data, is sent to the file store for storage.
