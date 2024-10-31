@@ -72,5 +72,9 @@
   - Arrange the filters in the proper order
   - Don't use "All" in the filters where it has low cardinality
 
-- Convert date to continuous and keep it as a range filter
-- 
+- Convert the date to continuous and keep it as a range filter
+
+- Sorting
+  - 1st click: Descending
+  - 2nd click: Ascending
+  - 3rd click: Data Source
