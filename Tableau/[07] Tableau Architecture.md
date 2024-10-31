@@ -31,4 +31,6 @@
     - The .hyper file, which contains the actual data, is sent to the file store for storage.
 
   - Authentication Process
-    - 
+    - The user logs into the system using their username and password.
+    - This action sends a login request to the authentication server.
+    - The authentication server checks the selected repository to verify if the user has permission to access the requested file.
