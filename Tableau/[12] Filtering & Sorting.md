@@ -70,3 +70,4 @@
     - Each click in the quick filter is a query
   - Minimize the number of quick filters
   - Arrange the filters in the proper order
+  - Don't use "All" in the filters where it has low cardinality
