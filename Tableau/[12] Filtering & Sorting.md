@@ -83,3 +83,8 @@
     - 1st click: Descending
     - 2nd click: Ascending
     - 3rd click: Data Source
+  - Field Sorting
+    - 1st click: Descending
+    - 2nd click: Ascending
+    - 3rd click: Data Source
+- Worksheet -> Show Sort Controls
