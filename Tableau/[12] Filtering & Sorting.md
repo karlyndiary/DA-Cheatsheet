@@ -65,5 +65,7 @@
     - The columns are long and have numerous rows of data.
     - Use columns that are of category kind.
   - Use wildcard match for high cardinality
-    - For product name where the values are unique and long
-  - 
+    - For product names where the values are unique and long
+  - Use the Apply button
+    - Each click in the quick filter is a query
+  - Minimize the number of quick filters
