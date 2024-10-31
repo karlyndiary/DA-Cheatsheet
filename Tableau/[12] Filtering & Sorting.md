@@ -88,3 +88,4 @@
     - 2nd click: Ascending
     - 3rd click: Data Source
 - Worksheet -> Show Sort Controls
+- For hierarchy, use nested sort 
