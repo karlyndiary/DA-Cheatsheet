@@ -15,3 +15,7 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - 2nd Method: Create the view as usual
     - Drag the 2nd measure on the view to the right end of the view till you see the green bar, when you do, drop the measure right there
     - Don't synchronize the axis
+- Bar Chart: Use a bar chart with a high cardinality dimension
+- Column Chart: Use a column chart with a low cardinality dimension
+- Side by side Bar Chart: Add country and order date to the column. Add sales to row. Filter the order date to display just the last two years.
+- Over Time Bar Chart: Add order date to column and drill down to quarter. Add sales row. 
