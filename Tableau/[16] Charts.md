@@ -35,4 +35,5 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 - Multiple Line Chart: Add the order date to the column and convert the order date to quarter month. Add sales to rows. Add category to colour.
 - Dual Line Chart: Add the order date to the column and convert the order date to quarter month. Add sales and profit to the row and make it dual axes. change the colours.
 - Cumulative Line Chart: Add the order date to the column and convert the order date to month. Add sales to the row. Right-click on sales -> Quick Table Calculation -> Running Total. Add category to colour. Over on the Label mark pane -> switch from ALL to Line end for the values. Disable Label start of line.
+- Multiple Small Line Chart: Add country to the column. Add category and sales to the row. Add the order date to the column and convert it to month. Add country to colour. Over on the Label mark pane -> switch from ALL to Line end for the values. Disable Label start of line.
 - 
