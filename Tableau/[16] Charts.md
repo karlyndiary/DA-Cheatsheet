@@ -29,5 +29,5 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 - Barcode Chart: Add sales to the columns and sub-category to the rows. Bring in a high-cardinality dimension like product name to details.
 
 - Line Chart: Add sales to row and order date to column. Convert the order date to month.
-- Customized Line Chart: Add sales, discount, profit, unit price and count of orders to row. Add the order date to the column and convert the order date to month.
+- Customized Line Chart: Add sales, discount, profit, unit price and count of orders to row. Add the order date to the column and convert the order date to a quarter month.
 - Multiple Line Chart: Add the order date to the column and convert the order date to month. Add sales to rows. Add category to colour.
