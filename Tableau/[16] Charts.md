@@ -5,7 +5,7 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Unlimited No of Measures
 - Single Axes:
   - Create a view with one measure and one dimension
-  - Drag the 2nd measure onto the value axes till you see a double green bar, and drop it on there.
+  - Drag the second measure onto the value axes until you see a double green bar, then drop it there.
   - Can't Customize Charts individually except for colors
 - Dual Axes:
   - Create a view with two or more measures and one dimension
@@ -18,4 +18,5 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 - Bar Chart: Use a bar chart with a high cardinality dimension
 - Column Chart: Use a column chart with a low cardinality dimension
 - Side by side Bar Chart: Add country and order date to the column. Add sales to row. Filter the order date to display just the last two years.
-- Over Time Bar Chart: Add order date to column and drill down to quarter. Add sales row. 
+- Over-Time Bar Chart: Add the order date to the column and drill down to the quarter. Add the sales row. 
+- Stacked Bar Chart: Add order data to the column and convert it to the month. Add the order date to the filter, and select the last year. Add sales to row. Add category to colour.
