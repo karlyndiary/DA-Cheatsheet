@@ -20,3 +20,5 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 - Side by side Bar Chart: Add country and order date to the column. Add sales to row. Filter the order date to display just the last two years.
 - Over-Time Bar Chart: Add the order date to the column and drill down to the quarter. Add the sales row. 
 - Stacked Bar Chart: Add order data to the column and convert it to the month. Add the order date to the filter, and select the last year. Add sales to row. Add category to colour.
+  - Analyse change over time
+  - 1 to whole relationship
