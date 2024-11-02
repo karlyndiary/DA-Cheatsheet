@@ -30,3 +30,4 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 
 - Line Chart: Add sales to row and order date to column. Convert the order date to month.
 - Customized Line Chart: Add sales, discount, profit, unit price and count of orders to row. Add the order date to the column and convert the order date to month.
+- Multiple Line Chart: Add the order date to the column and convert the order date to month. Add sales to rows. Add category to colour.
