@@ -34,3 +34,10 @@
     - The user logs into the system using their username and password.
     - This action sends a login request to the authentication server.
     - The authentication server checks the selected repository to verify if the user has permission to access the requested file.
+
+  - Access View Process
+    - User Login: The user accesses Tableau Server via a web browser and enters their login credentials (username and password).
+    - Authentication: The credentials are sent to the authentication server, which verifies the user’s identity using a specified method (e.g., Active Directory, SAML, or local authentication).
+    - Authorization Check: Once authenticated, the server checks the user's permissions in the repository to determine access rights for specific workbooks, data sources, or dashboards.
+    - Access Granted: If authorized, the user can access and interact with approved content on Tableau Server based on their permission level (such as viewer, editor, or admin).
+    - Session Management: Tableau Server manages the user session, ensuring secure access and compliance with any additional security protocols during the session.
