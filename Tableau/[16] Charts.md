@@ -12,3 +12,5 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Right-click on the second measure and select dual-axis
   - Right-click on the value axes and select the synchronize axis
   - Customize Charts individually.
+  - 2nd Method: Create the view as usual
+    - Drag the 2nd measure on the view to the right end of the view till you see the green bar, when you do, drop the measure right there
