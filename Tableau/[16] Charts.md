@@ -16,6 +16,7 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
     - Drag the 2nd measure on the view to the right end of the view till you see the green bar, when you do, drop the measure right there
     - Don't synchronize the axis
 
+### Bar Chart
 - Bar Chart: Use a bar chart with a high cardinality dimension
 - Column Chart: Use a column chart with a low cardinality dimension
 - Side by side Bar Chart: Add country and order date to the column. Add sales to row. Filter the order date to display just the last two years.
@@ -28,6 +29,7 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 - Bar in Bar Chart: Add sales and quantity to columns and make it dual axes. Add sub-category to rows. Head to the quantity marks pane and make the size of the bar chart smaller.
 - Barcode Chart: Add sales to the columns and sub-category to the rows. Bring in a high-cardinality dimension like product name to details.
 
+### Line Chart
 - Line Chart: Add sales to row and order date to column. Convert the order date to month.
 - Customized Line Chart: Add sales, discount, profit, unit price and count of orders to row. Add the order date to the column and convert the order date to month.
 - Multiple Line Chart: Add the order date to the column and convert the order date to quarter month. Add sales to rows. Add category to colour.
