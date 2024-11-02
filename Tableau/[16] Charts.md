@@ -1,3 +1,7 @@
-- Individual Axes: Multiple measures on the single axes. Customize Charts individually. Unlimited No of Measures
+- Individual Axes:
+  - Multiple measures on the single axes.
+  - Customize Charts individually.
+  - Unlimited No of Measures
 - Single Axes:
+  - 
 - Dual Axes:
