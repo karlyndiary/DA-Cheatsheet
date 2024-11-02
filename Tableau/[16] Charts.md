@@ -7,3 +7,6 @@
   - Drag the 2nd measure onto the value axes till you see a double green bar, and drop it on there.
   - Can't Customize Charts individually except for colors
 - Dual Axes:
+  - Create a view with two or more measures and one dimension
+  - Right-click on the second measure and select dual-axis
+  - Right-click on the value axes and select synchronize axis
