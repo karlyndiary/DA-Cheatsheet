@@ -14,3 +14,4 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Customize Charts individually.
   - 2nd Method: Create the view as usual
     - Drag the 2nd measure on the view to the right end of the view till you see the green bar, when you do, drop the measure right there
+    - Don't synchronize the axis
