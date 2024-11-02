@@ -15,6 +15,7 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - 2nd Method: Create the view as usual
     - Drag the 2nd measure on the view to the right end of the view till you see the green bar, when you do, drop the measure right there
     - Don't synchronize the axis
+
 - Bar Chart: Use a bar chart with a high cardinality dimension
 - Column Chart: Use a column chart with a low cardinality dimension
 - Side by side Bar Chart: Add country and order date to the column. Add sales to row. Filter the order date to display just the last two years.
@@ -25,3 +26,6 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 - 100% Stacked Bar Chart: Same as a stacked bar chart. Head over to sales in the rows -> Right-click -> Quick Table Calculation -> Percent of Total -> Right-click -> Edit Table Calculation -> Specific Dimension -> Remove the dimension that is not related to the bar chart in terms of making it a stacked bar chart.
 - Multiple Small Bar Chart: Add country to the column. Add category and sales to the row. Add the order date to the column and convert it to month. Add country to colour.
 - Bar in Bar Chart: Add sales and quantity to columns and make it dual axes. Add sub-category to rows. Head to the quantity marks pane and make the size of the bar chart smaller.
+- Barcode Chart: Add sales to the columns and sub-category to the rows. Bring in a high-cardinality dimension like product name to details.
+
+- Line Chart
