@@ -10,4 +10,5 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 - Dual Axes:
   - Create a view with two or more measures and one dimension
   - Right-click on the second measure and select dual-axis
-  - Right-click on the value axes and select synchronize axis
+  - Right-click on the value axes and select the synchronize axis
+  - Customize Charts individually.
