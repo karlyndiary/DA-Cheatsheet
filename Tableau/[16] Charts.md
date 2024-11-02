@@ -5,5 +5,5 @@
 - Single Axes:
   - Create a view with one measure and one dimension
   - Drag the 2nd measure onto the value axes till you see a double green bar, and drop it on there.
-  - Can't Customize Charts individually
+  - Can't Customize Charts individually except for colors
 - Dual Axes:
