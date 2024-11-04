@@ -72,7 +72,7 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Duplicate measure values on the columns
   - Change the shape from a circle to line
   - Move the measure names to path.
-  - Right click on the duplicated measure values on the column and select dual axis.
+  - Right-click on the duplicated measure values on the column and select dual axis.
   - Switch the order of measure values on the columns to put the line behind the circles. 
 
 
@@ -96,3 +96,37 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
    - Change the shape to circle.
    - Right-click on the 2nd sales -> Dual axis
    - Synchronize axis
+
+
+- Bar and Line Chart (1)
+  - Add sales to row and order date to columns and switch to month
+  - Switch it to a bar chart
+  - Analytics -> Average Line
+
+
+- Bar and Line Chart (2)
+  - Correlation
+  - Compare two measures
+  - Add order date to columns and switch to month. Add order count to row
+  - Add count of customers to row
+  - Switch to circle line in color marks.
+  - Dual axis
+ 
+
+- Bullet Chart
+  - Compare Two measures
+    - Current year vs Previous year
+    - Actual vs Target
+  - Add sub-category to row and sales 2022 to columns.
+  - Add sales 2021 to detail.
+  - Right-click on the x-axis -> Add Reference Line -> value: Sales 2021, label: None, Scope: Per Cell
+  - Change line color and transparency
+   
+
+- Horizontal Lollipop Chart
+  - Use Case
+    - Ranking and highlighting important information in circle
+  - Add sub-category to rows and sales to columns.
+  - Reduce the line size. [Make sure its changed to bar]
+  - Duplicates sales on columns and change the shape to circle and increase the size
+  - Dual axis and synchronize axis
