@@ -130,3 +130,83 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Reduce the line size. [Make sure its changed to bar]
   - Duplicates sales on columns and change the shape to circle and increase the size
   - Dual axis and synchronize axis
+
+- Area Chart
+  - To analysis change over time
+  - Add order date to columns and switch to month. Add sales to row.
+  - Change the chart to area
+
+- Lined Area Chart
+  - Add order date to columns and switch to month. Add sales to row.
+  - Change the chart to area
+  - Duplicate sales in the row and change the chart type to line.
+  - Dual Axis and synchronize axis
+ 
+- Stacked Area Chart
+  - Add order date to columns and switch to month. Add sales to row.
+  - Change the chart to area
+  - Add Category field to colour
+ 
+- Full (100%) Stacked Area Chart
+  - Add order date to columns and switch to month. Add sales to row.
+  - Change the chart to area
+  - Add Category field to colour
+  - Right-click on sales -> Quick Table Calculation -> Percent of Total
+  - Right-click on sales -> Edit Table Calculation -> Specific Dimensions -> Category field
+ 
+- Small Multiple Area Chart
+  - Add country and order date to columns and switch to month. 
+  - Add category and sales to row.
+  - Add category to colour
+ 
+- Scatter Plot
+  - To find outliers
+  - Correlation
+  - Add sales to columns and profit to rows
+  - Add customer id to detail
+ 
+- Custom Scatter Plot
+  - To find outliers
+  - Correlation
+  - Add sales to columns and profit to rows
+  - Add customer id to detail
+  - Add count of orders to size
+  - Add country to color, add a border to the circles and turn down the opacity.
+ 
+- Dot Plot
+  - Distribution of data across categories
+  - Add sales to columns
+  - Add order date to rows and switch it to months discrete
+  - Add order id to details
+  - Add category to colour
+
+- Circle Timeline
+  - Analyse trends over time
+  - Correlation between two measures
+  - Add sub-category to row
+  - Add order date to columns and switch it to quarter continues
+  - Add sales to size
+  - Add profit to colour
+ 
+- Pie Chart
+  - Add sales to angle and country to colour
+
+- Donut Chart
+  - Add sales to angle and country to colour
+  - Add AVG(0) to columns and duplicate it -> Dual Axis and synchronize axis
+  - On the 2nd AVG(0) in the marks pane, change the chart type to a circle, reduce the size and change the colour to white.
+  - On the 2nd AVG(0) -> add sales to label -> Edit the text
+ 
+- Treemap
+  - Part to whole relationship
+  - Plot Hierarchical Data
+  - Change the chart type to square
+  - Add sales to size
+  - Add category to color
+  - Expand the category to the lowest level
+
+- Heatmap
+  - Correlation between two categories
+  - Add country to columns and sub-category to rows
+  - Add sales to label and color
+  - Change the chart type in the marks pane to square
