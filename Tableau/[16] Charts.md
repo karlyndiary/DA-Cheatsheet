@@ -210,3 +210,16 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Add country to columns and sub-category to rows
   - Add sales to label and color
   - Change the chart type in the marks pane to square
+
+- Bubble Chart
+  - Change the chart type in the marks pane to circle
+  - Add sales to size
+  - Add sub-category to detail, profit to colour, category to label
+ 
+- Stacked Bubble Chart
+  - Change the chart type in the marks pane to circle
+  - Add sales to size
+  - Add country to color
+  - Add Order id to detail
+ 
+- Map
