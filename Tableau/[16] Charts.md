@@ -87,3 +87,12 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 
 
  - Slope Chart
+   - To show how rank changes over time
+   - Add order date to column and sales to rows.
+   - Filter to show the last two years.
+   - Add country to detail
+   - Add country to label and select line ends.
+   - Duplicate the sales on the rows.
+   - Change the shape to circle.
+   - Right-click on the 2nd sales -> Dual axis
+   - Synchronize axis
