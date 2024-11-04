@@ -38,3 +38,16 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 - Multiple Small Line Chart: Add country to the column. Add category and sales to the row. Add the order date to the column and convert it to month. Add country to colour. Over on the Label mark pane -> switch from ALL to Line end for the values. Disable the Label start of line.
 - Highlighted Line Chart (1): Create a line chart as usual. Add a field to colour. Right-click on the pill -> Show highlight -> Select an option from the drop-down to highlight and dim the rest of the lines.
 - Highlighted Line Chart (2): Create a line chart as usual. Add a field to detail. Create a Parameter with the field values. Create a calculated field with ```[Country] = [Select Country]```. Add the calculated field to the colour. Change the colour of false to grey. Add the calculated field to size. Right-click on the legend and edit size -> Click on reverse.
+
+
+- Bump Chart
+  - Add the Order date and convert it to quarter.
+  - Add sales.
+  - Add country to color.
+  - Right-click on sales -> Quick table calculation -> Rank
+  - Right-click on sales -> Edit table calculation -> Specific Dimension -> Select field
+  - Reverse the rank axes -> Right-click on the axes -> Edit axes -> Reversed
+  - Duplicate the sales on the same row.
+  - On the 2nd chart -> Switch the shape to circle. -> Increase the size
+  - Right-click on the 2nd sales pill and select dual axes. -> Synchronize axes
+  - 
