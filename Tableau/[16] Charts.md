@@ -41,6 +41,7 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
 
 
 - Bump Chart
+  - To show the rank
   - Add the Order date and convert it to quarter.
   - Add sales.
   - Add country to color.
@@ -50,4 +51,39 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Duplicate the sales on the same row.
   - On the 2nd chart -> Switch the shape to circle. -> Increase the size
   - Right-click on the 2nd sales pill and select dual axes. -> Synchronize axes
-  - 
+
+
+- Sparkline
+  - Add the Order date and convert it to quarter.
+  - Add sales.
+  - Add country to the row.
+  - Add sales to label -> Min/Max -> Select quarter in the field
+  - Resize the chart.
+ 
+
+- Barbell Chart
+  - Perfect for categories
+  - Show the range between two values
+  - To compare years. Longer the line means larger the difference in sales between the two years.
+  - Add sub-category to row.
+  - Create two calculated fields -> ```IF YEAR([Order Date]) = 2021 THEN [Sales] ELSE NULL END```, ```IF YEAR([Order Date]) = 2022 THEN [Sales] ELSE NULL END```
+  - Add the 2021 calculated field to columns. Change the shape to a circle.
+  - Add the 2022 calculated field to the x-axis.
+  - Duplicate measure values on the columns
+  - Change the shape from a circle to line
+  - Move the measure names to path.
+  - Right click on the duplicated measure values on the column and select dual axis.
+  - Switch the order of measure values on the columns to put the line behind the circles. 
+
+
+- Rounded Bar Chart
+  - Add sales to columns and sub-category to row
+  - Add AVG(0) to columns
+  - Add the AVG(0) to the x-axis of sales to generate measure values and names.
+  - Change it from bar to line.
+  - Move measure names from rows to path
+  - Increase the line size.
+  - Add measure values to color
+
+
+ - Slope Chart
