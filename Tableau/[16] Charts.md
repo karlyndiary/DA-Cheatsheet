@@ -223,3 +223,52 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Add Order id to detail
  
 - Map
+  - Add Longitude to columns and latitude to rows
+  - Add country, state to details
+  - Change the chart type to map
+  - Add region to color
+  - Add sales to label
+ 
+- Map with symbols
+  - Add Longitude to columns and latitude to rows
+  - Add country, state to details
+  - Change the chart type to shape
+  - Add region to color
+  - Add sales to size
+
+- No Background Map
+  - Add Longitude to columns and latitude to rows
+  - Add country, state to details
+  - Change the chart type to Map
+  - Add region to color
+  - Map -> Background Layers -> Washout (%) -> 100%
+ 
+- Night Vision Map
+  - Add Longitude to columns and latitude to rows
+  - Add country, state to details
+  - Change the chart type to Map
+  - Map -> Background Layers -> Style -> Dark
+  - Add sales to size and color
+  - Duplicate the longitude and change the chart type to map
+  - Remove sales size and color
+  - Edit Border in color -> Dual Axis
+
+ - Histogram (1 Measure)
+   - Right-click on the field -> Create -> Bins
+   - Add the bins to columns and the field to rows
+   - Right-click on the bins and convert it to continuous
+  
+- Histogram (2 Measure)
+  - Create a calculated field -> ```{FIXED [Customer ID]: COUNT([Order ID])}``` -> convert it to dimension
+  - Add the calculated field to columns
+  - Add customer count to rows and label
+ 
+- Calendar Chart
+  - Add order date to columns and convert it to weekday [More -> Weekday]
+  - Add order date to rows and convert it to weeknumber [More -> Weeknumber]
+  - Add order date to filter as year and another order date filter as month -> Select one year and one month
+  - Add sales to color
+  - Add the order date to the label and convert it to day.
+
+ - Waterfall Chart
+   - 
