@@ -280,7 +280,7 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
    - Add profit to color and make it two step
    - Analysis -> Totals -> Show Row Grand Totals
 
-- Pareto Chart
+- Pareto Chart V1
   - 80/20 Rule
   - 80% of consequences come from 20% of the causes
   - Add sub-category to columns and sales to rows
@@ -289,3 +289,26 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Dual Axis
   - Right-click on the 2nd sales -> Table Calculation -> Select Running Total [primary calculation] -> Add secondary calculation -> Percent of Total [secondary calculation]
   - Enable the label on the 2nd sales
+
+- Pareto Chart V2
+  - Business Question: Do 20% of the products make up 80% of the sales?
+  - Add sales to rows and product name to columns and select count distinct under measures for product name
+  - Add product name to detail
+  - Right-click on the product name -> Table Calculation -> Select Running Total [primary calculation] -> Specific Dimensions -> Product name -> Add secondary calculation -> Percent of Total [secondary calculation] -> Specific Dimensions -> Product name
+  - Repeat the above for sales as well
+  - Switch the chart type to line
+  - Right-click on the product name on detail -> Sort -> Field -> Sales -> Descending
+  - Analytics -> Drag and drop the Reference Line on products -> 0.2 in values and constant -> ok
+  - Repeat the same but this time 80% [0.8] for sales
+
+- Butterfly Chart V1
+  - Correlation
+  - Compare two measures by category
+  - Add sub-category to rows and count of customers and count of orders to columns
+  - Add AVG(0) to columns and place it between the counts
+  - Add sub-category to label to avg(0) and change the chart type to text
+  - Right-click on the left count axis -> Edit axis -> Reversed
+  - Add color to count of customers and count of orders
+ 
+- Butterfly Chart V2
+  - 
