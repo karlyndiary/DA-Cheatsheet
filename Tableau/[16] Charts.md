@@ -271,4 +271,21 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Add the order date to the label and convert it to day.
 
  - Waterfall Chart
-   - 
+   - Part to whole relationship
+   - Flow Process (Typically Budgets)
+   - Add sub-category to columns and profit to rows
+   - Right-click on profit -> Quick Table Calculation -> Running Total
+   - Change the chart type to gantt bar
+   - Add profit to size and double click to edit the sum of sales on size pill and add a minus in front of it ```-sum(sales)```
+   - Add profit to color and make it two step
+   - Analysis -> Totals -> Show Row Grand Totals
+
+- Pareto Chart
+  - 80/20 Rule
+  - 80% of consequences come from 20% of the causes
+  - Add sub-category to columns and sales to rows
+  - Sort it in descending order
+  - Duplicate Sales and switch it to line chart
+  - Dual Axis
+  - Right-click on the 2nd sales -> Table Calculation -> Select Running Total [primary calculation] -> Add secondary calculation -> Percent of Total [secondary calculation]
+  - Enable the label on the 2nd sales
