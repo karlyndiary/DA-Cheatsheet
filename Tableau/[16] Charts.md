@@ -344,4 +344,25 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
     END
     ```
   - Add the quadrant color to color
+
+- Box Plot
+  - The Length of Box: The longer the box, the more dispersed the data The smaller, the less dispersed the data
+  - Add sales to rows and sub-category to details
+  - Add category to columns and change the chart type to circle
+  - Add reference line -> Select box plot -> ok
+
+- KPI
+  - Analyse the performance of the business
+  - Add sub-category to rows and country to column
+  - Add sales to text
+  - Create a KPI Color Calculated Field
+    ```
+    IF SUM([Sales]) >= 50000 THEN 'Green'
+    ELSEIF SUM([Sales]) <= 50000 AND SUM([Sales]) >= 10000 THEN 'Orange'
+    ELSE 'Red'
+    END
+    ```
+  - Add the calculated field to color
+  - Change the chart type to shape and move sales from text to detail
+  - Move the KPI color from color to shape
   - 
