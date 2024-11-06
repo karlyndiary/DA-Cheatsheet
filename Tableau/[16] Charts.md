@@ -311,4 +311,37 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Add color to count of customers and count of orders
  
 - Butterfly Chart V2
+  - Add count of customers to columns and and sub-category to rows
+  - Add count of orders to the count of customers value axis
+  - Move measure names from rows to colors
+  - Sort the value axis descending order
+  - Over on the measure values mark pane change the count of customers to ```-COUNT([Customers.csv])```
+  - Add AVG(0) to columns, switch the chart type to text and add sub-category to text
+  - Dual axis and synchronize axis. Make the text white in color.
+
+- Quadrant Chart
+  - Use Case:
+    - Categorize Data Points
+    - Risk Management
+    - Strategic Planning
+  - Add discount to columns and switch the measure to average
+  - Create a calculated field for profit ratio ```SUM([Profit])/SUM([Sales])```
+  - Add the profit ratio to rows
+  - Switch the y-axis to percentage -> Right-click on the profit ratio axis -> Format -> Under numbers -> Select Percentage -> Remove decimals
+  - Repeat the same for the other axis as well
+  - Add customer id to details
+  - Change chart type to circle
+  - Reduce the opacity to see the overlapping (70%)
+  - Create two parameters -> one for discount and another for profit ratio
+  - Data type: Float, Display format: percentage without decimals, Current value: 0.15 for 15%
+  - Add two reference line -> Right-click on the axis -> Add reference line -> Select the parameter of the selected axis -> Label: None
+  - Create a calculated field -> Quadrant color
+    ```
+    IF [Profit Ratio] >= [Select Profit Ratio] AND AVG([Discount]) >= [Select Discount] THEN 'Upper Right'
+    ELSEIF [Profit Ratio] >= [Select Profit Ratio] AND AVG([Discount]) < [Select Discount] THEN 'Upper Left'
+    ELSEIF [Profit Ratio] < [Select Profit Ratio] AND AVG([Discount]) >= [Select Discount] THEN 'Bottom Right'
+    ELSE 'Bottom Left'
+    END
+    ```
+  - Add the quadrant color to color
   - 
