@@ -416,11 +416,40 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Slope Chart
   - Bar Chart Over Time
   - Stacked Area Chart
-  - Calender Chart
+  - Calendar Chart
   - Circle Timeline
 - Magnitude
+  - Show size comparisons. These can be relative absolute
+  - Which categories have the highest and lowest sales
+  - Show comparison of sales across different categories'
+  - Bar Chart (Rows and Columns)
+  - Bar Chart Side by Side
+  - Stacked Bar Chart
+  - Full (100%) Stacked Bar Chart
+  - Lollipop Horizontal Bar Chart
+  - Bubble Chart
+  - Scatter Plot
 - Part to whole
+  - Show how a whole breaks down into its components
+  - How much each category contributes to overall sales?
+  - Pie Chart
+  - Donut Chart
+  - Full (100%) Stacked Bar Chart
+  - Full (100%) Stacked Area Chart
+  - Treemap
+  - Waterfall Chart
+- Correlation
+  - Show the relationships between two or more measures
+  - Is there a correlation between two measures?
+  - How strongly related are the two variables?
+  - Custom Scatter Plot
+  - Quadrant Chart
+  - Dual Line Chart
+  - Bar & Line Chart (2)
+  - Butterfly Chart V2
+  - Histogram (2 Measures)
 - Spatial
+  - 
 - Flow
 - Distribution
 - Ranking
