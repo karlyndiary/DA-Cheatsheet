@@ -391,4 +391,20 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Right-click on the sales under marks -> Format -> Currency (custom) -> Add currency, remove decimals and display units in K or M
   - Add Country to text -> Edit text -> Make the country text smaller than the number value and disable the header
  
+- Funnel Chart
+  - Progress of data through different stages
+  - Add sales to rows and sub-category to color
+  - Add sales to size and sort it descending order
+  - Add sales and sub-category to text
+  - Right-click on sales -> quick table calculation -> Percent of total
+  - Add category as filter
+ 
+- Progress Bar
+  - Add sales to columns and country to rows
+  - Right-click on sales -> Quick Table Calculation -> Percent of Total
+  - Enable the label and add AVG(1) to columns
+  - Dual axis and synchronize axis
+  - Rearrange the pills in the columns and change the color of avg(1) to a lighter color
+ 
+### How to choose the right chart?
 - 
