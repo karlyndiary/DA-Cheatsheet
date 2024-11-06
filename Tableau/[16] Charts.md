@@ -448,8 +448,20 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Bar & Line Chart (2)
   - Butterfly Chart V2
   - Histogram (2 Measures)
-- Spatial
+- Ranking
+  - Show an item's position in an ordered list (Relative Ranking)
+  - Show top 10 customers by sales
+  - Show the lowest 10 products by sales
+  - Bar Chart (Rows and Columns)
+  - Lollipop Horizontal Chart
+  - Rounded Bar Chart
+  - Slope Chart
+  - Funnel Chart
+  - Bump Chart
+  - Butterfly Chart V2
+- Distribution
+  - Show values in a dataset and how often they occur
+  - What is the distribution of customers' ages?
+  - What are the busiest times in our workday?
   - 
 - Flow
-- Distribution
-- Ranking
