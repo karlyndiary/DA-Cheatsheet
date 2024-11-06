@@ -365,4 +365,30 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Add the calculated field to color
   - Change the chart type to shape and move sales from text to detail
   - Move the KPI color from color to shape
-  - 
+  - Change the shapes
+
+- KPI and Bar Chart (Bullet Chart)
+  - Add sub-category to row and sales 2022 to columns.
+  - Add sales 2021 to detail.
+  - Right-click on the x-axis -> Add Reference Line -> value: Sales 2021, label: None, Scope: Per Cell
+  - Change line color and transparency
+  - Create a calculated field ->
+    ```
+    IF SUM([Sales 2022]) > SUM([Sales 2021]) THEN 'Green'
+    ELSE 'Red'
+    END
+    ```
+  - Add AVG(0) to columns and switch the chart type to shape
+  - Add the calculated field to shape and color
+  - Dual Axis and synchronize axis
+  - Edit the AVG(0) to AVG(-10000) to make space for the KPI shapes and the bar chart
+ 
+- KPI BANS
+  - Change the chart type to text
+  - Add sales to text
+  - Add country to columns
+  - Increase the number size in the text and center align it
+  - Right-click on the sales under marks -> Format -> Currency (custom) -> Add currency, remove decimals and display units in K or M
+  - Add Country to text -> Edit text -> Make the country text smaller than the number value and disable the header
+ 
+- 
