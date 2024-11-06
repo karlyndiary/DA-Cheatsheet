@@ -407,4 +407,20 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Rearrange the pills in the columns and change the color of avg(1) to a lighter color
  
 ### How to choose the right chart?
-- 
+- Change over time
+  - Show trends over time
+  - How does the data change evolve over time?
+  - Are there any trends or patterns in data over time?
+  - Line Chart
+  - Sparkline Chart
+  - Slope Chart
+  - Bar Chart Over Time
+  - Stacked Area Chart
+  - Calender Chart
+  - Circle Timeline
+- Magnitude
+- Part to whole
+- Spatial
+- Flow
+- Distribution
+- Ranking
