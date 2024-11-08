@@ -80,7 +80,7 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Add sales to columns and sub-category to row
   - Add AVG(0) to columns
   - Add the AVG(0) to the x-axis of sales to generate measure values and names.
-  - Change it from bar to line.
+  - Change it from bar to line in the marks pane.
   - Move measure names from rows to path
   - Increase the line size.
   - Add measure values to color
