@@ -463,5 +463,21 @@ https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Charts_173052
   - Show values in a dataset and how often they occur
   - What is the distribution of customers' ages?
   - What are the busiest times in our workday?
-  - 
+  - Histogram (2 Measures)
+  - Box Plot
+  - Dot Plot
+  - Custom Scatter Plot
+  - Quadrant Chart
+  - Barcode Chart
+  - Barbell Chart
+- Spatial
+  - Use when geospatial patterns in your data are more important than anything else
+  - Which city/state has the highest sales?
+  - Map
+  - No Background Map
+  - Map with symbols
+  - Night Vision Map
 - Flow
+  - Visualize the movement or flow of data over time
+  - How do things move from one point to another?
+  - Waterfall Chart
