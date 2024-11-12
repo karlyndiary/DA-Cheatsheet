@@ -6,10 +6,10 @@ The company has significant amounts of data on its sales, marketing efforts, ope
 
 Insights and recommendations are provided on the following key areas : 
 
-• Sales Trends Analysis : Evaluation of historical sales patterns, both globally and by region, focusing on Revenue, Order Volume, and Average Order Value (AOV). 
-• Product Level Performance : An analysis of Elist's various product lines, understanding their impact on sales and returns. 
-• Loyalty Program Success : An assessment of the loyalty program on customer retention and sales. 
-• Regional Comparisons : An evaluation of sales and orders by region.
+- Sales Trends Analysis : Evaluation of historical sales patterns, both globally and by region, focusing on Revenue, Order Volume, and Average Order Value (AOV). 
+- Product Level Performance : An analysis of Elist's various product lines, understanding their impact on sales and returns. 
+- Loyalty Program Success : An assessment of the loyalty program on customer retention and sales. 
+- Regional Comparisons : An evaluation of sales and orders by region.
 
 An interactive PowerBI dashboard can be downloaded here. [here is the link]
 the SQL queries utilized to inspect and perform quality checks can be found here. 
@@ -35,10 +35,10 @@ below is the overview page from the PowerBI dashboard and more examples are incl
 [dashboard image here]
 
 Sales Trends : 
-• The company's sales peaked in December 2020 with 4,019 orders totaling $1,251,721 monthly revenue. This corresponds with the boom in economy-wide spending due to pandemic-induced changing consumer behavior. 
-• Beginning in April 2021, revenue declined on a year-over-year basis for 21 consecutive months. Revenue hit a company lifetime low in October 2022, with the company earning just over $178K. In the following months, revenue recovered slightly, following normal holiday seasonality patterns. 
-• Despite the downward trend, full-year 2022 remained above the pre-COVID 2019 baseline in all three key performance indicators. This is primarily due to the stronger 1Q22, which recorded revenue and order count well above the same period in 2020, up 37% and 23% respectively. 
-• Average order value saw a one-month year-over-year increase in September 2022, this can be attributed to an increased share of high-cost laptop orders.
+- The company's sales peaked in December 2020 with 4,019 orders totaling $1,251,721 monthly revenue. This corresponds with the boom in economy-wide spending due to pandemic-induced changing consumer behavior. 
+- Beginning in April 2021, revenue declined on a year-over-year basis for 21 consecutive months. Revenue hit a company lifetime low in October 2022, with the company earning just over $178K. In the following months, revenue recovered slightly, following normal holiday seasonality patterns. 
+- Despite the downward trend, full-year 2022 remained above the pre-COVID 2019 baseline in all three key performance indicators. This is primarily due to the stronger 1Q22, which recorded revenue and order count well above the same period in 2020, up 37% and 23% respectively. 
+- Average order value saw a one-month year-over-year increase in September 2022, this can be attributed to an increased share of high-cost laptop orders.
 
 [sales trends chart]
 
