@@ -40,4 +40,28 @@
     - Authentication: The credentials are sent to the authentication server, which verifies the user’s identity using a specified method (e.g., Active Directory, SAML, or local authentication).
     - Authorization Check: Once authenticated, the server checks the user's permissions in the repository to determine access rights for specific workbooks, data sources, or dashboards.
     - Access Granted: If authorized, the user can access and interact with approved content on Tableau Server based on their permission level (such as viewer, editor, or admin).
-    - Session Management: Tableau Server manages the user session, ensuring secure access and compliance with any additional security protocols during the session.
+    - Session Management: Tableau Server manages the user session, ensuring secure access and compliance with additional security protocols during the session.
+
+    - Process: Tableau Server Workflow for Visualizations
+      - Signal from Tableau Server: The Tableau Server receives a signal indicating a request for a visualization. The signal is sent to the Application Server, which manages user sessions and permissions.
+      
+      - Forward to VizQL Server: Since the request pertains to a visualization, the Application Server forwards it to the VizQL Server. The VizQL Server is responsible for handling queries related to visualizations.
+      
+      - Permission Check: The VizQL Server checks with the Repository (PostgreSQL database used by Tableau) to verify if the user has permission to access the requested visualization.    
+      If the user is authorized, the Repository responds with an "OK."
+      If not, the request is denied.
+
+      - Request for Dashboard File (TWB or TWBX): Upon receiving approval, the VizQL Server requests the Repository for the XML file of the dashboard (.TWB) or the packaged workbook (.TWBX). These files contain the structure and metadata of the dashboard but not the data itself.
+      
+      - Dashboard Rendering Initialization: The VizQL Server begins building the visualization framework based on the retrieved file. At this stage, Tableau is aware of the data requirements to complete the visualization.
+      
+      - Data Request to Data Server: The VizQL Server sends a request to the Data Server to fetch the required data for rendering the dashboard.
+      
+      - Querying the Data Engine: The Data Server communicates with the Data Engine (Hyper or legacy Tableau Data Engine) to process the request.     
+      The Data Engine queries the File Store (Tableau’s storage system for extracts) or the external data source if the data is not stored locally.
+      - Data Retrieval from File Store or Data Source: The File Store (or external database) sends the requested data back to the Data Engine, which processes it as per the query logic.
+      
+      - Data Transfer to VizQL Server: The processed data is sent from the Data Engine to the Data Server, and then to the VizQL Server for integration with the visualization framework.
+      
+      - Final Dashboard Rendering: The VizQL Server combines the data with the visualization structure (defined in the TWB/TWBX file) and renders the final dashboard. This rendered visualization is displayed to the user via their browser or Tableau Desktop.
+
