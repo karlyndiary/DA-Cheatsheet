@@ -67,4 +67,4 @@
 
 - Application Server: It handles Authentication and Authorisation, Publishing and UI Rendering.
 - VisQL Server [Visual Query Language]: For example, when you drag a measure and dimension in tableau -> VisQL now converts this to SQL query -> and sends it to the data server to get the data -> The data server sends the raw data to VisQL -> Now VisQL will now translate it to visual.
-- Data Server:   
+- Data Server: Knows everything about the data, knows where to find the data, how to connect it and how to speak to it. 
