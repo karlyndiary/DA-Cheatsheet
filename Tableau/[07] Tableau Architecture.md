@@ -65,6 +65,8 @@
       
       - Final Dashboard Rendering: The VizQL Server combines the data with the visualization structure (defined in the TWB/TWBX file) and renders the final dashboard. This rendered visualization is displayed to the user via their browser or Tableau Desktop.
 
-- Application Server: It handles Authentication and Authorisation, Publishing and UI Rendering.
-- VisQL Server [Visual Query Language]: For example, when you drag a measure and dimension in tableau -> VisQL now converts this to SQL query -> and sends it to the data server to get the data -> The data server sends the raw data to VisQL -> Now VisQL will now translate it to visual.
-- Data Server: Knows everything about the data, knows where to find the data, how to connect it and how to speak to it. 
+- Server Components
+  - Application Server: It handles Authentication and Authorisation, Publishing and UI Rendering. It handles the publishing process and splits the process into two -> XML file stored in the Repository and the HYPER in the File Store.
+  - VisQL Server [Visual Query Language]: For example, when you drag a measure and dimension in tableau -> VisQL now converts this to SQL query -> and sends it to the data server to get the data -> The data server sends the raw data to VisQL -> Now VisQL will now translate it to visual. It's the brain of visualization. 
+  - Data Server: Knows everything about the data, knows where to find the data, how to connect it and how to speak to it. The first task of the data server is to manage extract and live databases, Acts as a proxy: It sends queries in the language that the database understands and Enforces Data Security: It checks if the user is allowed to see the data and does filtering if needed. 
+  - Data Engine: If the data is stored inside Tableau as an extract, then the data engine is going to deal with it. Different components can send requests to the data engine. Example: The application server can send a request to the data engine to publish a new extract, and then the data engine can execute and create an operation to create a new extract and store data inside it. The data engine can receive a query request from the data server asking for the data. The data engine can find the correct extract, it can connect to the hard driver and then it can repulse the needed extract from it.
