@@ -66,6 +66,7 @@
       - Final Dashboard Rendering: The VizQL Server combines the data with the visualization structure (defined in the TWB/TWBX file) and renders the final dashboard. This rendered visualization is displayed to the user via their browser or Tableau Desktop.
 
 - Server Components
+  - The Gateway plays a crucial role in load balancing in multi-node environments, ensuring efficient distribution of client requests across different server nodes.
   - Application Server: It handles Authentication and Authorisation, Publishing and UI Rendering. It handles the publishing process and splits the process into two -> XML file stored in the Repository and the HYPER in the File Store.
   - VisQL Server [Visual Query Language]: For example, when you drag a measure and dimension in tableau -> VisQL now converts this to SQL query -> and sends it to the data server to get the data -> The data server sends the raw data to VisQL -> Now VisQL will now translate it to visual. It's the brain of visualization. 
   - Data Server: Knows everything about the data, knows where to find the data, how to connect it and how to speak to it. The first task of the data server is to manage extract and live databases, Acts as a proxy: It sends queries in the language that the database understands and Enforces Data Security: It checks if the user is allowed to see the data and does filtering if needed. 
