@@ -74,3 +74,13 @@
   - Cache Server: It stores almost everything like images, icons, results of queries, dashboards and so on. So if you start a dashboard that is already accessed before the data can be pulled from the cache server.
   - Backgrounder: You can create a schedule to refresh the data inside your extract, and the task of the backgrounder is to check the schedule each 10s and then trigger the process of refreshing the extract if the time comes.
   - Search and Browse: Users can search for content, and this component is responsible for searching inside the repository and returning the results to the users.
+
+- Tableau Public Process
+  - Files: You can only connect files like CSV, JSON, Access and Google Sheets.
+  - Tableau Public Desktop: We connect Tableau Public to our files by creating a data source, in the data source, we have only one type of connection - Extract. A copy of our files to Tableau public desktop. There is no live connection. Then we build the visualizations. We have only one option to share the visualization and workbook, ie., to Tableau Public. Now users can interact and download the file.
+  - Limitations:
+    - CSV, JSON, Access and Google Sheets -> Only these files types
+    - Only Extract. 15M Rows. No local save.
+    - Max 15GB on Tableau Public.
+    - No Automation.
+    - Only Public. -> No User-based sharing.
