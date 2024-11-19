@@ -1,3 +1,5 @@
+https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/TableCalculations_17299246923910/Salescomparisonoveryears
+
 - Table Calculations are generally executed last in the order of computations in Tableau.
 - Table Calculations are context-sensitive and operate based on the data displayed in the visualization.
 - Table Calculations are calculated after the aggregation
