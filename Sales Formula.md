@@ -28,11 +28,11 @@
 ​
 - Sales Growth Rate: Percentage increase in sales over a specific period.
   - Sales Growth Rate = ((Sales in Current Period - Sales in Previous Period)/ Sales in Previous Period) * 100
- 
+
 - Churn Rate: Percentage of customers lost over a specific period.
   - Churn Rate = ((Customers at Beginning of Period - Customers at End of Period)/Customers at Beginning of Period) * 100
 
-​- Retention Rate: Percentage of customers retained over a specific period.
+- Retention Rate: Percentage of customers retained over a specific period.
   - Retention Rate = (Number of Repeat Customers/ Total Customers) * 100
 
 - Market Share: Proportion of total market sales captured by a company.
@@ -41,6 +41,6 @@
 - Break-even Point: Sales level at which total revenue equals total costs.
   - Break-even Point (Units) = Fixed Costs / Selling Price per Unit − Variable Cost per Unit
 
-​- Sales Conversion Rate: Percentage of leads converted into customers.
+- Sales Conversion Rate: Percentage of leads converted into customers.
   - Sales Conversion Rate = (Number of Sales/ Number of Leads) * 100
 
