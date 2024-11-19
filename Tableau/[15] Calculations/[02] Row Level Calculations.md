@@ -1,3 +1,5 @@
+https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/RowLevelCalculations_17294895576700/LogicalOperators
+
 ### Number Functions
 
 - Ceiling: Rounds up the number. Ceiling(1.8) => 2
