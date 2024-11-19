@@ -90,7 +90,7 @@
 
 ### Data Blending
 https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/Udemy-DataBlending_17290860466500/Sheet1 
-- Produc_prices - Json, Products - CSV
+- Product_prices - Json, Products - CSV
 - It takes place at the visualization layer, not in the logical layer.
 - Data source imported into Tableau is the primary data source and the secondary data source is external.
 - Only Left Join by default.
