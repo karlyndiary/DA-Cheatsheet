@@ -44,3 +44,30 @@
 - Sales Conversion Rate: Percentage of leads converted into customers.
   - Sales Conversion Rate = (Number of Sales/ Number of Leads) * 100
 
+- Revenue per Customer (RPC): Average revenue generated per customer.
+  - RPC = Revenue/ Number of Customers
+
+​- Average Revenue per User (ARPU): Commonly used in subscription businesses.
+  - ARPU = Monthly Revenue/ Number of Users
+
+​### Customer Behavior Metrics
+
+- Customer Retention Cost (CRC): Cost incurred to retain existing customers.
+  - CRC = Retention Campaign Costs/ Customers Retained
+
+- Customer Attrition Rate (a.k.a Customer Churn Rate): Rate at which customers stop doing business with the company.
+  - Attrition Rate = (Lost Customers/ Total Customers at Start of Period) * 100​
+
+- Repeat Purchase Rate (RPR): Proportion of customers who make more than one purchase.
+  - RPR = (Repeat Customers/ Total Customers) * 100
+
+- Customer Purchase Frequency: Measures how often customers purchase within a given time frame.
+  - Purchase Frequency = Total Orders/ Unique Customers
+
+### Operational and Inventory Metrics
+
+- 
+​
+
+
+ 
