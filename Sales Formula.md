@@ -47,10 +47,10 @@
 - Revenue per Customer (RPC): Average revenue generated per customer.
   - RPC = Revenue/ Number of Customers
 
-​- Average Revenue per User (ARPU): Commonly used in subscription businesses.
+- Average Revenue per User (ARPU): Commonly used in subscription businesses.
   - ARPU = Monthly Revenue/ Number of Users
 
-​### Customer Behavior Metrics
+### Customer Behavior Metrics
 
 - Customer Retention Cost (CRC): Cost incurred to retain existing customers.
   - CRC = Retention Campaign Costs/ Customers Retained
