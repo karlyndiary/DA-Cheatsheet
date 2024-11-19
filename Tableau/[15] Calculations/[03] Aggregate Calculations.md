@@ -1,3 +1,5 @@
+https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/AggregateCalculations_17294252400240/AttrCountry
+
 - Aggregate Measure
   - Aggregate the data at the visualization level of details (VIZ LOD)
   - Global: Calculated Field
