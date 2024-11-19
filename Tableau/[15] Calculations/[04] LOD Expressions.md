@@ -1,3 +1,5 @@
+https://public.tableau.com/app/profile/karen.judelyn.fernandes/viz/LODExpression_17297449978720/Comparativesalesanalysisbycategory
+
 - How it works?
   - Aggregate the rows at the dimension level used in the calculation
   - Level of Details is the LOD Expression
