@@ -22,3 +22,6 @@
 - [Retail Dataset](https://www.iguazio.com/blog/13-best-free-retail-datasets-for-machine-learning/)
 - [Datasets](https://data.mendeley.com/)
 - [Social Media Data](https://www.benlcollins.com/spreadsheets/import-social-media-statistics/#instagram)
+
+### Data Analysis Project Ideas
+- [Data Analysis Projects](https://amankharwal.medium.com/data-analysis-projects-with-python-a262a6f9e68c)
