@@ -64,10 +64,48 @@
 - Customer Purchase Frequency: Measures how often customers purchase within a given time frame.
   - Purchase Frequency = Total Orders/ Unique Customers
 
+- Retention Rate (YoY): How many customers from the previous year remain active this year.
+  - Retention Rate (%) = (Repeat Customers (CY)/ Total Customers (PY)) * 100
+    
 ### Operational and Inventory Metrics
 
-- 
-​
+- Inventory Carrying Cost: The cost of storing unsold inventory.
+  - Carrying Cost = (Total Inventory Costs/ Inventory Value) * 100
 
-
+- Fill Rate: Measures order fulfillment efficiency.
+  - Fill Rate = (Orders Shipped on Time/ Total Orders) * 100
  
+- Stock Turnover Ratio: How often inventory is sold and replaced in a period.
+  - Stock Turnover Ratio = COGS/ Average Inventory
+
+​- Backorder Rate: Percentage of orders delayed due to stock shortages.
+  - Backorder Rate = (Backordered Units/ Total Units Ordered) * 100
+
+### Forecasting and Trends
+
+- Sales Forecast Accuracy (SFA): Measures the accuracy of sales forecasts.
+  - SFA = (1 - Forecast Error/ Actual Sales) * 100
+ 
+- Seasonality Index: Identifies seasonal sales trends.
+  - Seasonality Index = Sales for Period/ Average Sales per Period
+
+### Benchmarks and Comparisons
+
+- Year-over-Year Growth (YoY): Compares performance across years.
+  - YoY Growth = ((Sales This Year - Sales Last Year)/ Sales Last Year) * 100
+​
+- Month-over-Month Growth (MoM): Compares performance across months.
+​  - MoM Growth = ((Sales This Month - Sales Last Month)/ Sales Last Month) * 100
+
+- Contribution to Total Sales: The percentage of current year's sales coming from specific categories, products, or regions.
+  - Contribution (%) = ((CY Category/Region/Product Sales)/ CY Total Sales)) * 100
+ 
+### Profitability KPIs
+
+- Gross Profit Growth (YoY): Percentage increase or decrease in gross profit year-over-year.
+  - Gross Profit Growth (%) = ((CY Gross Profit - PY Gross Profit)/ PY Gross Profit) * 100
+
+- Net Profit Margin (YoY): Comparison of net profit as a percentage of revenue for CY and PY.
+  - Net Profit Margin (%) = (CY Net Profit/ CY Total Revenue) * 100 
+
+- 
