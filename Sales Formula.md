@@ -108,4 +108,12 @@
 - Net Profit Margin (YoY): Comparison of net profit as a percentage of revenue for CY and PY.
   - Net Profit Margin (%) = (CY Net Profit/ CY Total Revenue) * 100 
 
-- 
+### Efficiency KPIs
+
+- Order Volume Growth (YoY): Percentage increase or decrease in total orders.
+  - Order Growth (%) = ((CY Total Orders - PY Total Orders)/ PY Total Orders) * 100
+​
+- Inventory Turnover (YoY): Comparison of how quickly inventory was sold this year versus last year.
+  - Inventory Turnover Ratio = Cost of Goods Sold (COGS)/ Average Inventory
+
+​
