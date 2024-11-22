@@ -2,9 +2,19 @@
 
 - [Python](https://github.com/karlyndiary/DA-Cheatsheet/tree/master/Python)
 - [Excel](https://github.com/karlyndiary/DA-Cheatsheet/tree/master/Excel)
-- [Power BI](https://github.com/karlyndiary/DA-Cheatsheet/tree/master/Power%20BI)
-- [SQL](https://github.com/karlyndiary/DA-Cheatsheet/tree/master/SQL)
-- [RStudio](https://github.com/karlyndiary/DA-Cheatsheet/blob/master/RStudio.md)
 - [Tableau](https://github.com/karlyndiary/DA-Cheatsheet/tree/master/Tableau)
+- [SQL](https://github.com/karlyndiary/DA-Cheatsheet/tree/master/SQL)
+- [Power BI](https://github.com/karlyndiary/DA-Cheatsheet/tree/master/Power%20BI)
+- [RStudio](https://github.com/karlyndiary/DA-Cheatsheet/blob/master/RStudio.md)
 - [Git Commands](https://github.com/karlyndiary/DA-Cheatsheet/blob/master/Git%20Commands.md)
 - [Q&A](https://github.com/karlyndiary/DA-Cheatsheet/tree/master/Q%26A)
+
+### Datasets & API
+
+- [Public APIs](https://github.com/public-apis/public-apis)
+- [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
+- [Maven Data Playground](https://www.mavenanalytics.io/data-playground)
+- []()
+- []()
+- []()
+- []()
