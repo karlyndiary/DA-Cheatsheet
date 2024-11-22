@@ -21,3 +21,4 @@
 - [RapidAPI](https://rapidapi.com/hub)
 - [Retail Dataset](https://www.iguazio.com/blog/13-best-free-retail-datasets-for-machine-learning/)
 - [Datasets](https://data.mendeley.com/)
+- [Social Media Data](https://www.benlcollins.com/spreadsheets/import-social-media-statistics/#instagram)
