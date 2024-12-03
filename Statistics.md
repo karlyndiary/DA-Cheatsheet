@@ -1,0 +1,6 @@
+- Standard deviation (std) is a statistical measure that shows how much individual data points in a dataset differ from the mean (average).
+  - A low standard deviation indicates that most of the data points are close to the mean, while a high standard deviation suggests a wide spread of values.
+- Deviation refers to the difference between an individual data point and the mean of the dataset.
+- Variance is a statistical measure that quantifies how spread out the data points in a dataset are from the mean. It is the average of the squared deviations from the mean.
+  - Low variance: Data points are close to the mean (less spread out).
+  - High variance: Data points are widely spread around the mean.
